@@ -1,0 +1,55 @@
+
+
+/* container */
+.themesflat-container {
+    position     : relative;
+    margin-left  : auto;
+    margin-right : auto;
+    padding-right: 15px;
+    padding-left : 15px;
+    width        : 1140px;
+    max-width    : 100%;
+}
+
+/* button 
+--------------------------------------------------*/
+.tf-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: #161616;
+    background-color: #DEE8E8;
+    padding      : 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 800;
+    width: 116px;
+    height: 42px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition   : all 0.3s ease;
+    -ms-transition    : all 0.3s ease;
+    -o-transition     : all 0.3s ease;
+    transition        : all 0.3s ease;
+}
+
+.tf-button:hover,
+.tf-button.active {
+    color: #161616;
+    background-color: #DDF247;
+}
+
+.tf-button.style-1 {
+    width: 170px;
+    height: 44px;
+    gap: 10px;
+    flex-shrink: 0;
+    background-color: #DDF247;
+}
+
+.tf-button.style-1:hover,
+.tf-button.style-1.active {
+    color: #161616;
+    background-color: #fff;
+}
