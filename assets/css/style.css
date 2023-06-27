@@ -526,6 +526,19 @@ input[type="search"]::-webkit-search-results-decoration {
     display: none
 }
 
+input.style-1 {
+    background-color: #232323 !important;
+}
+
+.search.search-submit {
+    position: absolute;
+    right: 26px;
+    top: 0;
+    background: transparent;
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+}
+
 
 /* Contact Form 7 */
 
@@ -574,10 +587,6 @@ select option{
     color: #1F1F2C;
 }
 
-input {
-    margin-bottom: 30px;
-}
-
 textarea,
 input[type="text"],
 input[type="password"],
@@ -588,7 +597,9 @@ input[type="month"],
 input[type="time"],
 input[type="week"],
 input[type="number"],
+input[type="email"],
 input[type="url"],
+input[type="search"],
 input[type="tel"],
 input[type="color"] {
     border: none;
@@ -597,6 +608,7 @@ input[type="color"] {
     -moz-box-shadow   : none;
     box-shadow        : none;
     font-size  : 14px;
+    font-family: 'Azeret Mono';
     line-height: 22px;
     border-radius: 12px;
     padding: 15px 26px;
@@ -618,6 +630,7 @@ input[type="week"]:focus,
 input[type="number"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
+input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus {
     border: none;
@@ -639,37 +652,14 @@ input[type="week"]::placeholder,
 input[type="number"]::placeholder,
 input[type="email"]::placeholder,
 input[type="url"]::placeholder,
+input[type="search"]::placeholder,
 input[type="tel"]::placeholder,
 input[type="color"]::placeholder {
     font-size  : 14px;
     font-weight: 400;
     line-height: 22px;
+    font-family: 'Azeret Mono';
     color      : rgba(255, 255, 255, 0.53);
-}
-
-input[type="email"],
-input[type="text"],
-input[type="search"] {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: none;
-    border: none;
-    width: 100%;
-    height: 52px;
-    padding: 15px 26px;
-    gap: 30px;
-    border-radius: 12px;
-    background: #232323;
-}
-
-.search.search-submit {
-    position: absolute;
-    right: 0;
-    top: 0;
-    background: transparent;
-    color: rgba(255, 255, 255, 1);
-    font-size: 24px;
 }
 
 /* Button */
@@ -893,8 +883,23 @@ label.error {
 .mt-30 {
     margin-top: 30px;
 }
+.mt-10 {
+    margin-top: 10px;
+}
+.mr-30 {
+    margin-right: 30px;
+}
+.ml-30 {
+    margin-left: 30px;
+}
+.ml-50 {
+    margin-left: 50px;
+}
+.mb-20 {
+    margin-bottom: 20px !important;
+}
 .mt-18 {
-    margin-top: 18px;
+    margin-top: 18px !important;
 }
 
 #wrapper{
