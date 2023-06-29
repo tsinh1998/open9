@@ -15,10 +15,10 @@ var swiper = new Swiper(".swiper-3d-7", {
         scale: 0.9,
         slideShadows: false,
     },
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: true,
-    // },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -49,8 +49,6 @@ var swiper = new Swiper(".swiper-3d-7", {
     },
 });
 
-
-
 var swiper =  new Swiper(".mainslider", {
     autoplay: {
     delay: 6000,
@@ -69,12 +67,24 @@ var swiper =  new Swiper(".mainslider", {
     },
 });
 
+var swiper =  new Swiper(".autoslider", {
+    autoplay: {
+        delay: 0
+    },
+    spaceBetween: 28,
+    slidesPerView: '4',
+    loop: true,
+    speed: 9000,
+    },
+    $(".autoslider").hover(function() {
+        (this).swiper.autoplay.stop();
+    }, function() {
+        (this).swiper.autoplay.start();
+    }
+
+));
 
 var swiper =  new Swiper(".carousel", {
-    // autoplay: {
-    //     delay: 5000,
-    //     disableOnInteraction: false,
-    //     },
     loop:false,
     slidesPerView: 1,
     spaceBetween: 30,
@@ -268,13 +278,9 @@ var swiper =  new Swiper(".seller-slider2", {
             spaceBetween: 30,
         },
         1070: {
-            slidesPerView: 7,
+            slidesPerView: 6,
             spaceBetween: 30,
         },
-        1400: {
-            slidesPerView: 9,
-            spaceBetween: 30,
-        }
     },
 });
 

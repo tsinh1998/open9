@@ -304,6 +304,14 @@ pre {
     height         : auto;
 }
 
+svg,
+svg path {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
 
 /* Elements
 -------------------------------------------------------------- */
@@ -317,9 +325,9 @@ html {
 *,
 *:before,
 *:after {
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing   : inherit;
-    box-sizing        : inherit;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing   : border-box;
+    box-sizing        : border-box;
 }
 
 hr {
@@ -821,20 +829,6 @@ label.error {
     color: #ff0000; 
 }
 
-/* .swiper-button-next:after,
-.swiper-button-prev:after{
-    font-family: 'Font Awesome 5 Pro' ;
-    font-size: 20px;
-}
-
-.swiper-button-next:after{
-    content: "\f061" ;
-}
-
-.swiper-button-prev:after{
-    content: "\f060" ;
-} */
-
 .relative {
     position: relative;
 }
@@ -881,8 +875,17 @@ label.error {
 .h-full {
     height: 100%;
 }
+.pt-10 {
+    padding-top: 10px;
+}
 .pt-40 {
     padding-top: 40px;
+}
+.pb-20 {
+    padding-bottom: 20px;
+}
+.pb-30 {
+    padding-bottom: 30px;
 }
 .pb-80 {
     padding-bottom: 80px;
@@ -911,6 +914,9 @@ label.error {
 .mt-18 {
     margin-top: 18px !important;
 }
+.mt-17 {
+    margin-top: 17px ;
+}
 .mt-16 {
     margin-top: 16px ;
 }
@@ -919,6 +925,14 @@ label.error {
 }
 .mt-40 {
     margin-top: 40px;
+}
+.tf-color {
+    color: #DDF247;
+}
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 #wrapper{
@@ -956,6 +970,11 @@ a:focus {
     0%{background-position:left}
     50%{background-position:right}
     100%{background-position:left}
+}
+
+.wd-tf-card-box > div {
+    margin-right: 10px;
+    height: fit-content;
 }
 
 /* Header
@@ -1367,3 +1386,33 @@ a:focus {
     color: #DDF247;
 }
 
+/* heading-section */
+.heading-section {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+}
+
+.heading-section .tf-title {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 44px;
+    text-transform: capitalize;
+}
+
+.heading-section a {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 19px;
+    text-transform: capitalize;
+}
+
+.heading-section a i {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    margin-right: 6px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.10);
+}
