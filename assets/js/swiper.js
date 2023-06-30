@@ -49,6 +49,71 @@ var swiper = new Swiper(".swiper-3d-7", {
     },
 });
 
+var swiper = new Swiper(".swiper-3d-3", {
+    loop: true,
+    spaceBetween: 0,
+    slidesPerView: 1,
+    centeredSlides: true,
+    freeMode: true,
+    watchSlidesProgress: true,
+    effect: "coverflow",
+    grabCursor: true,
+    coverflowEffect: {
+        rotate: 15,
+        stretch: 90,
+        depth: 0,
+        modifier: 1,
+        scale: 0.9,
+        slideShadows: false,
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        500: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 3,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+    },
+});
+
+var swiper = new Swiper(".swiper-3d-3card", {
+    loop: true,
+    spaceBetween: 0,
+    slidesPerView: 1,
+    centeredSlides: true,
+    freeMode: true,
+    watchSlidesProgress: true,
+    effect: "coverflow",
+    grabCursor: true,
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 530,
+        depth: 0,
+        modifier: 1,
+        scale: 0.9,
+        slideShadows: false,
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+});
+
 var swiper =  new Swiper(".mainslider", {
     autoplay: {
     delay: 6000,
@@ -72,7 +137,7 @@ var swiper =  new Swiper(".autoslider", {
         delay: 0
     },
     spaceBetween: 28,
-    slidesPerView: '4',
+    slidesPerView: '7',
     loop: true,
     speed: 9000,
     },
@@ -215,6 +280,27 @@ var swiper =  new Swiper(".carousel3", {
         },
     },
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 var swiper =  new Swiper(".seller-slider", {
     slidesPerView: 2,

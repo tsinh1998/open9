@@ -6,3 +6,18 @@
         transform: rotate(360deg);
     }
 }
+
+@keyframes moveleft {
+    0% {
+      -webkit-transform: translate(0);
+      transform: translate(0);
+    }
+    50% {
+        -webkit-transform: translate(-15px);
+        transform: translate(-15px);
+    }
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}

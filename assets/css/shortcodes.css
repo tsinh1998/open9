@@ -15,6 +15,10 @@
     width: 1520px;
 }
 
+.tf-section {
+    padding: 30px 0;
+}
+
 /* button 
 --------------------------------------------------*/
 .tf-button {
@@ -326,6 +330,7 @@
     height: 26px;
     border-radius: 26px;
     background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(2px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -350,6 +355,7 @@
     padding         : 8.5px 10px;
     border-radius   : 9999px;
     background-color: rgba(255, 255, 255, 0.20);
+    backdrop-filter : blur(2px);
     width           : 90px;
 }
 
@@ -413,6 +419,38 @@
     font-family: 'Azeret Mono';
     font-weight: 400;
     line-height: 19px;
+}
+
+.tf-card-box.style-1:hover .card-media .button-place-bid {
+    bottom: auto;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* style-3 */
+.tf-card-box.style-3 {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 0;
+    box-shadow: 0px 30px 70px 0px #0A0A0A;
+    width: 456px;
+    height: 560px;
+}
+
+.tf-card-box.style-3:hover .button-place-bid {
+    top: 50%;
+}
+
+.tf-card-box.style-3 .card-bottom {
+    border-radius: 0px 0px 16px 16px;
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    padding: 10px 16px 10px 10px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 /* tf-card-collection */
@@ -504,7 +542,76 @@
     margin-bottom: 4px;
 }
 
+/* style-1 */
+.tf-card-collection.style-1 .image {
+    border-radius: 16px;
+    overflow: hidden;
+}
 
+.tf-card-collection.style-1 .image img  {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition   : all 0.3s ease;
+    -ms-transition    : all 0.3s ease;
+    -o-transition     : all 0.3s ease;
+    transition        : all 0.3s ease;
+}
+
+.tf-card-collection.style-1:hover .image img {
+    transform: scale(1.05);
+}
+
+.tf-card-collection.style-1 .card-bottom {
+    border-radius: 0px 0px 16px 16px;
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    padding: 10px;
+    bottom: 10px;
+    left: 0;
+    width: -webkit-fill-available;
+    margin: 0 10px;
+}
+
+.tf-card-collection.style-1 .author .infor {
+    color: rgba(255, 255, 255, 1);
+}
+
+.tf-card-collection.style-1 .bottom-right .shop {
+    margin: 0;
+    padding: 0 0 0 18px;
+    border: none;
+    border-left: 1px solid rgba(217, 217, 217, 0.1);
+}
+
+.tf-card-collection.style-1 .like {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(2px);
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tf-card-collection.style-1 .like .wishlist-button {
+    position: unset;
+    width: 14px;
+    height: 14px;
+    background: none;
+    border: none;
+    backdrop-filter: unset;
+}
+
+.tf-card-collection.style-1 .like p {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 9px;
+    text-transform: capitalize;
+}
 
 /* side-bar */
 /* ----------------------------------------- */
@@ -996,7 +1103,11 @@
     margin-bottom: 50px;
 }
 
-.tf-button.style-1.w190 {
+.tf-button.h50 {
+    height: 50px;
+}
+
+.tf-button.w190 {
     width: 190px;
 }
 
@@ -1352,3 +1463,342 @@
 
 }
 
+/* tf-box-icon */
+.tf-box-icon .image img {
+    padding: 22.5px;
+    border-radius: 20px;
+    background: #1A1A1A;
+    box-shadow: 0px 15px 30px -6px rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(217, 217, 217, 0.1);
+    margin-bottom: 30px;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition   : all 0.8s ease-in-out;
+    -ms-transition    : all 0.8s ease-in-out;
+    -o-transition     : all 0.8s ease-in-out;
+    transition        : all 0.8s ease-in-out;
+}
+
+.tf-box-icon:hover .image img {
+    transform: rotateY(360deg);
+}
+
+.tf-box-icon .image p {
+    color: rgba(255, 255, 255, 0.53);
+    font-size: 12px;
+    font-family: 'Azeret Mono';
+    font-weight: 400;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.tf-box-icon h4 {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 27px;
+    margin-bottom: 20px;
+}
+
+.tf-box-icon p {
+    color: rgba(255, 255, 255, 0.53);
+    font-size: 14px;
+    font-family: 'Azeret Mono';
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.tf-box-icon svg {
+    position: absolute;
+    top: -10px;
+    right: -65px;
+}
+
+.tf-box-icon:hover svg * {
+    fill: #DDF247;
+}
+
+/* style-1 */
+.tf-box-icon.style-1 {
+    border-radius: 30px;
+    background: #232323;
+    padding: 30px;
+}
+
+.tf-box-icon.style-1::after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 177px;
+    height: 10px;
+    border-radius: 5px;
+    z-index: -1;
+    background: linear-gradient(to right,rgba(253, 207, 0, 1), rgba(253, 150, 1, 1));
+}
+
+.tf-box-icon.style-1 .image img {
+    padding: 0;
+    background: none;
+    border-radius: unset;
+    border: none;
+}
+
+.tf-box-icon.style-1 h4,
+.tf-box-icon.style-1 .image p {
+    margin-bottom: 12px;
+}
+
+/* action__body */
+.action__body {
+    padding: 50px 40px;
+    background-color: rgba(221, 242, 71, 1);
+    border-radius: 20px;
+    position: relative;
+    background-image: url(../images/backgroup-section/line.png);
+    background-position: 0 35px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.action__body h2 {
+    color: #161616;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 44px;
+    margin-bottom: 30px;
+    max-width: 330px;
+}
+
+.tf-button.style-2 {
+    background-color: rgba(22, 22, 22, 1);
+    color: rgba(221, 242, 71, 1);
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.tf-button i::before {
+    font-size: 18px;
+}
+
+.tf-button.style-2:hover {
+    color: rgba(22, 22, 22, 1);
+    background-color: #fff;
+}
+
+.tf-button.w230 {
+    width: 230px;
+}
+
+.tf-button.h50 {
+    height: 50px;
+}
+
+.action__body img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: moveleft 5s infinite linear;
+}
+
+/* flat-pages-title-home2 */
+.flat-pages-title-home2 {
+    padding: 137px 0 108px 0;
+    background-image: url(../images/item-background/bg-home2.png);
+    background-position: 0 209px;
+    background-repeat: no-repeat;
+}
+
+.flat-pages-title-home2 .content {
+    padding-left: 42%;
+}
+
+.flat-pages-title-home2 .content h1 {
+    font-size: 54px;
+    font-weight: 800;
+    text-transform: capitalize;
+    line-height: 74px;
+    margin-bottom: 30px;
+}
+
+.flat-pages-title-home2 .content p {
+    color: rgba(255, 255, 255, 0.53);
+    font-size: 14px;
+    font-family: "Azeret Mono";
+    line-height: 22px;
+    margin-bottom: 50px;
+}
+
+.flat-pages-title-home2 .themesflat-container {
+    width: 100%;
+}
+
+.flat-pages-title-home2 .banner__right {
+    margin-left: 140px;
+}
+
+.tf-card-box.style-2 {
+    width: 456px;
+    height: 560px;
+    flex-shrink: 0;
+    padding: 0;
+    background: none;
+    margin-bottom: 0;
+    position: relative;
+    transform: none;
+}
+
+.tf-card-box.style-2 .card-media img {
+    margin: -43px 0;
+}
+
+.tf-card-box.style-2 .author {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(2px);
+}
+
+.tf-card-box.style-2 .author * {
+    color: #FFF;
+}
+
+.tf-card-box.style-2 .featured-countdown {
+    top: 88px;
+    left: 22px;
+}
+
+.tf-card-box.style-2 .wishlist-button {
+    top: 88px;
+    left: 120px;
+}
+
+.tf-card-box.style-2 .button-place-bid a {
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(2px);
+    color: #FFF;
+}
+
+.tf-card-box.style-2 .button-place-bid a:hover {
+    background-color: #DDF247;
+    color: #161616;
+}
+
+.flat-pages-title-home2 .swiper-button-disabled {
+    cursor: pointer !important;
+    opacity: 1 !important;
+    pointer-events: all !important;
+}
+
+/* tf-category */
+.tf-category {
+    padding: 14px 10px;
+    border-radius: 20px;
+    background: #232323;
+}
+
+.tf-category .card-media {
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.tf-category .card-media::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition   : all 0.3s ease;
+    -ms-transition    : all 0.3s ease;
+    -o-transition     : all 0.3s ease;
+    transition        : all 0.3s ease;
+}
+
+.tf-category:hover .card-media::after {
+    opacity: 1;
+}
+
+.tf-category .card-media a {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border-radius: 12px;
+    color: rgba(22, 22, 22, 1);
+    background-color: #DDF247;
+    opacity: 0;
+    z-index: 1;
+}
+
+.tf-category .card-media a:hover {
+    background-color: #FFF;
+}
+
+.tf-category .card-media a i {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition   : all 0.3s ease;
+    -ms-transition    : all 0.3s ease;
+    -o-transition     : all 0.3s ease;
+    transition        : all 0.3s ease;
+}
+
+.tf-category .card-media a:hover i {
+    transform: rotate(45deg);
+}
+
+.tf-category:hover .card-media a {
+    top: 50%;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition   : all 0.3s ease;
+    -ms-transition    : all 0.3s ease;
+    -o-transition     : all 0.3s ease;
+    transition        : all 0.3s ease;
+}
+
+.tf-category h6 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+/* tf-author-box style-2 */
+.tf-author-box.style-2 {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.tf-author-box.style-2  .author-avatar {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.tf-author-box.style-2 .order {
+    color: #DDF247;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 44px;
+    text-transform: capitalize;
+    margin-left: 10px;
+}
