@@ -71,14 +71,23 @@
             if (iteration > 2) iteration = 1;
             $(this).data('iteration', iteration);
         });
+    };
+
+    var dropdown = function () { 
+        $(".dropdown").on("click", function() {
+            $(this).toggleClass("active");
+            
+        })
+        
     }
+
 
     
 
     // Dom Ready
     $(function () {
         buttonHeart();
-        
+        dropdown()
     });
 
 })(jQuery);

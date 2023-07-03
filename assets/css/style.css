@@ -152,6 +152,10 @@ body {
     line-height: 1;
 }
 
+body.background-white {
+    background-color: #fff;
+}
+
 article,
 aside,
 details,
@@ -937,6 +941,9 @@ label.error {
     height: 1px;
     background-color: rgba(255, 255, 255, 0.1);
 }
+.mw-667 {
+    max-width: 667px !important;
+}
 
 #wrapper{
     position: relative;
@@ -1056,14 +1063,14 @@ a:focus {
     top: 25%;
 }
 
-/* .flat-wallet .canvas.style-1 span,
+.flat-wallet .canvas.style-1 span,
 .flat-wallet .canvas.style-1::before {
     background-color: rgba(22, 22, 22, 1);
 }
 
 .flat-wallet .canvas.style-1::after {
     background-color: rgba(221, 242, 71, 1);
-} */
+}
 
 /* main-nav */
 .header_1 #main-nav {
@@ -1236,6 +1243,29 @@ a:focus {
     -ms-transition    : all 0.3s ease;
     -o-transition     : all 0.3s ease;
     transition        : all 0.3s ease;
+}
+
+/* style-white */
+.header_1.style-white {
+    background: #fff;
+}
+
+.header_1.style-white .tf-button {
+    background-color: #DEE8E8;
+}
+
+.header_1.style-white .tf-button:hover {
+    background-color: #DDF247;
+}
+
+.header_1.style-white #main-nav>ul>li>a {
+    color: #161616;
+}
+
+.header_1.style-white #main-nav>.menu>li.current-menu-item>a::after,
+.header_1.style-white #main-nav>.menu>li:hover>a::after, 
+.header_1.style-white #main-nav>ul>li:hover>a {
+    color: #161616;
 }
 
 
