@@ -1420,6 +1420,19 @@ a:focus {
     color: #DDF247;
 }
 
+/* bg-white */
+#footer.bg-white {
+    background-color: #fff;
+}
+
+#footer.bg-white .title-widget {
+    color: rgba(22, 22, 22, 1);
+}
+
+#footer.bg-white .widget-menu ul li a {
+    color: rgba(22, 22, 22, 1);
+}
+
 /* heading-section */
 .heading-section {
     display        : flex;
@@ -1442,11 +1455,14 @@ a:focus {
 }
 
 .heading-section a i {
-    width: 20px;
-    height: 20px;
     padding: 5px;
     margin-right: 6px;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.10);
     background: rgba(255, 255, 255, 0.10);
+}
+
+.heading-section.bg-white .tf-title,
+.heading-section.bg-white a {
+    color: #161616;
 }
