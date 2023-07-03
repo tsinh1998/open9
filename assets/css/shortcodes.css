@@ -438,10 +438,13 @@
     line-height: 19px;
 }
 
+.tf-card-box.style-1 .card-media .button-place-bid {
+    bottom: 30%;
+}
+
 .tf-card-box.style-1:hover .card-media .button-place-bid {
-    bottom: auto;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    bottom: 50%;
+    transform: translate(-50%,50%);
 }
 
 /* style-3 */
@@ -1859,6 +1862,15 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
+}
+
+/* style-1 */
+.tf-category.style-1 {
+    background-color: #FFF;
+}
+
+.tf-category.style-1 h6 {
+    color: #161616;
 }
 
 /* tf-author-box style-2 */
