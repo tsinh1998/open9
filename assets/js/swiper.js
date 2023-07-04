@@ -138,15 +138,8 @@ var swiper = new Swiper(".swiper-3d-3cardfull", {
 });
 
 var swiper = new Swiper(".swiper-rotate-3", {
-    coverflowEffect: {
-        rotate: 30,
-        stretch: 0,
-        depth: 320,
-        modifier: 0,
-        slideShadows: false,
-    },
     loop: true,
-    spaceBetween: 0,
+    spaceBetween: 70,
     slidesPerView: 1,
     centeredSlides: true,
     freeMode: true,
@@ -160,10 +153,10 @@ var swiper = new Swiper(".swiper-rotate-3", {
         modifier: 0,
         slideShadows: false,
     },
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: true,
-    // },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+    },
     breakpoints: {
         500: {
             slidesPerView: 2,
