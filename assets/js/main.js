@@ -73,12 +73,58 @@
         });
     };
 
-    var dropdown = function () { 
-        $(".dropdown").on("click", function() {
-            $(this).toggleClass("active");
-            
+    var avatar_popup1 = function(){
+        $('.popup-notification').find('.notification').on('click',function(event){
+            event.stopPropagation();});
+        $('.popup-notification').find('.notification').on('click', function(event){
+            if(!$('.avatar_popup').hasClass('visible')){
+                $('.avatar_popup').addClass('visible');
+                    event.preventDefault();
+                }
+            else
+                $('.avatar_popup').removeClass('visible');
+        })    
+    };
+
+    var avatar_popup2 = function(){
+        $('.popup-user').find('.user').on('click',function(event){
+            event.stopPropagation();});
+        $('.popup-user').find('.user').on('click', function(event){
+            if(!$('.avatar_popup2').hasClass('visible')){
+                $('.avatar_popup2').toggleClass('visible');
+                    event.preventDefault();
+                }
+            else
+                $('.avatar_popup2').removeClass('visible');
         })
+    };
+
+    var tabs = function() {
+        if ($('div').hasClass('flat-tabs')) {
+            var tabLinks = document.querySelectorAll(".tablinks");
+            var tabContent =document.querySelectorAll(".tabcontent");
         
+            tabLinks.forEach(function(el) {
+            el.addEventListener("click", openTabs);
+            });
+        
+            function openTabs(el) {
+                var btn = el.currentTarget; 
+                var tabs = btn.dataset.tabs; 
+                
+                tabContent.forEach(function(el) {
+                    el.classList.remove("active");
+                });
+        
+                tabLinks.forEach(function(el) {
+                    el.classList.remove("active");
+                });
+        
+                document.querySelector("#" + tabs).classList.add("active");
+                
+                btn.classList.add("active");
+            }
+        }
     }
 
 
@@ -87,7 +133,9 @@
     // Dom Ready
     $(function () {
         buttonHeart();
-        dropdown()
+        avatar_popup1();
+        avatar_popup2();
+        tabs();
     });
 
 })(jQuery);

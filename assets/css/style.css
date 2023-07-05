@@ -833,7 +833,12 @@ h6 {
 label.error {
     color: #ff0000; 
 }
-
+.hidden {
+    display: none;
+}
+.block {
+    display: block;
+}
 .relative {
     position: relative;
 }
@@ -1654,10 +1659,117 @@ a:focus {
     color: #DDF247;
 }
 
-
-
 .section-menu-left .menu-bottom {
     padding-top: 30px;
     margin-top: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
+
+.section-menu-left .bottom {
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.section-menu-left .bottom p {
+    color: rgba(255, 255, 255, 0.53);
+    font-size: 12px;
+    font-family: 'Azeret Mono';
+    font-weight: 400;
+    line-height: 19px;
+    padding: 0 30px;
+}
+
+.section-menu-left .create {
+    padding: 26px 30.5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.section-menu-left .create a.tf-button {
+    width: 100%;
+    background-color: #DEE8E8;
+    color: #161616;
+}
+
+.section-menu-left .content h6 {
+    padding: 0 30px;
+    font-size: 14px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 9px;
+}
+
+.section-menu-left ul.menu-tab li {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 6px;
+    padding: 12px 30px 12px 64px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition   : all 0.3s ease;
+    -ms-transition    : all 0.3s ease;
+    -o-transition     : all 0.3s ease;
+    transition        : all 0.3s ease;
+}
+
+.section-menu-left ul.menu-tab li::before {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 6px;
+    height: 24px;
+    content: "";
+    top: 50%;
+    left: 0;
+    background-color: #DDF247;
+    border-radius: 999px;
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition   : all 0.3s ease;
+    -ms-transition    : all 0.3s ease;
+    -o-transition     : all 0.3s ease;
+    transition        : all 0.3s ease;
+}
+
+.section-menu-left ul.menu-tab li.active:before,
+.section-menu-left ul.menu-tab li:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.section-menu-left ul.menu-tab li.active,
+.section-menu-left ul.menu-tab li:hover {
+    color: #DDF247;
+}
+
+.section-menu-left ul.menu-tab li svg {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition   : all 0.3s ease;
+    -ms-transition    : all 0.3s ease;
+    -o-transition     : all 0.3s ease;
+    transition        : all 0.3s ease;
+    position: absolute;
+    left: 30px;
+}
+
+.section-menu-left ul.menu-tab li.active svg:first-child,
+.section-menu-left ul.menu-tab li svg:last-child,
+.section-menu-left ul.menu-tab li:hover svg:first-child {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.section-menu-left ul.menu-tab li.active svg:last-child,
+.section-menu-left ul.menu-tab li:hover svg:last-child {
+    opacity: 1;
+    visibility: visible;
+}
+
