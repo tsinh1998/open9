@@ -939,6 +939,9 @@ label.error {
 .mt-40 {
     margin-top: 40px;
 }
+.mb-40 {
+    margin-bottom: 40px;
+}
 .tf-color {
     color: #DDF247;
 }
@@ -1689,6 +1692,11 @@ a:focus {
     width: 100%;
     background-color: #DEE8E8;
     color: #161616;
+}
+
+.section-menu-left .create a.tf-button.active {
+    color: #161616;
+    background-color: #DDF247;
 }
 
 .section-menu-left .content h6 {

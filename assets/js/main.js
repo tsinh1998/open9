@@ -127,6 +127,45 @@
         }
     }
 
+    var buttonfollow = function () { 
+        $("button.follow").on("click", function() {
+            var iteration = $(this).data('iteration') || 1;
+            
+            switch (iteration) {
+                case 1:
+                    $(this).addClass("active");
+                    $(this).text('Following');
+                    var val = parseInt($(this).find("span").text())+1;
+                    $(this).find("span").text(val);
+                    break;
+                case 2:
+                    $(this).removeClass("active");
+                    $(this).text('Follow');
+                    var val = parseInt($(this).find("span").text())-1;
+                    $(this).find("span").text(val);                   
+                    break;
+            }
+            iteration++;
+            if (iteration > 2) iteration = 1;
+            $(this).data('iteration', iteration);
+        });
+    };
+
+    var tabs1 = function(){
+        $('.widget-tabs').each(function(){
+            $(this).find('.widget-content-tab').children().hide();
+            $(this).find('.widget-content-tab').children(".active").show();
+            $(this).find('.widget-menu-tab').children('li').on('click',function(){
+                var liActive = $(this).index();
+                var contentActive=$(this).siblings().removeClass('active').parents('.widget-tabs').find('.widget-content-tab').children().eq(liActive);
+                contentActive.addClass('active').fadeIn("slow");
+                contentActive.siblings().removeClass('active');
+                $(this).addClass('active').parents('.widget-tabs').find('.widget-content-tab').children().eq(liActive).siblings().hide();
+                // swiper_tab();
+            });
+        });
+    };
+
 
     
 
@@ -136,6 +175,8 @@
         avatar_popup1();
         avatar_popup2();
         tabs();
+        buttonfollow();
+        tabs1();
     });
 
 })(jQuery);

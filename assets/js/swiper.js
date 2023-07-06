@@ -230,6 +230,32 @@ var swiper =  new Swiper(".carousel", {
     },
 });
 
+var swiper =  new Swiper(".carousel1", {
+    loop:false,
+    slidesPerView: 1,
+    spaceBetween: 26.67,
+    navigation: {
+        clickable: true,
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+        1300: {
+            slidesPerView: 4,
+        },
+    },
+});
+
 var swiper =  new Swiper(".carousel3", {
     slidesPerView: 1,
     loop: false, 

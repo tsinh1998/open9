@@ -1569,6 +1569,19 @@
     width: 100%;
 }
 
+.dropdown-toggle::after {
+    position: absolute;
+    right: 12px;
+}
+
+.tf-soft .soft-right .dropdown {
+    width: 254px;
+}
+
+.tf-soft .soft-left .dropdown {
+    width: 200px;
+}
+
 .dropdown .btn-secondary {
     background-color: transparent;
     padding: 10px 12px;
@@ -2449,7 +2462,9 @@
     right: 50px;
     top: 0;
     padding-top: 40px;
+    padding-bottom: 40px;
     background: #111;
+    z-index: 10;
 }
 
 .market-header .widget-search {
@@ -2565,6 +2580,7 @@
 .side-bar .widget-recently .card-small-main {
     border-radius: 14px;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 
 .side-bar .widget-recently .card-small-main .card-bottom {
@@ -2583,6 +2599,179 @@
     line-height: 22px;
 }
 
-.side-bar .widget-recently .card-small img {
+.widget-recently .date {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.widget-recently .card-small {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.widget-recently .card-small:last-child {
+    margin-bottom: 0;
+}
+
+.widget-recently .card-small .author {
+    display: flex;
+}
+
+.widget-recently .card-small img {
     border-radius: 17px;
+    margin-right: 14px;
+}
+
+
+.widget-recently .card-small .info h6 {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 22px;
+    margin-top: 16.5px;
+    margin-bottom: 4px;
+}
+
+.widget-recently .card-small .info p {
+    font-family: 'Azeret Mono';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.5px;
+}
+
+.widget-recently .card-small .info p a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.side-bar .see-all {
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+.widget-creators-item .order {
+    margin-right: 10px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 10px;
+}
+
+.widget-creators-item .author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 14px;
+
+}
+
+.widget-creators-item .author h6 {
+    color: #FFF;
+    font-family: 'Manrope';
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 22px;
+    margin-bottom: 4px;
+}
+
+.widget-creators-item .author span {
+    font-family: 'Azeret Mono';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.widget-creators-item .author span a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.widget-creators-item .time {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+button.follow {
+    width: 100px;
+    height: 44px;
+    background-color: #DEE8E8;
+    color: #161616;
+}
+
+button.follow.active,
+button.follow:focus,
+button.follow:hover {
+    color: #161616;
+    background-color: #DDF247;
+}
+
+.widget-coins-item img {
+    margin-right: 10px;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition   : all 0.8s ease-in-out;
+    -ms-transition    : all 0.8s ease-in-out;
+    -o-transition     : all 0.8s ease-in-out;
+    transition        : all 0.8s ease-in-out;
+}
+
+.widget-coins-item:hover img {
+    transform: rotateY(360deg);
+}
+
+.widget-coins-item p {
+    font-family: 'Azeret Mono';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.widget-coins-item p a {
+    color: rgba(255, 255, 255, 0.53);
+}
+
+/* widget-tabs */
+.widget-tabs .tf-soft {
+    position: absolute;
+    right: 0;
+}
+
+.widget-tabs .tf-soft button {
+    height: 40px;
+    padding: 9px 12px;
+}
+
+.widget-menu-tab {
+    display: flex;
+    gap: 9px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.widget-menu-tab li {
+    padding: 9px 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background-color: transparent;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 19px;
+    text-transform: capitalize;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition   : all 0.3s ease-in-out;
+    -ms-transition    : all 0.3s ease-in-out;
+    -o-transition     : all 0.3s ease-in-out;
+    transition        : all 0.3s ease-in-out;
+}
+
+.widget-menu-tab li:hover,
+.widget-menu-tab li.active {
+    color: #161616;
+    background-color: #DDF247;
 }
