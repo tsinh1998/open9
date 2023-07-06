@@ -1692,6 +1692,7 @@ a:focus {
     width: 100%;
     background-color: #DEE8E8;
     color: #161616;
+    cursor: pointer;
 }
 
 .section-menu-left .create a.tf-button.active {
