@@ -1685,14 +1685,14 @@
     width: 28px;
     height: 16px;
     -webkit-appearance: none;
-    background: #f9f9f9;
+    background: rgba(35, 35, 35, 1);
     border-radius: 10px;
     transition: .5s;
     margin-right: 0;
 }
 
 .tf-soft .soft-right input:checked[type=checkbox] {
-    background: rgb(41, 43, 44);
+    background: rgba(35, 35, 35, 1);
     transition: .5s;
 }
 
@@ -1704,12 +1704,12 @@
     position: absolute;
     top: 2px;
     left: 2px;
-    background: rgb(41, 43, 44);
+    background: #fff;
     transition: .5s;
 }
 
 .tf-soft .soft-right input:checked[type=checkbox]::before {
-    background: #fff;
+    background: rgba(221, 242, 71, 1);
     left: 14px;
 }
 
@@ -2456,7 +2456,7 @@
 /* market-page */
 /* ------------------------------------------------- */
 #page.market-page {
-    padding: 132px 50px 10px 330px;
+    padding: 132px 50px 40px 330px;
     background: #111;
 }
 
@@ -2797,7 +2797,7 @@ button.follow:hover {
 }
 
 .wrap-box-card .col-item {
-    width: calc(25% - 30px);
+    width: calc(25% - 26.67px);
     margin-left: 26.67px;
 }
 
@@ -2836,4 +2836,271 @@ button.follow:hover {
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
+}
+
+.top-collections.style-bottom .tf-card-collection {
+    margin-bottom: 30px;
+}
+
+/* connect-wallet */
+#wallet.tabcontent .inner-content > p {
+    color: rgba(255, 255, 255, 0.53);
+    font-family: 'Azeret Mono';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+
+.button-connect-wallet {
+    cursor: pointer;
+}
+
+#connect-wallet-list {
+    display: none;
+}
+
+#connect-wallet-list.active {
+    display: block;
+}
+
+.box-wallet {
+    padding: 20px;
+    border-radius: 20px;
+    background: #232323;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.box-wallet img {
+    margin-bottom: 20px;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition   : all 0.8s ease-in-out;
+    -ms-transition    : all 0.8s ease-in-out;
+    -o-transition     : all 0.8s ease-in-out;
+    transition        : all 0.8s ease-in-out;
+}
+
+.box-wallet:hover img {
+    transform: rotateY(360deg);
+}
+
+.box-wallet h6 {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.box-wallet p {
+    font-family: 'Azeret Mono';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.box-wallet.style-1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.box-wallet.style-1 img {
+    margin-bottom: 0;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.box-wallet.style-1 .info {
+    flex-grow: 1;
+    text-align: start;
+}
+
+.box-wallet.style-1 .info h6 {
+    margin-bottom: 4px;
+}
+
+.tf-button.style-3 {
+    width: 124px;
+    height: 44px;
+    gap: 10px;
+}
+
+#history .inner-content .widget-history  {
+    border-radius: 20px;
+    background: #232323;
+    padding: 20px;
+}
+
+#history .inner-content .widget-history .widget-creators-item {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#history .inner-content .widget-history .widget-creators-item:last-child {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* settings */
+.widget-edit {
+    border-radius: 20px;
+    background: #232323;
+    padding: 20px;
+}
+
+.widget-edit .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.widget-edit .title h4 {
+    font-weight: 800;
+    line-height: 27px;
+}
+
+.widget-edit .title i {
+    font-size: 18px;
+}
+
+.widget-edit.avatar img {
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.widget-edit.avatar .uploadfile h6 {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 19px;
+    margin-bottom: 10px;
+}
+
+.widget-edit.avatar .uploadfile label {
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 10px 12px;
+    background: transparent;
+    width: 460px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.uploadfile input[type=file] {
+    width: 142px;
+    height: 44px;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0 0;
+    border: none;
+    border-radius: 12px;
+    position: relative;
+}
+
+.uploadfile input[type=file]:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 12.5px 17px 12.5px 45px;
+    content: 'Choose file';
+    display: inline-block;
+    border: none;
+    background-color: #DDF247;
+    color: #161616;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition   : all 0.3s ease-in-out;
+    -ms-transition    : all 0.3s ease-in-out;
+    -o-transition     : all 0.3s ease-in-out;
+    transition        : all 0.3s ease-in-out;
+}
+
+.uploadfile input[type=file]::after {
+    position: absolute;
+    content: '\e924';
+    font-family: 'icomoon';
+    top: 13px;
+    left: 17px;
+    font-size: 18px;
+    color: #161616;
+}
+
+.uploadfile label:hover input::before {
+    background-color: #FFF;
+
+}
+
+.widget-edit.avatar .uploadfile .text {
+    font-family: 'Azeret Mono';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.widget-edit.setting .notification-setting-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.widget-edit.setting .notification-setting-item h6 {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 22px;
+}
+
+.widget-edit.setting .notification-setting-item p {
+    font-family: 'Azeret Mono';
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.widget-edit.setting .check {
+    position: relative;
+    width: 62px;
+    height: 32px;
+    -webkit-appearance: none;
+    background: rgba(22, 22, 22, 1);
+    border-radius: 999px;
+    transition: .5s;
+    margin-right: 0;
+}
+
+.widget-edit.setting input:checked[type=checkbox] {
+    transition: .5s;
+}
+
+.widget-edit.setting .check::before {
+    content: '';
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: rgba(35, 35, 35, 1);
+    transition: .5s;
+}
+
+.widget-edit.setting input:checked[type=checkbox]::before {
+    background: rgba(221, 242, 71, 1);
+    left: 30px;
 }

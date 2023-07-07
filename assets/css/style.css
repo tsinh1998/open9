@@ -555,6 +555,19 @@ input.style-1 {
 
 
 /* Contact Form 7 */
+fieldset {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+form label {
+    color: #FFF;
+    font-family: 'Manrope';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    margin-bottom: 16px;
+}
 
 .wpcf7-form select,
 .wpcf7-form textarea,
@@ -575,8 +588,8 @@ select{
 }
 
 .select::after {
-    font-family: 'Font Awesome 5 Pro' ;
-    content: '\f078';
+    font-family: 'icomoon' ;
+    content: '\e914';
     font-size: 14px;
     right: 10px;
     font-weight: 600;
@@ -595,10 +608,28 @@ select{
     transform: translateY(-50%);
 }
 
+select {
+    border: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    font-size: 14px;
+    font-family: 'Azeret Mono';
+    line-height: 22px;
+    border-radius: 12px;
+    padding: 15px 26px;
+    width: 100%;
+    background: #161616;
+    color: #fff;
+}
+
 select option{
+    padding: 15px 26px;
     font-size: 15px;
     line-height: 24px;
     color: #1F1F2C;
+    background-color: #fff;
 }
 
 textarea,
@@ -746,6 +777,19 @@ input.style-1[type="submit"]:focus {
     background-color: rgba(221, 242, 71, 1);
 }
 
+.btn-submit button[type="submit"]:hover {
+    background-color: #FFF;
+    color: rgba(22, 22, 22, 1);
+}
+
+.btn-submit button.active {
+    background-color: #FFF;
+    color: rgba(22, 22, 22, 1);
+}
+
+textarea {
+    height: 180px;
+}
 
 /* Placeholder color */
 ::-webkit-input-placeholder {
@@ -858,6 +902,9 @@ label.error {
 .flex-grow {
     flex-grow: 1;
 }
+.gap30 {
+    gap: 30px;
+}
 .justify-center {
     justify-content: center;
 }
@@ -942,6 +989,9 @@ label.error {
 .mb-40 {
     margin-bottom: 40px;
 }
+.mb-30 {
+    margin-bottom: 30px;
+}
 .tf-color {
     color: #DDF247;
 }
@@ -952,6 +1002,9 @@ label.error {
 }
 .mw-667 {
     max-width: 667px !important;
+}
+.w242 {
+    width: 242.5px;
 }
 
 #wrapper{

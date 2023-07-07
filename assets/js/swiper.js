@@ -256,6 +256,29 @@ var swiper =  new Swiper(".carousel1", {
     },
 });
 
+var swiper =  new Swiper(".carousel3-type1", {
+    loop:false,
+    slidesPerView: 1,
+    spaceBetween: 25,
+    navigation: {
+        clickable: true,
+        nextEl: ".next-type1",
+        prevEl: ".prev-type1",
+    },
+    pagination: {
+        el: ".pagination-type1",
+        clickable: true,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+    },
+});
+
 var swiper =  new Swiper(".carousel3", {
     slidesPerView: 1,
     loop: false, 

@@ -166,7 +166,20 @@
         });
     };
 
+    var connectwallet = function() {
+        if ($('span').hasClass('button-connect-wallet')) {
+            $('.button-connect-wallet').on('click',function() {
+                $('#connect-wallet-grid').addClass('hidden');
+                $('#connect-wallet-list').addClass('active');
+            })
+        }
+    };
 
+    var flcustominput = function () {
+        $("input[type=file]").change(function (e) {
+            $(this).parents(".uploadfile").find(".filename").text(e.target.files[0].name);
+          });          
+    };
     
 
     // Dom Ready
@@ -177,6 +190,8 @@
         tabs();
         buttonfollow();
         tabs1();
+        connectwallet();
+        flcustominput();
     });
 
 })(jQuery);
