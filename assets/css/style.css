@@ -264,6 +264,8 @@ acronym {
     cursor       : help;
 }
 
+.btn-link:focus, 
+.btn-link:hover,
 mark,
 ins {
     text-decoration: none;
@@ -892,6 +894,9 @@ label.error {
 .fixed {
     position: fixed !important;
 }
+.position-unset {
+    position: unset;
+}
 .flex {
     display: -webkit-box;
     display: -moz-box;
@@ -943,6 +948,12 @@ label.error {
 }
 .pb-30 {
     padding-bottom: 30px;
+}
+.pb-38 {
+    padding-bottom: 38px;
+}
+.pb-40 {
+    padding-bottom: 40px;
 }
 .pb-80 {
     padding-bottom: 80px;
@@ -1005,6 +1016,9 @@ label.error {
 }
 .w242 {
     width: 242.5px;
+}
+.rotateZ90 {
+    transform: rotateZ(90deg);
 }
 
 #wrapper{
