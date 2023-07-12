@@ -3286,7 +3286,7 @@ button.follow:hover {
     margin-right: 6px;
 }
 
-#create .wrap-content .btn-submit button {
+.btn-submit button.style-1 {
     color: #161616;
     display: flex;
 }
@@ -3999,4 +3999,296 @@ img {
 /* widget-gg-map */
 .widget-gg-map {
     filter: grayscale(100%);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+/* widget-login */
+.widget-login {
+    padding: 30px;
+    border-radius: 20px;
+    background: #232323;
+}
+
+fieldset.password > i::before {
+    margin-left: -46px;
+    font-size: 18px;
+    color: rgba(145, 145, 145, 1);
+    cursor: pointer;
+}
+
+.forget-password {
+    text-align: right;
+    font-family: 'Azeret Mono';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 18px;
+}
+
+.forget-password a {
+    color: rgba(255, 255, 255, 0.53);
+}
+
+.widget-login .other {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.53);
+    font-family: 'Azeret Mono';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.widget-login .other::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    width: 40%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.widget-login .other::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: 0;
+    width: 40%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.widget-login .login-other {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.widget-login .login-other-item {
+    width: 100%;
+    height: 50px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 19px;
+    text-transform: capitalize;
+}
+
+.widget-login .login-other-item:hover {
+    color: #161616;
+    background-color: #DDF247;
+}
+
+.widget-login .no-account {
+    color: rgba(255, 255, 255, 0.53);
+    text-align: center;
+    font-family: 'Azeret Mono';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+/* popup */
+.modal{
+    z-index: 999999 !important;
+}
+
+.modal-dialog {
+    max-width: 525px !important;
+    margin: auto !important;
+}
+
+.modal-open .modal{
+    overflow: hidden !important;
+    padding-right: 0 !important;
+}
+
+.modal-dialog-centered{
+    display: flex;
+    display: -webkit-box;  
+    display: -moz-box;      
+    display: -ms-flexbox;   
+    display: -webkit-flex; 
+    align-items: center;
+    min-height: 100%;
+    max-width: 500px;
+    margin: 1.75rem auto;
+}
+
+.modal.fade.popup.show{
+    padding-right: 0 !important;
+}
+
+.modal-content {
+    border-radius: 20px !important;
+    overflow: hidden;
+}
+
+.modal-body {
+    background: #161616;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.80);
+    padding: 30px;
+}
+
+.modal-body .image {
+    background-color: #DDF247;
+    border-radius: 10px;
+}
+
+.modal-body .logo-rotate {
+    background-color: #161616;
+    border: none;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px !important;
+    height: 120px !important;
+    margin: auto;
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+
+.modal-body h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 41px;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}
+
+.modal-body p {
+    color: rgba(255, 255, 255, 0.53);
+    text-align: center;
+    font-family: 'Azeret Mono';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 50px;
+}
+
+.modal-body fieldset {
+    margin-bottom: 20px;
+}
+
+.modal-body > a.tf-button {
+    width: 320px;
+    margin: auto;
+}
+
+/* section-single-page */
+/* --------------------------------------- */
+.section-single-page {
+    background-image: url(../images/item-background/bg-home1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 74px 0 75px 0;
+    text-align: center;
+}
+
+.section-single-page .content {
+    padding: 216px 0 265px 0;
+}
+
+.section-single-page .content h1 {
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 137px;
+    text-transform: capitalize;
+    margin-bottom: 24px;
+}
+
+.section-single-page .content p {
+    color: rgba(255, 255, 255, 0.53);
+    font-family: 'Azeret Mono';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 59px;
+}
+
+.section-single-page .content fieldset {
+    width: 638px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.section-single-page .content > a {
+    width: 320px;
+    margin: auto;
+}
+
+.section-single-page .content .status {
+    font-family: 'Azeret Mono';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 11px;
+    margin-bottom: -11px;
+}
+
+.section-single-page.maintanance .content {
+    padding-bottom: 346px;
+}
+
+.section-single-page.maintanance .content p {
+    margin-bottom: 50px;
+}
+
+.section-single-page.maintanance .content .box-button {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section-single-page.maintanance .content .box-button a {
+    width: 216px;
+}
+
+.section-404-page {
+    text-align: center;
+    padding: 24px 0 353px 0;
+    background-image: url(../images/item-background/bg-404png.png);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+}
+
+.section-404-page .content {
+    font-size: 300px;
+    font-weight: 800;
+    line-height: 410px;
+    text-transform: capitalize;
+    margin-bottom: -13px;
+}
+
+.section-404-page h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 55px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.section-404-page p {
+    color: rgba(255, 255, 255, 0.53);
+    font-family: 'Azeret Mono';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 40px;
+}
+
+.section-404-page a {
+    width: 320px;
+    margin: auto;
 }

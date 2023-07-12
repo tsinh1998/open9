@@ -1,0 +1,30 @@
+
+
+@media (max-width: 1024px) {
+    .header_1 #main-nav {
+        left: 20%;
+    }
+    #main-nav>ul>li {
+        padding: 17px 10px 18px 10px;
+    }
+}
+
+@media (max-width: 991px) {
+    .flat-wallet {
+        margin-right: 56px;
+    }
+    .header_1 #main-nav ,
+    .canvas {
+        display: none;
+    }
+    .mobile-button {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    #wallet-header {
+        display: none;
+    }
+}
+

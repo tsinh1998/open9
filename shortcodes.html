@@ -3190,12 +3190,56 @@
                 </div>
             </div>
 
-            <div class="contact-us main-content">
+            <div class="contact-us">
                 <div class="themesflat-container">
                     <div class="row">
                         <div class="col-12">
                             <div class="widget-gg-map">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d97101.88872869895!2d-74.22688511715344!3d40.487336736141906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1689125037376!5m2!1svi!2s" width="100%" height="460" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="themesflat-container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="widget-login">
+                                <form action="contact/contact-process.php" method="post" id="commentform" class="comment-form" novalidate="novalidate">
+                                    <fieldset class="email">
+                                        <label>Email *</label>
+                                        <input type="email" id="email" placeholder="mail@website.com" name="email" tabindex="2" value="" aria-required="true" required="">
+                                    </fieldset>
+                                    <fieldset class="password">
+                                        <label>Password *</label>
+                                        <input class="password-input" type="password" id="password" placeholder="Min. 8 character" name="password" tabindex="2" value="" aria-required="true" required="">
+                                        <i class="icon-show password-addon" id="password-addon"></i>
+                                        <div class="forget-password">
+                                            <a href="#">Forget password</a>
+                                        </div>
+                                    </fieldset>
+                                    <div class="btn-submit mb-30">
+                                        <button class="tf-button style-1 h50 w-100" type="submit">Login<i class="icon-arrow-up-right2"></i></button>
+                                    </div>
+                                </form>
+                                <div class="other">or continue</div>
+                                <div class="login-other">
+                                    <a href="#" class="login-other-item">
+                                        <img src="assets/images/google.png" alt="">
+                                        <span>Sign with google</span>
+                                    </a>
+                                    <a href="#" class="login-other-item">
+                                        <img src="assets/images/facebook.png" alt="">
+                                        <span>Sign with facebook</span>
+                                    </a>
+                                    <a href="#" class="login-other-item">
+                                        <img src="assets/images/apple.png" alt="">
+                                        <span>Sign with apple</span>
+                                    </a>
+                                </div>
+                                <div class="no-account">Don't have an account? <a href="#" class="tf-color">Sign up</a></div>
                             </div>
                         </div>
                     </div>
@@ -3233,6 +3277,30 @@
 
         </div>
         <!-- /#page -->
+
+        <!-- Modal Popup Bid -->
+        <div class="modal fade popup" id="popup_bid" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="image">
+                            <img src="assets/images/backgroup-section/popup.png" alt="">
+                        </div>
+                        <div class="logo-rotate">
+                            <img class="" src="assets/images/item-background/item6-img.png" alt="">
+                        </div>
+                        <h2>Subscribe to our newsletter</h2>
+                        <p>Subscribe for our newsletter to stay in the loop</p>
+                        <fieldset class="email">
+                            <input type="email" class="style-1" id="email" placeholder="Email address*" name="email" tabindex="2" value="" aria-required="true" required="">
+                        </fieldset>
+                        <a href class="tf-button style-1 h50">Subscribe<i class="icon-arrow-up-right2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
     <!-- /#wrapper -->
 
