@@ -1167,6 +1167,7 @@ a:focus {
 #main-nav>ul>li {
     float: left;
     padding: 17px 15px 18px 15px;
+    cursor: pointer;
 }
 
 #main-nav>ul>li>a {
@@ -2088,8 +2089,8 @@ a:focus {
     color: #fff;
 }
 
-#menu-mobile-menu li a:hover ,
 #menu-mobile-menu li.current-menu-item > a ,
+#menu-mobile-menu li a:hover ,
 #menu-mobile-menu li.current-item a {
     color: #DDF247;
 }
@@ -2101,16 +2102,17 @@ a:focus {
     font-weight: 300;
     position: absolute;
     right: 0;
-    top: 25px;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
+    top: 17px;
+    line-height: 16px;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+}
+
+#menu-mobile-menu>li.active a::after {
+    transform: rotate(180deg);
 }
 
 #menu-mobile-menu>li .sub-menu-mobile {
@@ -2137,30 +2139,29 @@ a:focus {
 
 /*Header fixed
 -------------------------------- */
-.header_1.is-fixed,
-#header_main.style-absolute.is-fixed {
-  position: fixed;
-  padding: 15px 0;
-  top: -80px;
-  left: 0;
-  width: 100%;
-  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.05);
-  z-index: 9999;
-  background: #161616;
-  border: none;
-  opacity: 1;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+.header_1.is-fixed {
+    position: fixed;
+    padding: 0;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.05);
+    z-index: 9999;
+    background: #161616;
+    border: none;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
-.header_1.is-fixed.is-small,
-#header_main.style-absolute.is-small {
-  top: 0;
-  -webkit-animation-name: fadeInDown;
-  -webkit-animation-duration: 0.8s;
-  animation-name: fadeInDown;
-  animation-duration: 0.8s;
+.header_1.is-fixed.is-small {
+    top: 0;
+    height: 87px;
+}
+
+.header_1.is-fixed.is-small .themesflat-container {
+    padding: 15px;
 }

@@ -184,22 +184,62 @@ var swiper = new Swiper(".swiper-rotate-3", {
 
 
 
-var swiper =  new Swiper(".autoslider", {
-    autoplay: {
-        delay: 0
-    },
+var swiper =  new Swiper(".autoslider1", {
     spaceBetween: 28,
-    slidesPerView: '7',
+    grabCursor: true,
+    speed: 10000,
+    centeredSlides: false,
     loop: true,
-    speed: 9000,
+    slidesPerView: 'auto',
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
     },
-    $(".autoslider").hover(function() {
-        (this).swiper.autoplay.stop();
-    }, function() {
-        (this).swiper.autoplay.start();
-    }
+    breakpoints: {
+            0: { 
+            spaceBetween: 20,
+            },
+                480: { 
+            spaceBetween: 20,
+            },
+                767: { 
+                spaceBetween: 28,
+            },
+            992: {
+                spaceBetween: 28,
+            }
+        },
+    },
+);
 
-));
+var swiper =  new Swiper(".autoslider2", {
+    spaceBetween: 28,
+    grabCursor: true,
+    speed: 10000,
+    centeredSlides: false,
+    loop: true,
+    slidesPerView: 'auto',
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+      reverseDirection: true,
+    },
+    breakpoints: {
+            0: { 
+            spaceBetween: 20,
+            },
+                480: { 
+            spaceBetween: 20,
+            },
+                767: { 
+                spaceBetween: 28,
+            },
+            992: {
+                spaceBetween: 28,
+            }
+        },
+    },
+);
 
 var swiper =  new Swiper(".carousel", {
     loop:false,

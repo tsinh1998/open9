@@ -78,7 +78,7 @@
                 injectSpace.hide();
               }
     
-              if ($(window).scrollTop() > 150) {
+              if ($(window).scrollTop() > 200) {
                 nav.addClass("is-small");
               } else {
                 nav.removeClass("is-small");
@@ -324,6 +324,31 @@
               });
         }
     }
+
+    var dropdown = function(id){
+        var obj = $(id+'.dropdown');
+        var btn = obj.find('.btn-selector');
+        var dd = obj.find('ul');
+        var opt = dd.find('li');
+            dd.hide();
+            obj.on("mouseenter", function() {
+                dd.show();
+                dd.addClass('show');
+                $(this).css("z-index",1000);
+            }).on("mouseleave", function() {
+                dd.hide();
+                 $(this).css("z-index","auto")
+                 dd.removeClass('show');
+            })
+            
+            opt.on("click", function() {
+                dd.hide();
+                var txt = $(this).text();
+                opt.removeClass("active");
+                $(this).addClass("active");
+                btn.text(txt);
+            });
+    }
     
     
 
@@ -343,6 +368,7 @@
         flatAccordion2();
         password();
         btnmenu();
+        dropdown('#select-day');
     });
 
 })(jQuery);
