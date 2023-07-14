@@ -270,6 +270,36 @@ var swiper =  new Swiper(".carousel", {
     },
 });
 
+var swiper =  new Swiper(".carouselfull", {
+    loop:true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    centeredSlides: true,
+    navigation: {
+        clickable: true,
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        1300: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+    },
+});
+
 var swiper =  new Swiper(".carousel1", {
     loop:false,
     slidesPerView: 1,
@@ -284,14 +314,21 @@ var swiper =  new Swiper(".carousel1", {
         clickable: true,
     },
     breakpoints: {
-        768: {
-            slidesPerView: 2,
-        },
-        1024: {
+        500: {
             slidesPerView: 3,
+            spaceBetween: 30,
         },
-        1300: {
+        640: {
             slidesPerView: 4,
+            spaceBetween: 30,
+        },
+        768: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+        },
+        1070: {
+            slidesPerView: 6,
+            spaceBetween: 30,
         },
     },
 });
@@ -341,8 +378,8 @@ var swiper =  new Swiper(".seller-slider2", {
     spaceBetween: 30,
     navigation: {
         clickable: true,
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".seller-next",
+        prevEl: ".seller-prev",
     },
     grabCursor: true,
     breakpoints: {

@@ -1020,6 +1020,14 @@ label.error {
 .rotateZ90 {
     transform: rotateZ(90deg);
 }
+.fl-item {
+    display: none;
+}
+
+.wd-tf-card-box > div {
+    margin-right: 10px;
+    height: fit-content;
+}
 
 #wrapper{
     position: relative;
@@ -1050,17 +1058,6 @@ a:focus {
     -ms-transition    : all 0.3s ease-in-out;
     -o-transition     : all 0.3s ease-in-out;
     transition        : all 0.3s ease-in-out;
-}
-
-@keyframes rainbow { 
-    0%{background-position:left}
-    50%{background-position:right}
-    100%{background-position:left}
-}
-
-.wd-tf-card-box > div {
-    margin-right: 10px;
-    height: fit-content;
 }
 
 /* Header

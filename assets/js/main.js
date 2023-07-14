@@ -1,29 +1,5 @@
 /**
-  * isMobile
-  * Parallax
-  * flatContentBox
-  * flatCounter
-  * flatIsotopeCase
-  * flatAccordion
-  * swClick
-  * buttonHeart
-  * goTop
-  * WOW
-  * toggleMenu
-  * topSearch
-  * flatProgressBar
-  * popUpLightBox
-  * donatProgress
-  * Preloader
-  * clearcheckbox
-  * flatAccordions
-  * dropdown
-  * no_link
-  * flcustominput
-  * tabs
-  * copycode
-  * fasterPreview
-  * viewShop
+  * headerFixed
 */
 
 ; (function ($) {
@@ -349,6 +325,25 @@
                 btn.text(txt);
             });
     }
+
+    var loadmore = function() {
+        if ($('div').hasClass('loadmore-8-item')) {
+            $(".fl-item").slice(0, 8).show();
+            $("#button-loadmore").on('click', function (e) {
+                e.preventDefault();
+                $(".fl-item:hidden").slice(0, 4).slideDown();
+                if ($(".fl-item:hidden").length == 0) {
+                    $("#button-loadmore span").text("Hide");
+                    $("#button-loadmore").on('click', function (e) {
+                        $(".fl-item").hide();
+                        $(".fl-item").slice(0, 8).show();
+                        $("#button-loadmore span").text("Load More");
+                        $('html, body').animate({scrollTop: $('.loadmore-8-item').offset().top - 100 }, 'slow');
+                    })
+                }
+            });
+        }   
+    };
     
     
 
@@ -368,6 +363,7 @@
         flatAccordion2();
         password();
         btnmenu();
+        loadmore();
         dropdown('#select-day');
     });
 
