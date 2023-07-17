@@ -300,6 +300,49 @@ var swiper =  new Swiper(".carouselfull", {
     },
 });
 
+var swiper =  new Swiper(".carouselfull-1", {
+    loop:true,
+    slidesPerView: 1,
+    spaceBetween: 16,
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+        1300: {
+            slidesPerView: 7,
+        },
+    },
+});
+
+var swiper =  new Swiper(".carouselright", {
+    loop:true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+        clickable: true,
+        nextEl: ".next-slide-right",
+        prevEl: ".prev-slide-right",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+        },
+        1200: {
+            slidesPerView: 3,
+        },
+        1300: {
+            slidesPerView: 5,
+        },
+    },
+});
+
 var swiper =  new Swiper(".carousel1", {
     loop:false,
     slidesPerView: 1,
@@ -400,5 +443,17 @@ var swiper =  new Swiper(".seller-slider2", {
             spaceBetween: 30,
         },
     },
+});
+
+var swiper =  new Swiper(".seller-slider", {
+    slidesPerView: 1,
+    loop: false, 
+    spaceBetween: 30,
+    navigation: {
+        clickable: true,
+        nextEl: ".seller-next",
+        prevEl: ".seller-prev",
+    },
+    grabCursor: true,
 });
 

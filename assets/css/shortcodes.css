@@ -517,6 +517,12 @@
     z-index: 10;
 }
 
+.carouselright {
+    width: calc(100vw - ((100vw - 1100px) / 2));
+    margin-right: unset !important;
+    max-width: 100%;
+}
+
 /* flat-pages-title-home3 */
 .flat-pages-title-home3 {
     padding-top: 83px;
@@ -1545,11 +1551,6 @@
     position: relative;
 }
 
-.tf-author-box .author-avatar img {
-    border-radius: 50%;
-    overflow: hidden;
-}
-
 .tf-author-box .author-avatar .number {
     border-radius: 24px;
     background: #DDF247;
@@ -1828,6 +1829,45 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgba(255, 255, 255, 0.2);
     -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+
+/* grid-box-icon */
+.grid-box-icon {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+}
+
+.box-icon-img {
+    padding-left: 60px;
+    padding-top: 65px;
+}
+
+/* grid-author-box */
+.grid-author-box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+
+.tf-author-box.style-2.type-1 {
+    padding: 24px;
+    border-radius: 20px;
+    background: #232323;
+    margin-bottom: 0;
+    border: none;
+}
+
+.tf-author-box.style-2.type-1 .author-avatar {
+    width: 70px;
+    height: 70px;
+    margin-right: 16px;
+}
+
+.tf-author-box.style-2.type-1 .price.gem {
+    font-weight: 400;
+    font-family: 'Azeret Mono';
+    font-size: 14px;
 }
 
 /* tf-box-icon */
@@ -2344,9 +2384,6 @@
     left: auto;
 }
 
-/* carouselright */
-
-
 /* flat-pages-title-home4 */
 .flat-pages-title-home4 {
     padding: 137px 0 108px 0;
@@ -2429,6 +2466,25 @@
     color: rgba(22, 22, 22, 1);
 }
 
+.top-collections.home-4 {
+    padding: 60px 0;
+    margin-bottom: 60px;
+}
+
+.top-collections.home-4::after {
+    background-image: url(../images/backgroup-section/bg-2.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    content: '';
+    mix-blend-mode: luminosity;
+}
+
 /* swiper-rotate-3 */
 .swiper-rotate-3 {
     padding: 30px 0;
@@ -2443,16 +2499,94 @@
 }
 
 .swiper-rotate-3 .swiper-slide.swiper-slide-active >div {
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 .swiper-rotate-3 .swiper-slide.swiper-slide-next {
     transform: translateY(-10px)  rotate(-20deg) !important;
 }
 
+.container-full {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.background-white .tf-author-box .author-infor h5 a {
+    color: #161616;
+}
+
+.background-white .tf-author-box .price.gem i::before,
+.background-white .tf-author-box .price.gem {
+    color: rgba(22, 22, 22, 0.3);
+}
+
+.background-white .swiper-button-prev {
+    border: 1px solid rgba(22, 22, 22, 0.10);
+}
+
+.background-white .swiper-button-prev::after {
+    color: rgba(22, 22, 22, 1);
+}
+
+.background-white .tf-author-box.style-2 {
+    border-color: rgba(217, 217, 217, 1);
+}
+
+.background-white .tf-author-box.style-2 .order {
+    color: rgba(22, 22, 22, 0.1);
+    margin-left: 0;
+    margin-right: 26px;
+}
+
+.background-white .tf-card-box .wishlist-button,
+.background-white .tf-card-box .featured-countdown {
+    background-color: #fff;
+}
+
+.background-white .tf-author-box.style-2 .author-avatar {
+    border-radius: 20px;
+}
+
 /* .flat-pages-title-home5 */
 .flat-pages-title-home5 .swiper-wrapper {
     padding: 100px 0;
+}
+
+.flat-pages-title-home5 .pages-title .content h1 {
+    color: #161616;
+    max-width: 589px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 67px;
+}
+
+.flat-pages-title-home5 .pages-title .content p {
+    color: #161616;
+}
+
+.flat-pages-title-home5 .pages-title .content .tf-button.active,
+.flat-pages-title-home5 .pages-title .content .tf-button:hover {
+    background-color: #DEE8E8;
+}
+
+.background-white .heading-section a,
+.background-white .heading-section .tf-title {
+    color: #161616;
+}
+
+.background-white .heading-section a i {
+    background-color: rgba(22, 22, 22, 0.10);
+}
+
+.flat-pages-title-home5::after {
+    position: absolute;
+    width: 100%;
+    height: 911px;
+    top: 45px;
+    left: 0;
+    content: '';
+    z-index: -1;
+    background: url(../images/item-background/bg-home5.png);
 }
 
 /* counter */

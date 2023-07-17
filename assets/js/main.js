@@ -333,13 +333,7 @@
                 e.preventDefault();
                 $(".fl-item:hidden").slice(0, 4).slideDown();
                 if ($(".fl-item:hidden").length == 0) {
-                    $("#button-loadmore span").text("Hide");
-                    $("#button-loadmore").on('click', function (e) {
-                        $(".fl-item").hide();
-                        $(".fl-item").slice(0, 8).show();
-                        $("#button-loadmore span").text("Load More");
-                        $('html, body').animate({scrollTop: $('.loadmore-8-item').offset().top - 100 }, 'slow');
-                    })
+                    $("#button-loadmore").hide();
                 }
             });
         }   

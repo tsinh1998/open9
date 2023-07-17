@@ -1004,7 +1004,7 @@ label.error {
     margin-bottom: 30px;
 }
 .tf-color {
-    color: #DDF247;
+    color: #DDF247 !important;
 }
 .divider {
     width: 100%;
@@ -1342,6 +1342,15 @@ a:focus {
     color: #161616;
 }
 
+.header_1.style-white #main-nav .sub-menu::before,
+.header_1.style-white #main-nav .sub-menu {
+    background-color: #DEE8E8;
+}
+
+.header_1.style-white.is-fixed {
+    background-color: #fff;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.06);
+}
 
 /* Mobile Menu Button */
 .mobile-button {
@@ -1371,6 +1380,12 @@ a:focus {
     -webkit-transition: all ease 0.3s;
     -moz-transition   : all ease 0.3s;
     transition        : all ease 0.3s;
+}
+
+.header_1.style-white .mobile-button::before,
+.header_1.style-white .mobile-button::after,
+.header_1.style-white .mobile-button span {
+    background-color: #161616;
 }
 
 .mobile-button:before,
