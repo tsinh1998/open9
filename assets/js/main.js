@@ -297,7 +297,7 @@
                   $(".menu-item-has-children-mobile").removeClass("active");
                   $(this).addClass("active");
                 }
-              });
+            });
         }
     }
 
@@ -337,7 +337,36 @@
                 }
             });
         }   
+        if ($('div').hasClass('loadmore-12-item')) {
+            $(".fl-item").slice(0, 12).show();
+            $("#button-loadmore").on('click', function (e) {
+                e.preventDefault();
+                $(".fl-item:hidden").slice(0, 4).slideDown();
+                if ($(".fl-item:hidden").length == 0) {
+                    $("#button-loadmore").hide();
+                }
+            });
+        }   
+        if ($('div').hasClass('loadmore-12-item-1')) {
+            $(".fl-item-1").slice(0, 12).show();
+            $("#button-loadmore").on('click', function (e) {
+                e.preventDefault();
+                $(".fl-item-1:hidden").slice(0, 4).slideDown();
+                if ($(".fl-item-1:hidden").length == 0) {
+                    $("#button-loadmore").hide();
+                }
+            });
+        }   
     };
+
+    var listmenu = function() {
+        if ($('div').hasClass('list-menu')) {
+            $('.button-sub-item').on('click', function () {
+                $(this).closest('.has-item').toggleClass("active");
+                $(this).closest('.has-item').find('.sub-item').slideToggle("active");
+            });
+        }
+    }
     
     
 
@@ -359,6 +388,7 @@
         btnmenu();
         loadmore();
         dropdown('#select-day');
+        listmenu();
     });
 
 })(jQuery);

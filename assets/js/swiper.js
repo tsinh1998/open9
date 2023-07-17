@@ -415,6 +415,67 @@ var swiper =  new Swiper(".carousel3", {
     },
 });
 
+var swiper =  new Swiper(".carousel5", {
+    loop:false,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+        clickable: true,
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        600: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 3,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 4,
+        },
+        1400: {
+            slidesPerView: 5,
+        },
+    },
+});
+
+var swiper =  new Swiper(".seller-slider3", {
+    slidesPerView: 1,
+    loop: false, 
+    spaceBetween: 45,
+    navigation: {
+        clickable: true,
+        nextEl: ".seller-next",
+        prevEl: ".seller-prev",
+    },
+    grabCursor: true,
+    breakpoints: {
+        500: {
+            slidesPerView: 3,
+        },
+        640: {
+            slidesPerView: 4,
+        },
+        768: {
+            slidesPerView: 5,
+        },
+        1070: {
+            slidesPerView: 6,
+        },
+        1400: {
+            slidesPerView: 7,
+        },
+    },
+});
+
 var swiper =  new Swiper(".seller-slider2", {
     slidesPerView: 2,
     loop: false, 
@@ -451,8 +512,8 @@ var swiper =  new Swiper(".seller-slider", {
     spaceBetween: 30,
     navigation: {
         clickable: true,
-        nextEl: ".seller-next",
-        prevEl: ".seller-prev",
+        nextEl: ".main-next",
+        prevEl: ".main-prev",
     },
     grabCursor: true,
 });

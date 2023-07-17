@@ -1020,6 +1020,7 @@ label.error {
 .rotateZ90 {
     transform: rotateZ(90deg);
 }
+.fl-item-1,
 .fl-item {
     display: none;
 }
@@ -1751,6 +1752,15 @@ a:focus {
     right: 10px;
     top: 12px;
     font-size: 22px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.section-menu-left .list-menu > ul > li.has-item.active > a::before {
+    transform: rotate(180deg);
 }
 
 .section-menu-left .list-menu > ul > li.language a img {
@@ -1775,7 +1785,7 @@ a:focus {
     border-left: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.section-menu-left .list-menu li.active ul.sub-item {
+.section-menu-left .list-menu li ul.sub-item.active {
     display: block;
 }
 
