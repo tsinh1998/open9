@@ -7,12 +7,12 @@ var tfChart = new Chart(ctx, {
             {
                 label: 'Price',
                 backgroundColor: '#161616',
-                data: [46, 55, 120, 70, 20,50,200],
+                data: [53, 162, 93, 131, 36, 93, 40],
                 order: 2,         
             },
             {
                 label: 'Sale',
-                data: [36, 35, 100, 50, 20,50,180],
+                data: [31, 114, 65, 93, 21, 73, 25],
                 borderColor: '#DDF247', 
                 borderWidth: 2, 
                 fill: false, 
@@ -50,7 +50,67 @@ var tfChart = new Chart(ctx, {
                     }
                 }
             },
-            
+        },
+        elements:{
+            bar:{
+                borderRadius: 20
+            }                
+        }
+    }
+});
+
+var ctx1 = document.getElementById('myChart1').getContext('2d');
+var tfChart1 = new Chart(ctx1, {
+    type: 'bar',
+    data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May','Jun','Jul'],
+        datasets: [
+            {
+                label: 'Price',
+                backgroundColor: '#161616',
+                data: [53, 162, 93, 131, 36, 93, 40],
+                order: 2,         
+            },
+            {
+                label: 'Sale',
+                data: [31, 114, 65, 93, 21, 73, 25],
+                borderColor: '#DDF247', 
+                borderWidth: 2, 
+                fill: false, 
+                type: 'line',
+                order: 1,
+                zIndex:2
+            }
+        ]
+    },
+    options: {
+        scales: {
+            x: {
+            grid: {
+                display: false,
+            }
+            },
+            y: {                   
+            beginAtZero: true,               
+            ticks: {
+                precision: 0,
+                stepSize: 50,                    
+            },               
+            }
+        },
+        plugins: {
+            legend: {
+            display: false
+            },
+            tooltip: {
+                yAlign: 'bottom',
+                backgroundColor: 'rgba(222, 232, 232, 0.20)',
+                callbacks: {
+                    label: function (tooltipItem) {
+                        return tooltipItem.value;
+                    }
+                }
+            },
         },
         elements:{
             bar:{

@@ -555,7 +555,6 @@ input.style-1 {
     font-size: 24px;
 }
 
-
 /* Contact Form 7 */
 fieldset {
     margin-bottom: 30px;
@@ -793,6 +792,10 @@ textarea {
     height: 180px;
 }
 
+input.style-2 {
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
 /* Placeholder color */
 ::-webkit-input-placeholder {
     color: #8A8AA0;
@@ -1023,6 +1026,9 @@ label.error {
 .fl-item-1,
 .fl-item {
     display: none;
+}
+.opacity-01 {
+    opacity: 0.1;
 }
 
 .wd-tf-card-box > div {

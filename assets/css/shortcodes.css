@@ -35,6 +35,10 @@
     padding-bottom: 20px;
 }
 
+.tf-section-2 {
+    padding-bottom: 80px;
+}
+
 /* button 
 --------------------------------------------------*/
 .tf-button {
@@ -137,6 +141,10 @@
     margin-right: 32px;
     opacity: 0.5;
     position: relative;
+}
+
+.breadcrumbs li:last-child {
+    margin-right: 0;
 }
 
 .breadcrumbs li.icon-keyboard_arrow_right::before {
@@ -2656,7 +2664,6 @@
     max-width: 435px;
 }
 
-
 .box-icon-wrap {
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -3810,7 +3817,21 @@ button.follow:hover {
     line-height: 22px;
 }
 
+.wrap-accordion .flat-button {
+    gap: 20px;
+}
+
+.wrap-accordion .flat-button a {
+    width: 216px;
+}
+
 /* ranking */
+.ranking .tf-soft .dropdown {
+    width: 180px;
+}
+
+
+
 .widget-table-ranking .table-ranking-heading {
     display: flex;
     align-items: center;
@@ -3820,24 +3841,29 @@ button.follow:hover {
     background: #232323;
     justify-content: space-between;
 }
+
+.widget-table-ranking .table-ranking-heading .column2 {
+    width: 130px;
+}
   
 .widget-table-ranking .table-ranking-heading .column1 {
-    width: 33.33%;
+    width: 360px;
 }
 
 .widget-table-ranking .table-ranking-heading .column {
-    width: 16.6%;
+    width: 101px;
 }
 
 .widget-table-ranking .table-ranking-heading h3 {
     font-size: 14px;
     font-weight: 700;
+    line-height: 19px;
 }
   
 .widget-table-ranking .table-ranking-content .fl-row-ranking {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 12px;
     padding: 20px;
     border-radius: 20px;
     background: #232323;
@@ -3847,34 +3873,43 @@ button.follow:hover {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 10px;
 }
   
 .widget-table-ranking .table-ranking-content .fl-row-ranking .td1,
-.td2,
-.td3,
-.td4,
-.td5,
-.td6 {
-    width: 33.33%;
+.widget-table-ranking .table-ranking-content .fl-row-ranking .td2,
+.widget-table-ranking .table-ranking-content .fl-row-ranking .td3,
+.widget-table-ranking .table-ranking-content .fl-row-ranking .td4,
+.widget-table-ranking .table-ranking-content .fl-row-ranking .td5,
+.widget-table-ranking .table-ranking-content .fl-row-ranking .td6,
+.widget-table-ranking .table-ranking-content .fl-row-ranking .td7 {
+    width: 101px;
     display: flex;
     align-items: center;
     gap: 14px;
     color: #fff;
     font-size: 16px;
     font-family: 'Azeret Mono';
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    line-height: 11px;
 }
 
-.widget-table-ranking
-.table-ranking-content
-.fl-row-ranking
-> :not(:first-child) {
-    width: 16.3%;
+
+
+.widget-table-ranking .table-ranking-content .fl-row-ranking .td1 {
+    width: 360px;
 }
-  
+
+.widget-table-ranking .table-ranking-content .fl-row-ranking .td2 {
+    width: 130px;
+}
+
+.widget-table-ranking .table-ranking-content .fl-row-ranking .td1 .item-rank {
+    font-family: 'Manrope';
+    font-weight: 800;
+    width: 22px;
+}
+
 .widget-table-ranking
 .table-ranking-content
 .fl-row-ranking
@@ -3886,26 +3921,30 @@ img {
     height: 60px;
 }
   
-.table-ranking-content .fl-row-ranking .td2 h6 {
+.table-ranking-content .fl-row-ranking h6 {
+    font-size: 16px;
     color: #fff;
+    line-height: 11px;
+}
+
+.table-ranking-content .fl-row-ranking .price.gem i {
+    font-size: 14px;
 }
   
-.table-ranking-content .fl-row-ranking div.danger h6 {
+.table-ranking-content .fl-row-ranking .danger h6 {
     color: #f24747;
 }
   
-.table-ranking-content .fl-row-ranking div.warning h6 {
+.table-ranking-content .fl-row-ranking .warning h6 {
     color: #ddf247;
 }
 
-
-
-
-
-
-
 /* product-detail */
 /* ----------------------------------------- */
+.product-detail {
+    margin-top: 60px;
+}
+
 .tf-card-box.style-5 {
     position: relative;
     padding: 0;
@@ -4146,6 +4185,10 @@ img {
     display: grid;
     grid-template-columns: repeat(3,1fr) ;
     grid-gap: 16px 10px;
+}
+
+.product-item.traits.style-1 .content {
+    grid-template-columns: repeat(4,1fr) ;
 }
 
 .product-item.traits .content .trait-item {
@@ -4762,3 +4805,44 @@ fieldset.password > i::before {
 .autoslider1 .swiper-wrapper {
     transition-timing-function: linear;
 }
+
+
+/* no-result */
+/* ----------------------------------- */
+.page-title {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.page-title h1 {
+    font-weight: 800;
+    line-height: 55px;
+    text-transform: capitalize;
+    padding-bottom: 16px;
+}
+
+.page-title p {
+    color: #919191;
+    font-family: 'Azeret Mono';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    max-width: 490px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.page-title p span {
+    color: #fff;
+}
+
+.page-title.no-result .widget-search {
+    width: 920px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.page-title.faqs p {
+    max-width: 730px;
+}
+

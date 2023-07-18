@@ -357,21 +357,17 @@ var swiper =  new Swiper(".carousel1", {
         clickable: true,
     },
     breakpoints: {
-        500: {
+        600: {
+            slidesPerView: 2,
+        },
+        991: {
             slidesPerView: 3,
-            spaceBetween: 30,
         },
-        640: {
+        1024: {
+            slidesPerView: 3,
+        },
+        1200: {
             slidesPerView: 4,
-            spaceBetween: 30,
-        },
-        768: {
-            slidesPerView: 5,
-            spaceBetween: 30,
-        },
-        1070: {
-            slidesPerView: 6,
-            spaceBetween: 30,
         },
     },
 });
