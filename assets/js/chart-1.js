@@ -3,7 +3,7 @@ var ctx1 = document.getElementById('myChart1').getContext('2d');
 var tfChart1 = new Chart(ctx1, {
     type: 'bar',
     data: {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May','Jun','Jul','Jul','Jul','Jul','Jul','Jul','Jul','Jul','Jul','Jul'],
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May','Jun','Jul','Aug','Sep','Oct','Nov','Dec','Jan','Feb','Mar','Apr'],
         datasets: [
             {
                 label: 'Price',

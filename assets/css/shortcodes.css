@@ -499,6 +499,7 @@
     transform: none;
 }
 
+.carouselfull-2,
 .carouselfull {
     overflow: unset !important;
 }
@@ -2643,6 +2644,7 @@
     top: 0;
     left: 0;
     content: "";
+    z-index: -1;
     background-image: url(../images/item-background/bg-home7.png);
     background-position: 0 100%;
     background-repeat: no-repeat;
@@ -2663,6 +2665,11 @@
     margin-right: unset;
     max-width: 435px;
 }
+
+/* .flat-pages-title-home7 .icon-background .item1 {
+    top: 0;
+    left: 0;
+} */
 
 .box-icon-wrap {
     display: grid;
@@ -4004,6 +4011,33 @@ img {
     bottom: 46px;
 }
 
+.tf-card-box.style-6 {
+    background: none;
+    padding: 0 7.5px;
+    margin-top: 19px;
+    margin-bottom: 50px;
+}
+
+.tf-card-box.style-7 {
+    background: none;
+    transform: none;
+    padding: 0 ;
+    margin-top: 0px;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.tf-card-box.style-7 .card-media {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.carousel3-type2 {
+    border-radius: 20px;
+    margin-bottom: 80px;
+}
+
+
 /* infor-product */
 .infor-product > .text {
     color: #DDF247;
@@ -4807,7 +4841,7 @@ fieldset.password > i::before {
 }
 
 
-/* no-result */
+/* page-title */
 /* ----------------------------------- */
 .page-title {
     padding-top: 60px;
@@ -4846,3 +4880,98 @@ fieldset.password > i::before {
     max-width: 730px;
 }
 
+.page-title.about-us {
+    padding-top: 125px;
+}
+
+.page-title.about-us::after {
+    position: absolute;
+    width: 100%;
+    height: 929px;
+    bottom: 40px;
+    left: 0;
+    content: '';
+    background-image: url(../images/item-background/bg-about.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-title.about-us .content {
+    margin-bottom: 80px;
+}
+
+.page-title.about-us .content h1 {
+    max-width: 600px;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.page-title.about-us .icon-background .item1 {
+    left: -63px;
+    top: 306px;
+    z-index: 7;
+}
+
+.page-title.about-us .icon-background .item2 {
+    left: 91px;
+    top: -31px;
+    z-index: 7;
+}
+
+.page-title.about-us .icon-background .item3 {
+    right: -5px;
+    top: 231px;
+    z-index: 7;
+}
+
+.page-title.about-us .icon-background .item4 {
+    right: -184px;
+    top: 135px;
+    z-index: 7;
+}
+
+.contact-us-page::after {
+    position: absolute;
+    content: '';
+    top: 177px;
+    left: 0;
+    width: 100%;
+    height: 1202px;
+    background-image: url(../images/item-background/bg-contact.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.heading-section-1 {
+    text-align: center;
+}
+
+.heading-section-1 h2 {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 55px;
+    text-transform: capitalize;
+}
+
+.heading-section-1 p {
+    color: rgba(255, 255, 255, 0.53);
+    font-family: 'Azeret Mono';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    max-width: 530px;
+    margin: auto;
+}
+
+.contact-us-page .widget-box-icon form button {
+    width: 350px;
+    height: 52px;
+    margin: auto;
+}
+
+.widget-login .widget-category-checkbox {
+    padding: 0;
+    margin-top: 30px;
+}
