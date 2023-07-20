@@ -1,8 +1,6 @@
 
 var swiper = new Swiper(".swiper-3d-7", {
     loop: true,
-    observer: true,
-    observeParents: true,
     spaceBetween: 0,
     slidesPerView: 1,
     centeredSlides: true,
@@ -52,12 +50,62 @@ var swiper = new Swiper(".swiper-3d-7", {
     },
 });
 
+
+var swiper = new Swiper(".slider-3d", {
+    loop: true,
+    spaceBetween: 0,
+    slidesPerView: 1,
+    centeredSlides: true,
+    freeMode: true,
+    watchSlidesProgress: true,
+    effect: "coverflow",
+    grabCursor: true,
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 90,
+        depth: 0,
+        modifier: 1,
+        scale: 0.9,
+        slideShadows: false,
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+    },
+    navigation: {
+      nextEl: ".next-3d",
+      prevEl: ".prev-3d",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+          },
+    },
+    breakpoints: {
+        500: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 3,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 4,
+        },
+        1400: {
+            slidesPerView: 5,
+        },
+    },
+});
+
 var swiper = new Swiper(".swiper-3d-2card", {
     loop: true,
     spaceBetween: 0,
     slidesPerView: 1,
-    observer: true,
-    observeParents: true,
     centeredSlides: true,
     freeMode: true,
     watchSlidesProgress: true,
@@ -85,8 +133,6 @@ var swiper = new Swiper(".swiper-3d-3card", {
     spaceBetween: 0,
     slidesPerView: 1,
     centeredSlides: true,
-    observer: true,
-    observeParents: true,
     freeMode: true,
     watchSlidesProgress: true,
     effect: "coverflow",
@@ -112,8 +158,6 @@ var swiper = new Swiper(".swiper-3d-3cardfull", {
     loop: true,
     spaceBetween: 0,
     slidesPerView: 1,
-    observer: true,
-    observeParents: true,
     centeredSlides: true,
     freeMode: true,
     watchSlidesProgress: true,
@@ -150,8 +194,6 @@ var swiper = new Swiper(".swiper-rotate-3", {
     spaceBetween: 70,
     slidesPerView: 1,
     centeredSlides: true,
-    observer: true,
-    observeParents: true,
     freeMode: true,
     watchSlidesProgress: true,
     effect: "coverflow",
@@ -252,6 +294,42 @@ var swiper =  new Swiper(".autoslider2", {
                 spaceBetween: 28,
             }
         },
+    },
+);
+
+
+var swiper =  new Swiper(".autoslider1reverse", {
+    direction: 'vertical',
+    spaceBetween: 45,
+    grabCursor: false,
+    speed: 10000,
+    observer: true,
+    observeParents: true,
+    centeredSlides: false,
+    loop: true,
+    slidesPerView: 'auto',
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+}
+);
+
+var swiper =  new Swiper(".autoslider2reverse", {
+    direction: 'vertical',
+    spaceBetween: 45,
+    grabCursor: false,
+    speed: 10000,
+    centeredSlides: false,
+    loop: true,
+    observer: true,
+    observeParents: true,
+    slidesPerView: 'auto',
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+      reverseDirection: true,
+    },
     },
 );
 

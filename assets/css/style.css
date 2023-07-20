@@ -1106,6 +1106,7 @@ a:focus {
 
 .flat-wallet {
     display: flex;
+    gap: 28px;
     position: absolute;
     padding: 6px 0 7px 0;
     right: 15px;
@@ -1118,7 +1119,6 @@ a:focus {
     position: relative;
     width: 30px;
     height: 30px;
-    margin-left: 28px;
     cursor: pointer;
 }
 
@@ -1366,6 +1366,52 @@ a:focus {
 .header_1.style-white.is-fixed {
     background-color: #fff;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* header-full */
+.header_1.header-full {
+    height: 98px !important;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.08);
+}
+
+.header_1.header-full .container-fluid {
+    padding: 20px 50px 21px 50px;
+}
+
+.header_1.header-full #main-nav {
+    left: 19%;
+}
+
+.header_1.header-full .widget-search input {
+    width: 580px;
+    height: 44px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 10px 18px;
+    font-family: 'Manrope';
+    font-weight: 400;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header_1.header-full .widget-search input::placeholder {
+    font-family: 'Manrope';
+    font-weight: 400;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header_1.header-full .widget-search button {
+    height: 44px;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.header_1.header-full #wallet-header a {
+    background: #DEE8E8;
+}
+
+.header_1.header-full #wallet-header a:hover {
+    background: #DDF247;
 }
 
 /* Mobile Menu Button */
