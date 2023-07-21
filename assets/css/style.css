@@ -1238,6 +1238,7 @@ a:focus {
     z-index: 9999;
     opacity: 0;
     visibility: hidden;
+    pointer-events: none;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
@@ -1277,6 +1278,7 @@ a:focus {
 #main-nav li:hover .sub-menu {
     opacity          : 1;
     visibility       : visible;
+    pointer-events   : all;
     -webkit-transform: translateY(0);
     -moz-transform   : translateY(0);
     -ms-transform    : translateY(0);
