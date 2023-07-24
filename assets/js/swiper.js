@@ -171,10 +171,10 @@ var swiper = new Swiper(".swiper-3d-3cardfull", {
         scale: 0.9,
         slideShadows: false,
     },
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: true,
-    },
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: true,
+    // },
     navigation: {
       nextEl: ".next-3d",
       prevEl: ".prev-3d",
@@ -429,8 +429,7 @@ var swiper =  new Swiper(".carouselfull-2", {
 });
 
 var swiper =  new Swiper(".carouselright", {
-    loop:true,
-    slidesPerView: 1,
+    slidesPerView: "auto",
     spaceBetween: 30,
     observer: true,
     observeParents: true,
@@ -442,17 +441,6 @@ var swiper =  new Swiper(".carouselright", {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
-    },
-    breakpoints: {
-        768: {
-            slidesPerView: 2,
-        },
-        1200: {
-            slidesPerView: 3,
-        },
-        1300: {
-            slidesPerView: 5,
-        },
     },
 });
 
@@ -641,6 +629,37 @@ var swiper =  new Swiper(".seller-slider2", {
         1070: {
             slidesPerView: 6,
             spaceBetween: 30,
+        },
+    },
+});
+
+var swiper =  new Swiper(".seller-slider3", {
+    slidesPerView: 2,
+    loop: false, 
+    observer: true,
+    observeParents: true,
+    spaceBetween: 45,
+    navigation: {
+        clickable: true,
+        nextEl: ".seller-next",
+        prevEl: ".seller-prev",
+    },
+    grabCursor: true,
+    breakpoints: {
+        500: {
+            slidesPerView: 3,
+        },
+        640: {
+            slidesPerView: 4,
+        },
+        768: {
+            slidesPerView: 5,
+        },
+        1070: {
+            slidesPerView: 6,
+        },
+        1400: {
+            slidesPerView: 7,
         },
     },
 });

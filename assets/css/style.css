@@ -548,8 +548,8 @@ input.style-1 {
 
 .search.search-submit {
     position: absolute;
-    right: 26px;
-    top: 0;
+    right: 18px;
+    top: 1px;
     background: transparent;
     color: rgba(255, 255, 255, 1);
     font-size: 24px;
@@ -940,6 +940,9 @@ label.error {
 .h-full {
     height: 100%;
 }
+.pl-2-5 {
+    padding-left: 2.5px;
+}
 .pt-10 {
     padding-top: 10px;
 }
@@ -1038,6 +1041,9 @@ label.error {
 }
 .no-bg {
     background: none !important;
+}
+.capitalize {
+    text-transform: capitalize;
 }
 
 .wd-tf-card-box > div {
@@ -1378,11 +1384,11 @@ a:focus {
 }
 
 .header_1.header-full .container-fluid {
-    padding: 20px 50px 21px 50px;
+    padding: 20px 33px 21px 50px;
 }
 
 .header_1.header-full #main-nav {
-    left: 19%;
+    left: 19.2%;
 }
 
 .header_1.header-full .widget-search input {
@@ -1657,6 +1663,10 @@ a:focus {
     background-color: #fff;
 }
 
+#footer.bg-white .widget {
+    margin-right: 80px;
+}
+
 #footer.bg-white .icon-vt:before,
 #footer.bg-white .widget-menu ul li a,
 #footer.bg-white .title-widget {
@@ -1680,6 +1690,8 @@ a:focus {
 #footer.bg-white .footer-bottom ul li a,
 #footer.bg-white .footer-bottom p {
     color: #161616;
+    font-size: 12px;
+    line-height: 19px;
 }
 
 
@@ -1730,11 +1742,11 @@ a:focus {
 }
 
 .section-menu-left .box-logo {
-    padding: 0 30.5px;
+    padding: 0 30px;
 }
 
 .section-menu-left .connect {
-    padding: 26px 30.5px;
+    padding: 26px 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -1754,7 +1766,7 @@ a:focus {
 }
 
 .section-menu-left .list-menu {
-    padding: 0 30.5px;
+    padding: 0 30px;
 }
 
 .section-menu-left .list-menu > ul > li {
@@ -1768,7 +1780,7 @@ a:focus {
 .section-menu-left .list-menu > ul > li > a {
     color: rgba(255, 255, 255, 0.4);
     display: inline-block;
-    padding: 12px 10px 12px 44px;
+    padding: 13px 10px 11px 44px;
     border-radius: 12px;
     width: 100%;
     font-size: 15px;
@@ -1784,7 +1796,7 @@ a:focus {
     padding: 2px;
     position: absolute;
     top: 12px;
-    left: 10px;
+    left: 9px;
 }
 
 .section-menu-left .list-menu > ul > li > a i::before {
@@ -1858,6 +1870,10 @@ a:focus {
     margin-bottom: 28px;
     padding-left: 16px;
     position: relative;
+}
+
+.section-menu-left .list-menu ul.sub-item li:last-child {
+    margin-bottom: 16px;
 }
 
 .section-menu-left .list-menu ul.sub-item li::before {
