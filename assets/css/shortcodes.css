@@ -449,11 +449,20 @@ a:hover .icon-arrow-up-right2 {
 .tf-card-box.style-1 .name {
     margin-bottom: 10px;
     line-height: 25px;
+    font-weight: 800;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .tf-card-box.style-1 .divider {
     margin-top: 16px;
     margin-bottom: 16px;   
+}
+
+.tf-card-box .meta-info,
+.tf-card-box .author {
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .text-bid {
@@ -1318,8 +1327,7 @@ a:hover .icon-arrow-up-right2 {
 /* flat-pages-title */
 .flat-pages-title {
     padding-top: 91px;
-    padding-bottom: 60px;
-    margin-bottom: 60px;
+    padding-bottom: 114px;
     background-image: url(../images/item-background/bg-home1.png) ;
     background-position: center;
     background-repeat: no-repeat;
@@ -1328,7 +1336,7 @@ a:hover .icon-arrow-up-right2 {
 
 .pages-title .content {
     text-align: center;
-    margin-bottom: 91px;
+    margin-bottom: 81px;
 }
 
 .pages-title .content h1 {
@@ -1371,45 +1379,55 @@ a:hover .icon-arrow-up-right2 {
 
 /* icon-background */
 .flat-pages-title .icon-background .item1 {
-    left: 22px;
-    top: 200px;
+    left: 37px;
+    top: 201px;
+    animation: flicker 3s infinite linear alternate;
+    animation-delay: 1.5s;
 }
 
 .flat-pages-title .icon-background .item2 {
-    left: 125px;
-    top: 70px;
+    left: 140px;
+    top: 72px;
+    animation: rotate360 1.5s infinite linear;
 }
 
 .flat-pages-title .icon-background .item3 {
-    left: 185px;
-    top: 200px;
+    left: 239px;
+    top: 188px;
+    animation: movedown 3s infinite linear alternate;
 }
 
 .flat-pages-title .icon-background .item4 {
-    left: 380px;
-    top: 300px;
+    left: 341px;
+    top: 307px;
+    animation: flicker 3s infinite linear alternate;
 }
 
 .flat-pages-title .icon-background .item5 {
-    right: 380px;
-    top: 300px;
+    right: 357px;
+    top: 271px;
+    animation: flicker 3s infinite linear alternate;
 }
 
 .flat-pages-title .icon-background .item6 {
-    right: 185px;
-    top: 150px;
+    right: 280px;
+    top: 143px;
+    animation: moveleft 3s infinite linear;
 }
 
 .flat-pages-title .icon-background .item7 {
-    right: 100px;
-    top: 270px;
+    right: 119px;
+    top: 236px;
+    animation: scale1 3s infinite linear;
+    animation-delay: 1.5s;
 }
 
 .flat-pages-title .icon-background .item8 {
-    right: 10px;
-    top: 70px;
+    right: 28px;
+    top: 83px;
     width: 19px;
     height: 20px;
+    animation: scale1 3s infinite linear;
 }
 
 .flat-pages-title .tf-card-box .card-media img {
@@ -1418,7 +1436,8 @@ a:hover .icon-arrow-up-right2 {
 
 /* swiper-container */
 .flat-pages-title .swiper-container {
-    padding-bottom: 77px;
+    padding-top: 10px;
+    padding-bottom: 38px;
 }
 
 .flat-pages-title .swiper-container .swiper-slide-active .tf-card-box {
@@ -1513,7 +1532,7 @@ a:hover .icon-arrow-up-right2 {
 
 /* featured-item style-bottom */
 .style-bottom .swiper-wrapper {
-    padding-bottom: 24px;
+    padding-bottom: 14px;
 }
 
 .style-bottom .swiper-pagination-bullet {
@@ -1544,7 +1563,7 @@ a:hover .icon-arrow-up-right2 {
 }
 
 .style-bottom .swiper-button-next {
-    right: 43.9%;
+    right: 44%;
 }
 
 .style-bottom .swiper-button-next::after {
@@ -1552,7 +1571,7 @@ a:hover .icon-arrow-up-right2 {
 }
 
 .style-bottom .swiper-button-prev {
-    left: 44.5%;
+    left: 44%;
 }
 
 .style-bottom .swiper-button-prev::after {
@@ -1580,7 +1599,7 @@ a:hover .icon-arrow-up-right2 {
     line-height: 18px;
     position: absolute;
     top: 0;
-    right: 28px;
+    right: 33px;
     -webkit-transition: all 0.8s ease-in-out;
     -moz-transition   : all 0.8s ease-in-out;
     -ms-transition    : all 0.8s ease-in-out;
@@ -1599,9 +1618,19 @@ a:hover .icon-arrow-up-right2 {
     margin-bottom: 4px;
 }
 
+.price.gem.style-1 {
+    font-family: 'Azeret Mono';
+    font-size: 14px;
+}
+
 .price.gem.style-1 i::before,
 .price.gem.style-1 {
     color: rgba(255, 255, 255, 0.3);
+    font-weight: 400;
+}
+
+.tf-author-box .author-infor .price.gem.style-1 i {
+    font-size: 13px;
 }
 
 /* tf-author-box bg-white */
@@ -1646,10 +1675,12 @@ a:hover .icon-arrow-up-right2 {
 
 .seller .swiper-button-prev {
     left: -61px;
+    top: 52px;
 }
 
 .seller .swiper-button-next {
     right: -61px;
+    top: 52px;
 }
 
 .seller .swiper-button-next.active {
@@ -1697,6 +1728,8 @@ a:hover .icon-arrow-up-right2 {
     align-items: center;
     border-radius: 12px;
     width: 100%;
+    height: 40px;
+    overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
@@ -4879,6 +4912,7 @@ fieldset.password > i::before {
 #select-day {
     position: relative;
     cursor: pointer;
+    padding-left: 5px;
     text-transform: lowercase;
 }
 

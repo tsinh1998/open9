@@ -16,10 +16,10 @@ var swiper = new Swiper(".swiper-3d-7", {
         scale: 0.9,
         slideShadows: false,
     },
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: true,
-    },
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: true,
+    // },
     navigation: {
       nextEl: ".next-3d",
       prevEl: ".prev-3d",

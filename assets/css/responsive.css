@@ -38,3 +38,8 @@
     }
 }
 
+@media (min-width: 991px) {
+    .pages-title .content h1 {
+        padding-right: 28px;
+    }
+}
