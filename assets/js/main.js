@@ -362,8 +362,17 @@
     var listmenu = function() {
         if ($('div').hasClass('list-menu')) {
             $('.button-sub-item').on('click', function () {
-                $(this).closest('.has-item').toggleClass("active");
-                $(this).closest('.has-item').find('.sub-item').slideToggle("active");
+                $(this).closest('.has-item').toggleClass('active');
+                $(this).closest('.has-item').find('.sub-item').slideToggle('active');
+            });
+        }
+    }
+
+    var categorycheckbox = function() {
+        if ($('div').hasClass('widget-category-checkbox')) {
+            $('.widget-category-checkbox h5').on('click', function () {
+                $(this).closest('.style-1').find('h5').toggleClass('active');
+                $(this).closest('.widget-category-checkbox').find('.content-wg-category-checkbox').slideToggle('hidden');
             });
         }
     }
@@ -389,6 +398,7 @@
         loadmore();
         dropdown('#select-day');
         listmenu();
+        categorycheckbox();
     });
 
 })(jQuery);

@@ -469,7 +469,7 @@ var swiper =  new Swiper(".carousel1", {
         1024: {
             slidesPerView: 3,
         },
-        1200: {
+        1201: {
             slidesPerView: 4,
         },
     },
@@ -525,11 +525,11 @@ var swiper =  new Swiper(".carousel3", {
     loop: false, 
     spaceBetween: 30,
     breakpoints: {
-        768: {
+        600: {
             slidesPerView: 2,
             spaceBetween: 30,
         },
-        1024: {
+        991: {
             slidesPerView: 3,
             spaceBetween: 30,
         },
@@ -555,16 +555,13 @@ var swiper =  new Swiper(".carousel5", {
         600: {
             slidesPerView: 2,
         },
-        991: {
-            slidesPerView: 3,
-        },
         1024: {
             slidesPerView: 3,
         },
-        1200: {
+        1440: {
             slidesPerView: 4,
         },
-        1400: {
+        1500: {
             slidesPerView: 5,
         },
     },
@@ -589,13 +586,13 @@ var swiper =  new Swiper(".seller-slider3", {
         640: {
             slidesPerView: 4,
         },
-        768: {
+        769: {
             slidesPerView: 5,
         },
-        1070: {
+        1440: {
             slidesPerView: 6,
         },
-        1400: {
+        1500: {
             slidesPerView: 7,
         },
     },
@@ -629,37 +626,6 @@ var swiper =  new Swiper(".seller-slider2", {
         1070: {
             slidesPerView: 6,
             spaceBetween: 30,
-        },
-    },
-});
-
-var swiper =  new Swiper(".seller-slider3", {
-    slidesPerView: 2,
-    loop: false, 
-    observer: true,
-    observeParents: true,
-    spaceBetween: 45,
-    navigation: {
-        clickable: true,
-        nextEl: ".seller-next",
-        prevEl: ".seller-prev",
-    },
-    grabCursor: true,
-    breakpoints: {
-        500: {
-            slidesPerView: 3,
-        },
-        640: {
-            slidesPerView: 4,
-        },
-        768: {
-            slidesPerView: 5,
-        },
-        1070: {
-            slidesPerView: 6,
-        },
-        1400: {
-            slidesPerView: 7,
         },
     },
 });

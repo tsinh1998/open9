@@ -961,6 +961,9 @@ label.error {
 .pb-40 {
     padding-bottom: 40px;
 }
+.pb-48 {
+    padding-bottom: 48px !important;
+}
 .pb-80 {
     padding-bottom: 80px;
 }
