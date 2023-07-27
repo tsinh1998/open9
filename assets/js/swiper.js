@@ -303,8 +303,6 @@ var swiper =  new Swiper(".autoslider1reverse", {
     spaceBetween: 45,
     grabCursor: false,
     speed: 10000,
-    observer: true,
-    observeParents: true,
     centeredSlides: false,
     loop: true,
     slidesPerView: 'auto',
@@ -322,8 +320,37 @@ var swiper =  new Swiper(".autoslider2reverse", {
     speed: 10000,
     centeredSlides: false,
     loop: true,
-    observer: true,
-    observeParents: true,
+    slidesPerView: 'auto',
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+      reverseDirection: true,
+    },
+    },
+);
+
+var swiper =  new Swiper(".autoslider3reverse", {
+    direction: 'vertical',
+    spaceBetween: 14,
+    grabCursor: false,
+    speed: 10000,
+    centeredSlides: false,
+    loop: true,
+    slidesPerView: 'auto',
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+}
+);
+
+var swiper =  new Swiper(".autoslider4reverse", {
+    direction: 'vertical',
+    spaceBetween: 14,
+    grabCursor: false,
+    speed: 10000,
+    centeredSlides: false,
+    loop: true,
     slidesPerView: 'auto',
     autoplay: {
       delay: 0,
@@ -469,7 +496,7 @@ var swiper =  new Swiper(".carousel1", {
         1024: {
             slidesPerView: 3,
         },
-        1201: {
+        1500: {
             slidesPerView: 4,
         },
     },

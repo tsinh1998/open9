@@ -793,6 +793,7 @@ textarea {
 }
 
 input.style-2 {
+    padding: 14px 26px;
     border: 1px solid rgba(255, 255, 255, 0.12) !important;
 }
 
@@ -946,8 +947,14 @@ label.error {
 .pt-10 {
     padding-top: 10px;
 }
+.pt-25 {
+    padding-top: 25px;
+}
 .pt-40 {
     padding-top: 40px;
+}
+.pb-16 {
+    padding-bottom: 16px;
 }
 .pb-20 {
     padding-bottom: 20px;
@@ -1703,6 +1710,7 @@ a:focus {
     display        : flex;
     align-items    : center;
     justify-content: space-between;
+    flex-wrap      : wrap;
 }
 
 .heading-section .tf-title {
@@ -1717,6 +1725,12 @@ a:focus {
     font-weight: 800;
     line-height: 19px;
     text-transform: capitalize;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition   : all 0.3s ease;
+    -ms-transition    : all 0.3s ease;
+    -o-transition     : all 0.3s ease;
+    transition        : all 0.3s ease;
+    position: relative;
 }
 
 .heading-section a i {
@@ -1724,8 +1738,29 @@ a:focus {
     margin-left: 3px;
     font-size: 10px;
     border-radius: 20px;
+    border-color:  transparent ;
+    background: none;
+}
+
+.heading-section a::after {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 1px;
+    right: 0;
+    content: '';
+    border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.10);
     background: rgba(255, 255, 255, 0.10);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition   : all 0.3s ease;
+    -ms-transition    : all 0.3s ease;
+    -o-transition     : all 0.3s ease;
+    transition        : all 0.3s ease;
+}
+
+.heading-section a:hover::after {
+    width: 107%;
 }
 
 .heading-section.bg-white .tf-title,

@@ -197,6 +197,30 @@
     .bg-home7 .swiper-container {
         margin: unset;
     }
+    .widget-table-ranking {
+        overflow-x: auto;
+    }
+    .widget-table-ranking .table-ranking-heading,
+    .widget-table-ranking .table-ranking-content {
+        width: 1110px;
+    }
+    .page-title.about-us {
+        padding-top: 100px;
+    }
+    .counter__body-1 {
+        flex-wrap: wrap;
+    }
+    .counter__body-1 > div {
+        width: 100%;
+        text-align: center;
+    }
+    .tf-box-icon.type-1 .arrow svg {
+        bottom: -28px;
+        left: -74px;
+        top: unset;
+        right: unset;
+        transform: rotateX(180deg) rotateZ(200deg);
+    }
 }
 
 @media (max-width: 768px) {
@@ -250,6 +274,17 @@
     .tf-blog-detail .side-bar {
         margin-top: 30px;
     }
+    .product-detail .tf-card-box.style-5:last-child {
+        margin-bottom: 30px !important;
+    }
+    .box-icon-item,
+    .widget-term-condition .wrap-menu {
+        margin-bottom: 30px;
+    }
+    .infor-product.style-1 .meta {
+        padding-right: 0;
+    }
+    
 }
 
 @media (max-width: 700px) {
@@ -326,7 +361,47 @@
         width: 100%;
         height: 1px;
     }
-    
+    .product-item.time-sales .content .flex {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .product-item.traits.style-1 .content,
+    .product-item.traits .content {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .product-item.offers .content,
+    .product-item.item-activity .content {
+        overflow-x: auto;
+    }
+    .product-item.offers .content > div,
+    .product-item.item-activity .content > div {
+        width: 1070px;
+    }
+    .infor-product.style-1 > .flex {
+        flex-wrap: wrap;
+        row-gap: 15px;
+        position: relative;
+    }
+    .infor-product.style-1 .menu_card {
+        position: absolute;
+        right: 0;
+        top: 8px;
+    }
+    form.comment-form > .flex {
+        flex-wrap: wrap;
+        row-gap: 0;
+    }
+    .widget-login .login-other {
+        flex-wrap: wrap;
+    }
+    .tf-box-icon.type-1 .arrow svg ,
+    .tf-box-icon .arrow svg {
+        bottom: -45px;
+        left: -50px;
+        top: unset;
+        right: unset;
+        transform: rotateX(180deg) rotateZ(270deg);
+    }
 }
 
 @media (min-width: 991px) {
