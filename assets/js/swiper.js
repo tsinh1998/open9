@@ -189,32 +189,55 @@ var swiper = new Swiper(".swiper-3d-3cardfull", {
     },
 });
 
+// var swiper = new Swiper(".swiper-rotate-3", {
+//     loop: true,
+//     spaceBetween: 70,
+//     slidesPerView: 1,
+//     centeredSlides: true,
+//     freeMode: true,
+//     watchSlidesProgress: true,
+//     effect: "coverflow",
+//     grabCursor: true,
+//     coverflowEffect: {
+//         rotate: 30,
+//         stretch: 0,
+//         depth: 320,
+//         modifier: 0,
+//         slideShadows: false,
+//     },
+//     autoplay: {
+//       delay: 2500,
+//       disableOnInteraction: true,
+//     },
+//     breakpoints: {
+//         500: {
+//             slidesPerView: 2,
+//         },
+//         991: {
+//             slidesPerView: 3,
+//         },
+//         1024: {
+//             slidesPerView: 3,
+//         },
+//     },
+// });
+
 var swiper = new Swiper(".swiper-rotate-3", {
     loop: true,
-    spaceBetween: 70,
+    spaceBetween: 53,
     slidesPerView: 1,
     centeredSlides: true,
     freeMode: true,
     watchSlidesProgress: true,
-    effect: "coverflow",
-    grabCursor: true,
-    coverflowEffect: {
-        rotate: 30,
-        stretch: 0,
-        depth: 320,
-        modifier: 0,
-        slideShadows: false,
-    },
     autoplay: {
       delay: 2500,
       disableOnInteraction: true,
     },
+    observer: true,
+    observeParents: true,
     breakpoints: {
         500: {
             slidesPerView: 2,
-        },
-        991: {
-            slidesPerView: 3,
         },
         1024: {
             slidesPerView: 3,
@@ -472,6 +495,37 @@ var swiper =  new Swiper(".carouselright", {
 });
 
 var swiper =  new Swiper(".carousel1", {
+    loop:false,
+    slidesPerView: 1,
+    observer: true,
+    observeParents: true,
+    spaceBetween: 26.67,
+    navigation: {
+        clickable: true,
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        600: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 3,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+        1500: {
+            slidesPerView: 4,
+        },
+    },
+});
+
+var swiper =  new Swiper(".carousel2", {
     loop:false,
     slidesPerView: 1,
     observer: true,

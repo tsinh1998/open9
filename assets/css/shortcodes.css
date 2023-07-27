@@ -23,8 +23,8 @@
     width: 1346px;
 }
 
-.themesflat-container.w1213 {
-    width: 1243px;
+.themesflat-container.w1150 {
+    width: 1180px;
 }
 
 .themesflat-container.w1358 {
@@ -637,14 +637,40 @@ a:hover .icon-arrow-up-right2 {
     position: relative;
 }
 
-.flat-pages-title-home3::before {
-    position: absolute;
-    content: '';
+.flat-pages-title-home3 .bg-grid-line {
     width: 100%;
-    height: 360px;
-    left: 0;
+    height: 400px;
+    overflow: hidden;
+    perspective: 450px;
+    position: absolute;
     bottom: 60px;
-    background: url(../images/item-background/bg-home3.png);
+}
+
+.flat-pages-title-home3 .bg-line {
+    width: 100%;
+    height: 100%;
+    transform: rotateX(21deg);
+    opacity: .3;
+    overflow: hidden;
+}
+
+.flat-pages-title-home3 .bg-line::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    background-image: linear-gradient(to right,#fff 1px,transparent 0),linear-gradient(to bottom,#fff 1px,transparent 0);
+    background-size: 50px 25px;
+    background-repeat: repeat;
+    animation: playline 35s linear infinite;
+}
+
+.flat-pages-title-home3 .bg-line::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #161616 0%, rgba(22, 22, 22, 0.00) 42.70%, #161616 100%);
 }
 
 .flat-pages-title-home3 .pages-title .content {
@@ -1476,10 +1502,35 @@ a:hover .icon-arrow-up-right2 {
 .flat-pages-title {
     padding-top: 91px;
     padding-bottom: 114px;
-    background-image: url(../images/item-background/bg-home1.png) ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
+}
+
+.flat-pages-title .bg-grid-line {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    perspective: 450px;
+    position: absolute;
+    bottom: 60px;
+}
+
+.flat-pages-title .bg-line-b {
+    width: 100%;
+    height: 100%;
+    transform: rotateX(50deg);
+    opacity: .07;
+    overflow: hidden;
+}
+
+.flat-pages-title .bg-line-b::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    background-image: linear-gradient(to right,#fff 1px,transparent 0),linear-gradient(to bottom,#fff 1px,transparent 0);
+    background-size: 40px 40px;
+    background-repeat: repeat;
+    animation: playline1 35s linear infinite;
 }
 
 .home-1 .flat-pages-title .content {
@@ -2313,6 +2364,7 @@ a:hover .icon-arrow-up-right2 {
 .action__body.style-1 img {
     top: -43px;
     right: 42px;
+    position: absolute;
     animation: rotateleftright 5s infinite linear alternate;
 }
 
@@ -2742,23 +2794,22 @@ a:hover .icon-arrow-up-right2 {
 
 /* swiper-rotate-3 */
 .swiper-rotate-3 {
-    padding: 30px 0;
+    margin-top: -15px;
 }
 .swiper-rotate-3 .swiper-slide.swiper-slide-prev {
-    transform: translateY(-10px) rotate(20deg) !important;
+    transform: translateY(-63px)  rotate(15deg);
 }
 
 .swiper-rotate-3 .swiper-slide.swiper-slide-active {
     transform: rotate(0) !important;
-    z-index: 9 !important;
 }
 
 .swiper-rotate-3 .swiper-slide.swiper-slide-active >div {
-    /* margin-top: 50px; */
+    margin-top: -16px;
 }
 
 .swiper-rotate-3 .swiper-slide.swiper-slide-next {
-    transform: translateY(-10px)  rotate(-20deg) !important;
+    transform: translateY(-63px)  rotate(-15deg);
 }
 
 .container-full {
@@ -2818,7 +2869,7 @@ a:hover .icon-arrow-up-right2 {
 
 /* .flat-pages-title-home5 */
 .flat-pages-title-home5 .swiper-wrapper {
-    padding: 100px 0 60px;
+    padding: 95px 0 80px;
 }
 
 .flat-pages-title-home5 .pages-title .content h1 {
@@ -3512,11 +3563,12 @@ a:hover .icon-arrow-up-right2 {
 }
 
 .content-tabs .wrapper-content .inner-content {
-    width: 71.4%;
+    max-width: 1100px;
+    width: 100%;
 }
 
 .content-tabs .side-bar {
-    width: 26%;
+    width: 400px;
 }
 
 .content-tabs .side-bar .widget {

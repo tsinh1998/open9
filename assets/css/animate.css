@@ -124,3 +124,23 @@
 		transform: rotate(-10deg);
 	}
 }
+
+@keyframes playline {
+    0% {
+        transform: translate3d(0,-50%,0) 
+    }
+
+    100% {
+        transform: translateY(0,0,0) 
+    }
+}
+
+@keyframes playline1 {
+    0% {
+        transform: translateY(0,0,0) 
+    }
+
+    100% {
+        transform: translate3d(0,-50%,0) 
+    }
+}
