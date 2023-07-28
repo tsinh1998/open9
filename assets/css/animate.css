@@ -144,3 +144,17 @@
         transform: translate3d(0,-50%,0) 
     }
 }
+
+@keyframes loader {
+    0% {
+        transform: scaleY(0.1);
+    }
+    50% {
+        transform: scaleY(1);
+        background: #DDF247;
+    }
+    100% {
+        transform: scaleY(0.1);
+        background: transparent;
+    }
+}

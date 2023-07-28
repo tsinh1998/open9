@@ -1056,11 +1056,6 @@ label.error {
     text-transform: capitalize;
 }
 
-.wd-tf-card-box > div {
-    margin-right: 10px;
-    height: fit-content;
-}
-
 #wrapper{
     position: relative;
     overflow: hidden;
@@ -1100,11 +1095,6 @@ a:focus {
     height: 57px;
     width: 100%;
     border: none;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition   : all 0.5s ease;
-    -ms-transition    : all 0.5s ease;
-    -o-transition     : all 0.5s ease;
-    transition        : all 0.5s ease;
 }
 
 #site-logo {
@@ -2305,4 +2295,176 @@ a:focus {
 
 .header_1.is-fixed.is-small .themesflat-container {
     padding: 15px;
+}
+
+/* preload */
+.preload-container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999999999999999;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+}
+
+.preload-container .middle {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.preload-container .bar {
+    width: 10px;
+    height: 70px;
+    background: transparent;
+    display: inline-block;
+    transform-origin: bottom center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    animation: loader 1.2s linear infinite;
+}
+.preload-container .bar1 {
+animation-delay: 0.1s;
+}
+.preload-container .bar2 {
+animation-delay: 0.2s;
+}
+.preload-container .bar3 {
+animation-delay: 0.3s;
+}
+.preload-container .bar4 {
+animation-delay: 0.4s;
+}
+.preload-container .bar5 {
+animation-delay: 0.5s;
+}
+.preload-container .bar6 {
+animation-delay: 0.6s;
+}
+.preload-container .bar7 {
+animation-delay: 0.7s;
+}
+.preload-container .bar8 {
+animation-delay: 0.8s;
+}
+
+.progress-wrap {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 44px;
+    width: 44px;
+    cursor: pointer;
+    display: block;
+    border-radius: 30px;
+    -webkit-box-shadow: inset 0 0 0 2px rgba(130, 130, 130, 0.2);
+    box-shadow: inset 0 0 0 2px rgba(130, 130, 130, 0.2);
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+    -webkit-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    transition: all 400ms linear;
+    background: #000;
+}
+  
+.progress-wrap::after {
+    position: absolute;
+    content: '\e911';
+    font-family: 'icomoon';
+    text-align: center;
+    line-height: 44px;
+    font-size: 16px;
+    font-weight: 900;
+    color: #DDF247;
+    left: 0;
+    top: 0;
+    height: 44px;
+    width: 44px;
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+    -webkit-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
+  
+.progress-wrap.active-progress {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+  
+.progress-wrap svg path {
+    fill: none;
+}
+  
+.progress-wrap svg.progress-circle path {
+    box-sizing: border-box;
+    stroke: #DDF247;
+    stroke-width: 4;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-duration: 0.4s;
+    transition-timing-function: linear;
+}
+
+
+/* cursor
+------------------------------------------------------ */
+.tf-mouse {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    border-radius: 50%;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    visibility: hidden
+}
+
+.tf-mouse-inner {
+    margin-left: -5px;
+    margin-top: -5px;
+    width: 8px;
+    height: 8px;
+    z-index: 1000;
+    background-color: #DDF247;
+    -webkit-transition: width .5s ease-in-out, height .5s ease-in-out, margin .5s ease-in-out, opacity .5s ease-in-out;
+    transition: width .5s ease-in-out, height .5s ease-in-out, margin .5s ease-in-out, opacity .5s ease-in-out
+}
+
+.tf-mouse-inner.mouse-hover {
+    margin-left: -40px;
+    margin-top: -40px;
+    width: 80px;
+    height: 80px;
+    background-color: #DDF247;
+    opacity: .3
+}
+
+.tf-mouse-outer {
+    margin-left: -22px;
+    margin-top: -22px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #DDF247;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 1000;
+    opacity: .5;
+    -webkit-transition: all .1s ease-out;
+    transition: all .1s ease-out
+}
+
+.tf-mouse-outer.mouse-hover {
+    opacity: 0
 }

@@ -2779,17 +2779,20 @@ a:hover .icon-arrow-up-right2 {
 }
 
 .top-collections.home-4::after {
-    background-image: url(../images/backgroup-section/bg-2.png) ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: absolute;
     width: 100%;
     height: 100%;
     left: 0;
     top: 0;
     content: '';
-    mix-blend-mode: luminosity;
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(22, 22, 22, 1);
+    background-blend-mode: luminosity;
+    background-image: url(../images/backgroup-section/bg-3.png);
 }
 
 /* swiper-rotate-3 */
@@ -3329,7 +3332,8 @@ a:hover .icon-arrow-up-right2 {
     margin-bottom: 0;
 }
 
-.widget-category-checkbox input {
+input[type="radio"],
+input[type="checkbox"] {
     position: absolute;
     opacity: 0;
     top: 0;
@@ -3337,7 +3341,7 @@ a:hover .icon-arrow-up-right2 {
     z-index: 1;
 }
 
-.widget-category-checkbox .btn-checkbox {
+.btn-checkbox {
     position: absolute;
     top: 0;
     left: 0;
@@ -3348,12 +3352,12 @@ a:hover .icon-arrow-up-right2 {
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.widget-category-checkbox form label input:checked~.btn-checkbox {
+input:checked~.btn-checkbox {
     background-color: #DDF247;
     border: 1px solid #DDF247;
 }
 
-.widget-category-checkbox .btn-checkbox:after {
+.btn-checkbox:after {
     content: "\e91b";
     font-family: 'icomoon' !important;
     position: absolute;
@@ -3364,16 +3368,16 @@ a:hover .icon-arrow-up-right2 {
     display: none;
 }
 
-.widget-category-checkbox form label input:checked ~ .btn-checkbox:after {
+input:checked ~ .btn-checkbox:after {
     display: block;
 }
 
-.widget-category-checkbox form label i.icon-star {
+form label i.icon-star {
     font-size: 15px;
     margin-right: 3px;
 }
 
-.widget-category-checkbox form label i.icon-star.active {
+form label i.icon-star.active {
     color: rgba(221, 242, 71, 1);
 }
 
@@ -4523,8 +4527,6 @@ button.follow:hover {
     line-height: 11px;
 }
 
-
-
 .widget-table-ranking .table-ranking-content .fl-row-ranking .td1 {
     width: 360px;
 }
@@ -4566,6 +4568,32 @@ img {
   
 .table-ranking-content .fl-row-ranking .warning h6 {
     color: #ddf247;
+}
+
+/* upcoming */
+.upcoming-page .flat-title-page {
+    padding-bottom: 40px;
+}
+
+.upcoming-page .widget-table-ranking .table-ranking-content .fl-row-ranking .td1 .item-rank {
+    width: 24px;
+}
+
+.upcoming-page .widget-table-ranking .table-ranking-content .fl-row-ranking .td1,
+.upcoming-page .widget-table-ranking .table-ranking-heading .column1 {
+    width: 370px;
+}
+
+.upcoming-page .widget-table-ranking .table-ranking-content .fl-row-ranking .td2,
+.upcoming-page .widget-table-ranking .table-ranking-content .fl-row-ranking .td3,
+.upcoming-page .widget-table-ranking .table-ranking-content .fl-row-ranking .td4,
+.upcoming-page .widget-table-ranking .table-ranking-heading .column {
+    width: 139px;
+}
+
+.upcoming-page .widget-table-ranking .table-ranking-content .fl-row-ranking .td5,
+.upcoming-page .widget-table-ranking .table-ranking-heading .column2 {
+    width: 236px;
 }
 
 /* product-detail */

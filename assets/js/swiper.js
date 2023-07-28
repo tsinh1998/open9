@@ -16,10 +16,10 @@ var swiper = new Swiper(".swiper-3d-7", {
         scale: 0.9,
         slideShadows: false,
     },
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: true,
-    // },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+    },
     navigation: {
       nextEl: ".next-3d",
       prevEl: ".prev-3d",
@@ -171,10 +171,10 @@ var swiper = new Swiper(".swiper-3d-3cardfull", {
         scale: 0.9,
         slideShadows: false,
     },
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: true,
-    // },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+    },
     navigation: {
       nextEl: ".next-3d",
       prevEl: ".prev-3d",
@@ -188,39 +188,6 @@ var swiper = new Swiper(".swiper-3d-3cardfull", {
         },
     },
 });
-
-// var swiper = new Swiper(".swiper-rotate-3", {
-//     loop: true,
-//     spaceBetween: 70,
-//     slidesPerView: 1,
-//     centeredSlides: true,
-//     freeMode: true,
-//     watchSlidesProgress: true,
-//     effect: "coverflow",
-//     grabCursor: true,
-//     coverflowEffect: {
-//         rotate: 30,
-//         stretch: 0,
-//         depth: 320,
-//         modifier: 0,
-//         slideShadows: false,
-//     },
-//     autoplay: {
-//       delay: 2500,
-//       disableOnInteraction: true,
-//     },
-//     breakpoints: {
-//         500: {
-//             slidesPerView: 2,
-//         },
-//         991: {
-//             slidesPerView: 3,
-//         },
-//         1024: {
-//             slidesPerView: 3,
-//         },
-//     },
-// });
 
 var swiper = new Swiper(".swiper-rotate-3", {
     loop: true,
@@ -510,13 +477,11 @@ var swiper =  new Swiper(".carousel1", {
         clickable: true,
     },
     breakpoints: {
-        600: {
+        768: {
             slidesPerView: 2,
         },
-        991: {
-            slidesPerView: 3,
-        },
-        1024: {
+        
+        1300: {
             slidesPerView: 3,
         },
         1500: {
