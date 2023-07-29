@@ -82,6 +82,25 @@
         width: 100% !important;
         height: auto !important;
     }
+    .flat-pages-title-home3 .next-3d,
+    .flat-pages-title-home3 .prev-3d {
+        display: none;
+    }
+    .market-page .bg-home7 {
+        justify-content: end;
+    }
+    .market-page .bg-home7 .swiper-container {
+        margin: unset;
+    }
+    .market-page .bg-home7 .autoslider3reverse {
+        display: none;
+    }
+}
+
+@media (max-width: 1280px) {
+    .header_1.header-full .widget-search {
+        display: none;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -128,11 +147,11 @@
     .widget-edit.avatar .uploadfile label {
         width: 100%;
     }
-}
-
-@media (max-width: 1280px) {
-    .header_1.header-full .widget-search {
-        display: none;
+    .flat-pages-title-home2 .banner__right {
+        margin-left: 15px;
+    }
+    .widget-income {
+        margin-right: 0;
     }
 }
 
@@ -164,11 +183,23 @@
         height: 75px;
     }
     .content-tabs .wrapper-content > div {
-        /* width: 100% !important; */
         max-width: 100% !important;
     }
     .content-tabs .wrapper-content {
         flex-wrap: wrap;
+    }
+    .carouselright {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .widget-income .image .iphone {
+        width: 50%;
+    }
+    .widget-income .image .icon-1,
+    .widget-income .image .icon-2,
+    .widget-income .image .icon-3,
+    .widget-income .image .icon-4 {
+        display: none;
     }
 }
 
@@ -229,11 +260,12 @@
         width: calc(100vw - 230px);
         margin-left: 230px;
     }
+    .bg-home7 .swiper-container:first-child,
     .bg-home7 .swiper-container:last-child {
         display: none;
     }
     .bg-home7 {
-        justify-content: center;
+        justify-content: end;
     }
     .bg-home7 .swiper-container {
         margin: unset;
@@ -252,15 +284,19 @@
         flex-wrap: wrap;
     }
     .counter__body-1 > div {
-        width: 100%;
+        width: 33.3%;
         text-align: center;
     }
-    .tf-box-icon.type-1 .arrow svg {
-        bottom: -28px;
-        left: -74px;
-        top: unset;
-        right: unset;
-        transform: rotateX(180deg) rotateZ(200deg);
+    .counter__body-1 .space:nth-of-type(4) {
+        display: none;
+    }
+    .counter__body-1 .space {
+        padding-left: 0;
+        padding-right: 0;
+        width: 10%;
+    }
+    .tf-box-icon .arrow svg {
+        display: none;
     }
     form .uploadfile ,
     .add-new-collection {
@@ -274,6 +310,17 @@
     }
     .tf-mouse {
         display: none
+    }
+    .flat-pages-title-home2 .content h1 {
+        font-size: 45px;
+        line-height: 68px;
+    }
+    .flat-pages-title-home2 .banner__right .tf-card-box {
+        width: 100%;
+        height: auto;
+    }
+    .home-6 .bg-home7 {
+        display: none;
     }
 }
 
@@ -450,14 +497,6 @@
     .widget-login .login-other {
         flex-wrap: wrap;
     }
-    .tf-box-icon.type-1 .arrow svg ,
-    .tf-box-icon .arrow svg {
-        bottom: -45px;
-        left: -50px;
-        top: unset;
-        right: unset;
-        transform: rotateX(180deg) rotateZ(270deg);
-    }
     .flat-pages-title-home4 .banner__right {
         margin-left: 0;
     }
@@ -524,6 +563,43 @@
     .widget-edit.setting .notification-setting-item .content {
         width: 100%;
         margin-bottom: 10px;
+    }
+    .flat-pages-title-home2 .banner__right {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .swiper-3d-3cardfull .tf-card-box {
+        width: 100%;
+        height: 560px;
+    }
+    .carouselright {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .carouselright::after {
+        display: none;
+    }
+    .carouselright .swiper-slide .tf-card-box {
+        width: 100% ;
+    }
+    .grid-box-icon {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .wrap-box-card.style-1 .col-item {
+        width: 100% !important;
+    }
+    .counter__body-1 > div {
+        width: 100% !important;
+    }
+    .counter__body-1 .space {
+        display: block !important;
+    }
+    .widget-income .image .iphone {
+        display: none;
+    }
+    .tf-card-box.style-6 {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 

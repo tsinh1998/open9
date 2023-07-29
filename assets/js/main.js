@@ -375,6 +375,12 @@
                 $(this).closest('.widget-category-checkbox').find('.content-wg-category-checkbox').slideToggle('hidden');
             });
         }
+        if ($('div').hasClass('product-item')) {
+            $('.product-item>i').on('click', function () {
+                $(this).closest('.product-item').find('.icon-keyboard_arrow_down').toggleClass('hiden');
+                $(this).closest('.product-item').find('.content').slideToggle('hidden');
+            });
+        }
     }
 
     

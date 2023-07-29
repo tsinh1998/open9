@@ -18,7 +18,7 @@ var swiper = new Swiper(".swiper-3d-7", {
     },
     autoplay: {
       delay: 2500,
-      disableOnInteraction: true,
+      disableOnInteraction: false,
     },
     navigation: {
       nextEl: ".next-3d",
@@ -70,7 +70,7 @@ var swiper = new Swiper(".slider-3d", {
     },
     autoplay: {
       delay: 2500,
-      disableOnInteraction: true,
+      disableOnInteraction: false,
     },
     navigation: {
       nextEl: ".next-3d",
@@ -107,7 +107,9 @@ var swiper = new Swiper(".swiper-3d-2card", {
     spaceBetween: 0,
     slidesPerView: 1,
     centeredSlides: true,
-    freeMode: true,
+    observer: true,
+    observeParents: true,
+    freeMode: false,
     watchSlidesProgress: true,
     effect: "coverflow",
     grabCursor: true,
@@ -121,7 +123,7 @@ var swiper = new Swiper(".swiper-3d-2card", {
     },
     autoplay: {
         delay: 2500,
-        disableOnInteraction: true,
+        disableOnInteraction: false,
     },
     navigation: {
       prevEl: ".prev-3d",
@@ -133,7 +135,8 @@ var swiper = new Swiper(".swiper-3d-3card", {
     spaceBetween: 0,
     slidesPerView: 1,
     centeredSlides: true,
-    freeMode: true,
+    observer: true,
+    freeMode: false,
     watchSlidesProgress: true,
     effect: "coverflow",
     grabCursor: true,
@@ -147,7 +150,8 @@ var swiper = new Swiper(".swiper-3d-3card", {
     },
     autoplay: {
         delay: 2500,
-        disableOnInteraction: true,
+        disableOnInteraction: false,
+        waitForTransition: true
     },
     navigation: {
       prevEl: ".prev-3d",
@@ -173,7 +177,7 @@ var swiper = new Swiper(".swiper-3d-3cardfull", {
     },
     autoplay: {
       delay: 2500,
-      disableOnInteraction: true,
+      disableOnInteraction: false,
     },
     navigation: {
       nextEl: ".next-3d",
@@ -198,7 +202,7 @@ var swiper = new Swiper(".swiper-rotate-3", {
     watchSlidesProgress: true,
     autoplay: {
       delay: 2500,
-      disableOnInteraction: true,
+      disableOnInteraction: false,
     },
     observer: true,
     observeParents: true,
@@ -261,14 +265,13 @@ var swiper =  new Swiper(".autoslider2", {
     grabCursor: true,
     speed: 10000,
     centeredSlides: false,
+    
     loop: true,
-    observer: true,
-    observeParents: true,
     slidesPerView: 'auto',
     autoplay: {
+      reverseDirection: true,
       delay: 0,
       disableOnInteraction: false,
-      reverseDirection: true,
     },
     breakpoints: {
             0: { 
@@ -358,12 +361,16 @@ var swiper =  new Swiper(".carousel", {
     spaceBetween: 30,
     navigation: {
         clickable: true,
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".slider-next",
+        prevEl: ".slider-prev",
     },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
+    },
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction:false,
     },
     breakpoints: {
         768: {
@@ -390,8 +397,12 @@ var swiper =  new Swiper(".carouselfull", {
     centeredSlides: true,
     navigation: {
         clickable: true,
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".next-full",
+        prevEl: ".prev-full",
+    },
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction:false,
     },
     pagination: {
         el: ".swiper-pagination",
@@ -430,6 +441,10 @@ var swiper =  new Swiper(".carouselfull-1", {
             slidesPerView: 7,
         },
     },
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction:false,
+    },
 });
 
 var swiper =  new Swiper(".carouselfull-2", {
@@ -437,16 +452,22 @@ var swiper =  new Swiper(".carouselfull-2", {
     slidesPerView: 1,
     observer: true,
     observeParents: true,
-    spaceBetween: 0,
+    spaceBetween: 20,
     breakpoints: {
         768: {
             slidesPerView: 2,
+            spaceBetween: 0,
         },
+    },
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction:false,
     },
 });
 
 var swiper =  new Swiper(".carouselright", {
-    slidesPerView: "auto",
+    loop:true,
+    slidesPerView: 1,
     spaceBetween: 30,
     observer: true,
     observeParents: true,
@@ -458,6 +479,15 @@ var swiper =  new Swiper(".carouselright", {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
+    },
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        700: {
+            slidesPerView: "auto",
+        },
     },
 });
 
@@ -475,6 +505,10 @@ var swiper =  new Swiper(".carousel1", {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
+    },
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction:false,
     },
     breakpoints: {
         768: {
@@ -519,6 +553,10 @@ var swiper =  new Swiper(".carousel2", {
             slidesPerView: 4,
         },
     },
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction:false,
+    },
 });
 
 var swiper =  new Swiper(".carousel3-type1", {
@@ -546,6 +584,10 @@ var swiper =  new Swiper(".carousel3-type1", {
             slidesPerView: 3,
         },
     },
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction:false,
+    },
 });
 
 var swiper =  new Swiper(".carousel3-type2", {
@@ -561,6 +603,10 @@ var swiper =  new Swiper(".carousel3-type2", {
         1024: {
             slidesPerView: 3,
         },
+    },
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction:false,
     },
 });
 
@@ -579,6 +625,10 @@ var swiper =  new Swiper(".carousel3", {
             slidesPerView: 3,
             spaceBetween: 30,
         },
+    },
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction:false,
     },
 });
 
@@ -611,6 +661,10 @@ var swiper =  new Swiper(".carousel5", {
             slidesPerView: 5,
         },
     },
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction:false,
+    },
 });
 
 var swiper =  new Swiper(".seller-slider3", {
@@ -642,11 +696,15 @@ var swiper =  new Swiper(".seller-slider3", {
             slidesPerView: 7,
         },
     },
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction:false,
+    },
 });
 
 var swiper =  new Swiper(".seller-slider2", {
     slidesPerView: 2,
-    loop: false, 
+    loop: true, 
     observer: true,
     observeParents: true,
     spaceBetween: 30,
@@ -656,6 +714,10 @@ var swiper =  new Swiper(".seller-slider2", {
         prevEl: ".seller-prev",
     },
     grabCursor: true,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction:false,
+    },
     breakpoints: {
         500: {
             slidesPerView: 3,
@@ -688,5 +750,9 @@ var swiper =  new Swiper(".seller-slider", {
         prevEl: ".main-prev",
     },
     grabCursor: true,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction:false,
+    },
 });
 

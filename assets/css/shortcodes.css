@@ -23,8 +23,8 @@
     width: 1346px;
 }
 
-.themesflat-container.w1150 {
-    width: 1180px;
+.themesflat-container.w1230 {
+    width: 1260px;
 }
 
 .themesflat-container.w1358 {
@@ -104,6 +104,10 @@
 .tf-button.style-1.active {
     color: #161616;
     background-color: #fff;
+}
+
+.tf-button.style-1.active:hover {
+    background-color: #DDF247;
 }
 
 /* tf-button loadmore */
@@ -589,7 +593,7 @@ a:hover .icon-arrow-up-right2 {
 }
 
 .carouselright {
-    width: calc(100vw - ((100vw - 1100px) / 2) - 4px);
+    width: calc(100vw - ((100vw - 1110px) / 2) - 8px);
     margin-right: unset !important;
     max-width: 100%;
 }
@@ -1637,7 +1641,7 @@ a:hover .icon-arrow-up-right2 {
 }
 
 .flat-pages-title .tf-card-box .card-media img {
-    height: 338px;
+    height: 338px !important;
 }
 
 /* swiper-container */
@@ -1976,8 +1980,8 @@ a:hover .icon-arrow-up-right2 {
 }
 
 .tf-soft .dropdown .dropdown-menu {
-    width: 250px;
-    padding: 20px;
+    width: 100%;
+    padding:  10px;
     border-radius: 10px;
 }
 
@@ -2074,8 +2078,9 @@ a:hover .icon-arrow-up-right2 {
 }
 
 .top-collector .heading-section {
-    padding-bottom: 30px;
+    text-align: center;
     justify-content: center;
+    padding: 0 15px 30px 15px;
 }
 
 /* tf-author-box style-1 */
@@ -2384,7 +2389,7 @@ a:hover .icon-arrow-up-right2 {
 
 .flat-pages-title-home2 .content {
     padding-top: 70px;
-    padding-left: 41.3%;
+    padding-left: calc((100vw - 1110px)/2 - 24px);
 }
 
 .flat-pages-title-home2 .content h1 {
@@ -2577,6 +2582,7 @@ a:hover .icon-arrow-up-right2 {
     align-items: center;
     padding-bottom: 30px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    position: relative;
 }
 
 .tf-author-box.style-2.no-border-b {
@@ -2585,7 +2591,6 @@ a:hover .icon-arrow-up-right2 {
 
 .tf-author-box.style-2 .author-avatar {
     width: 80px;
-    height: 80px;
     margin-right: 20px;
     border-radius: 50%;
     overflow: hidden;
@@ -2798,6 +2803,7 @@ a:hover .icon-arrow-up-right2 {
 /* swiper-rotate-3 */
 .swiper-rotate-3 {
     margin-top: -15px;
+    padding: 0px 40px !important;
 }
 .swiper-rotate-3 .swiper-slide.swiper-slide-prev {
     transform: translateY(-63px)  rotate(15deg);
@@ -3332,8 +3338,8 @@ a:hover .icon-arrow-up-right2 {
     margin-bottom: 0;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+label input[type="radio"],
+label input[type="checkbox"] {
     position: absolute;
     opacity: 0;
     top: 0;
@@ -4364,6 +4370,7 @@ button.follow:hover {
     line-height: 25px;
     position: relative;
     cursor: pointer;
+    padding-right: 25px;
 }
 
 .about-us-page .flat-accordion .flat-toggle .toggle-title ,
@@ -4834,6 +4841,16 @@ img {
     font-size: 12px;
     right: 20px;
     top: 23.5px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition   : all 0.3s ease;
+    -ms-transition    : all 0.3s ease;
+    -o-transition     : all 0.3s ease;
+    transition        : all 0.3s ease;
+}
+
+.product-item > i.hiden {
+    transform: rotate(180deg);
 }
 
 .product-item.time-sales .content .text {
@@ -4960,6 +4977,11 @@ img {
 .product-item .table-item .column .icon-two-arrow {
     font-size: 14px;
     margin-right: 4px;
+}
+
+#myChart {
+    width: 100% !important;
+    height: 248px !important;
 }
 
 /* widget-box-icon */
@@ -5434,11 +5456,12 @@ fieldset.password > i::before {
 
 /* select-day */
 #select-day {
-    display: inline;
+    display: inline-block;
     position: relative;
     cursor: pointer;
     padding-left: 5px;
     padding-right: 34px;
+    width: unset;
 }
 
 .background-white #select-day {
@@ -5624,24 +5647,28 @@ fieldset.password > i::before {
     left: -68px;
     top: 306px;
     z-index: 7;
+    animation: scale1 3s infinite linear;
 }
 
 .page-title.about-us .icon-background .item2 {
     left: 106px;
     top: -31px;
     z-index: 7;
+    animation: move1 7s infinite linear;
 }
 
 .page-title.about-us .icon-background .item3 {
     right: 3px;
     top: 233px;
     z-index: 7;
+    animation: moveleft 3s infinite linear;
 }
 
 .page-title.about-us .icon-background .item4 {
     right: -163px;
     top: 132px;
     z-index: 7;
+    animation: movedown 3s infinite linear alternate;
 }
 
 .contact-us-page::after {
@@ -5824,4 +5851,28 @@ fieldset.password > i::before {
     right: -7px;
     top: 412px;
     animation: rotate360 1.5s infinite linear;
+}
+
+
+.tf-author-box.style-2.hv-border:before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    top: calc(2px/-1);
+    left: calc(2px/-1);
+    background: linear-gradient(to right, #DDF247 0%, #DDF247 100%), linear-gradient(to top, #DDF247 50%, transparent 50%), linear-gradient(to top, #DDF247 50%, transparent 50%), linear-gradient(to right, #DDF247 0%, #DDF247 100%), linear-gradient(to left, #DDF247 0%, #DDF247 100%);
+    background-size: 100% 2px, 2px 200%, 2px 200%, 0% 2px, 0% 2px;
+    background-position: 50% 100%, 0% 0%, 100% 0%, 100% 0%, 0% 0%;
+    background-repeat: no-repeat, no-repeat;
+    transition: transform 0.2s ease-in-out, background-position 0.2s ease-in-out, background-size 0.2s ease-in-out;
+    transform: scaleX(0) rotate(0deg);
+    transition-delay: 0.4s, 0.2s, 0s;
+}
+
+.tf-author-box.style-2.hv-border:hover:before {
+    background-size: 200% 2px, 2px 400%, 2px 400%, 55% 2px, 55% 2px;
+    background-position: 50% 100%, 0% 100%, 100% 100%, 100% 0%, 0% 0%;
+    transform: scaleX(1) rotate(0deg);
+    transition-delay: 0s, 0.2s, 0.4s;
 }

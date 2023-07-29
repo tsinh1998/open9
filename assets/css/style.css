@@ -1185,7 +1185,7 @@ a:focus {
 
 #main-nav>ul>li {
     float: left;
-    padding: 17px 15px 18px 15px;
+    padding: 16px 16px 18px 15px;
     cursor: pointer;
 }
 
@@ -1694,7 +1694,6 @@ a:focus {
     line-height: 19px;
 }
 
-
 /* heading-section */
 .heading-section {
     display        : flex;
@@ -1901,7 +1900,7 @@ a:focus {
 }
 
 .section-menu-left .list-menu ul.sub-item li:last-child {
-    margin-bottom: 16px;
+    margin-bottom: 0px;
 }
 
 .section-menu-left .list-menu ul.sub-item li::before {
@@ -2436,7 +2435,7 @@ animation-delay: 0.8s;
     margin-top: -5px;
     width: 8px;
     height: 8px;
-    z-index: 1000;
+    z-index: 10000;
     background-color: #DDF247;
     -webkit-transition: width .5s ease-in-out, height .5s ease-in-out, margin .5s ease-in-out, opacity .5s ease-in-out;
     transition: width .5s ease-in-out, height .5s ease-in-out, margin .5s ease-in-out, opacity .5s ease-in-out
@@ -2459,7 +2458,7 @@ animation-delay: 0.8s;
     border: 2px solid #DDF247;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    z-index: 1000;
+    z-index: 10000;
     opacity: .5;
     -webkit-transition: all .1s ease-out;
     transition: all .1s ease-out
