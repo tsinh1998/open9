@@ -337,10 +337,8 @@
 }
 
 a:hover .icon-arrow-up-right2 {
-    animation: arrow 1s linear infinite;
+    animation: arrow 1s linear;
 }
-
-
 
 /* tf-card-box */
 /* -------------------------------------- */
@@ -1165,7 +1163,7 @@ a:hover .icon-arrow-up-right2 {
 
 .widget-tag ul li a {
     line-height: 15px;
-    padding: 6px 8px;
+    padding: 10px 14px;
     font-size: 13px;
     font-family: 'Azeret Mono';
     border-radius: 10px;
@@ -1335,7 +1333,7 @@ a:hover .icon-arrow-up-right2 {
 
 .tf-blog-detail .inner-content .bottom .widget-tag ul li {
     margin-bottom: 0;
-    margin-right: 4px;
+    margin-right: 0px;
 }
 
 .tf-blog-detail .inner-content .bottom .widget-tag ul li a {
@@ -1640,7 +1638,7 @@ a:hover .icon-arrow-up-right2 {
     animation: scale1 3s infinite linear;
 }
 
-.flat-pages-title .tf-card-box .card-media img {
+.flat-pages-title .swiper-3d-7 .tf-card-box .card-media img {
     height: 338px !important;
 }
 
@@ -1866,9 +1864,10 @@ a:hover .icon-arrow-up-right2 {
     border-radius: 20px;
 }
 
-.tf-author-box.style-3 .author-avatar .number {
+.tf-author-box .author-avatar .number {
     background-color: #DEE8E8;
-    right: 10%;
+    left: 50%;
+    transform: translateX(42px);
 }
 
 /* seller */
@@ -2918,18 +2917,68 @@ a:hover .icon-arrow-up-right2 {
 }
 
 /* home-6 */
-.home-6 {
-    display: flex;
+.btn-canvas {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 30;
+    top: 43px;
+    left: 15px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    background: #1b1b1b;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.btn-canvas.active {
+    left: 290px;
+}
+
+.btn-canvas .canvas::after,
+.btn-canvas .canvas::before {
+    width: 25px;
+}
+
+.btn-canvas.active .canvas span {
+    display: none;
+}
+
+.btn-canvas.active .canvas::after {
+    transform: rotate3d(0, 0, 1, -45deg);
+    top: 50%;
+}
+.btn-canvas.active .canvas::before {
+    transform: rotate3d(0, 0, 1, 45deg);
+    top: 50%;
 }
 
 .home-6 .section-menu-left {
     position: fixed;
     height: 100%;
     overflow-y: auto;
+    left: 0;
+    padding-bottom: 180px;
 }
 
-.home-6 .section-menu-left::-webkit-scrollbar {
-    width: 0px;
+.section-menu-left .over-content {
+    overflow-y: auto;
+}
+
+.section-menu-left .over-content::-webkit-scrollbar {
+    width: 1px;
+}
+
+.section-menu-left .over-content::-webkit-scrollbar-thumb {
+    background: linear-gradient(216.56deg,#DDF247 5.32%,#DEE8E8 94.32%);
+    border-radius: 6px;
 }
 
 .home-6 .wrap-content {
@@ -2937,6 +2986,11 @@ a:hover .icon-arrow-up-right2 {
     padding: 73px 124px 30px 109px;
     background: #161616;
     margin-left: 281px;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
 }
 
 .home-6 .wrap-content .tf-soft .soft-right {
@@ -3437,6 +3491,19 @@ form label i.icon-star.active {
 #page.market-page {
     padding: 132px 33px 40px 330px;
     background: #111;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+#page.market-page #market {
+    margin-bottom: -30px;
+}
+
+.market-page .btn-canvas.active {
+    left: 215px;
 }
 
 #market-header {
@@ -3447,7 +3514,12 @@ form label i.icon-star.active {
     padding-top: 40px;
     padding-bottom: 40px;
     background: #111;
-    z-index: 10;
+    z-index: 20;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
 }
 
 .market-header .widget-search {
@@ -3535,6 +3607,7 @@ form label i.icon-star.active {
     gap: 29px;
     height: 100%;
     overflow-y: auto;
+    padding-bottom: 115px;
 }
 
 #page.market-page .section-menu-left::-webkit-scrollbar {
@@ -3575,6 +3648,11 @@ form label i.icon-star.active {
 .content-tabs .wrapper-content .inner-content {
     max-width: 1100px;
     width: 100%;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
 }
 
 .content-tabs .side-bar {
@@ -3612,6 +3690,10 @@ form label i.icon-star.active {
     border-radius: 14px;
     overflow: hidden;
     margin-bottom: 30px;
+}
+
+.widget-recently .card-small-main img {
+    width: 100%;
 }
 
 .widget-recently .card-small-main .card-bottom {
@@ -4745,9 +4827,6 @@ img {
 
 .menu_card .dropdown-menu.show {
     display: block;
-    top: 3px !important;
-    right: 0 !important;
-    left: auto !important;
     padding: 20px;
     border-radius: 20px;
     background: #232323;
@@ -4982,6 +5061,10 @@ img {
 #myChart {
     width: 100% !important;
     height: 248px !important;
+}
+
+#myChart1 {
+    /* height: 217px !important; */
 }
 
 /* widget-box-icon */
@@ -5410,6 +5493,7 @@ fieldset.password > i::before {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .section-single-page.maintanance .content .box-button a {

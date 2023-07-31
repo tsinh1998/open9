@@ -1,5 +1,26 @@
 /**
-  * headerFixed
+    * headerFixed
+    * buttonHeart
+    * avatar_popup1
+    * avatar_popup2
+    * tabs
+    * buttonfollow
+    * tabs1
+    * termcondition
+    * connectwallet
+    * flcustominput
+    * flatAccordion
+    * flatAccordion2
+    * password
+    * btnmenu
+    * loadmore
+    * dropdown
+    * listmenu
+    * categorycheckbox
+    * cursor
+    * gotop
+    * dashboard
+    * preloader
 */
 
 ; (function ($) {
@@ -195,8 +216,8 @@
     var connectwallet = function() {
         if ($('span').hasClass('button-connect-wallet')) {
             $('.button-connect-wallet').on('click',function() {
-                $('#connect-wallet-grid').addClass('hidden');
-                $('#connect-wallet-list').addClass('active');
+                $('#connect-wallet-grid').toggleClass('hidden');
+                $('#connect-wallet-list').toggleClass('active');
             })
         }
     };
@@ -383,48 +404,58 @@
         }
     }
 
-    
-    var bars = document.querySelectorAll('.meter > span');
-    setInterval(function(){
-    bars.forEach(function(bar){
-        var getWidth = parseFloat(bar.dataset.progress);
-        
-        for(var i = 0; i < getWidth; i++) {
-        bar.style.width = i + '%';
+    var dashboard = function() {
+        if ($('body').hasClass('dashboard')) {
+            $('.btn-canvas').on('click', function () {
+                $(this).toggleClass('active');
+                $(this).closest('#page').find('.wrap-content').toggleClass('full');
+                $(this).closest('#page').find('.section-menu-left').toggleClass('null');
+            });
         }
-    });
-    }, 500);
+
+        if ($('body').hasClass('dashboard1')) {
+            $('.btn-canvas').on('click', function () {
+                $(this).toggleClass('active');
+                $(this).closest('#page').toggleClass('full');
+                $(this).closest('#page').find('.section-menu-left').toggleClass('null');
+            });
+        }
+
+    }
 
     // progress
-    var progressPath = document.querySelector('.progress-wrap path');
-    var pathLength = progressPath.getTotalLength();
-    progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
-    progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
-    progressPath.style.strokeDashoffset = pathLength;
-    progressPath.getBoundingClientRect();
-    progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
-    var updateProgress = function() {
-        var scroll = $(window).scrollTop();
-        var height = $(document).height() - $(window).height();
-        var progress = pathLength - (scroll * pathLength / height);
-        progressPath.style.strokeDashoffset = progress;
-    }
-    updateProgress();
-    $(window).scroll(updateProgress);
-    var offset = 150;
-    var duration = 550;
-    jQuery(window).on('scroll', function() {
-        if (jQuery(this).scrollTop() > offset) {
-            jQuery('.progress-wrap').addClass('active-progress');
-        } else {
-            jQuery('.progress-wrap').removeClass('active-progress');
+    var gotop = function() {
+        if ($('div').hasClass('progress-wrap')) {
+        var progressPath = document.querySelector('.progress-wrap path');
+        var pathLength = progressPath.getTotalLength();
+        progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+        progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+        progressPath.style.strokeDashoffset = pathLength;
+        progressPath.getBoundingClientRect();
+        progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+        var updateprogress = function() {
+            var scroll = $(window).scrollTop();
+            var height = $(document).height() - $(window).height();
+            var progress = pathLength - (scroll * pathLength / height);
+            progressPath.style.strokeDashoffset = progress;
         }
-    });
-    jQuery('.progress-wrap').on('click', function(event) {
-        event.preventDefault();
-        jQuery('html, body').animate({ scrollTop: 0 }, duration);
-        return false;
-    })
+        updateprogress();
+        $(window).scroll(updateprogress);
+        var offset = 150;
+        var duration = 550;
+        jQuery(window).on('scroll', function() {
+            if (jQuery(this).scrollTop() > offset) {
+                jQuery('.progress-wrap').addClass('active-progress');
+            } else {
+                jQuery('.progress-wrap').removeClass('active-progress');
+            }
+        });
+        jQuery('.progress-wrap').on('click', function(event) {
+            event.preventDefault();
+            jQuery('html, body').animate({ scrollTop: 0 }, duration);
+            return false;
+        })
+    }}
 
     const cursor = function () {
         var myCursor = jQuery(".tf-mouse");
@@ -495,6 +526,8 @@
         listmenu();
         categorycheckbox();
         cursor();
+        gotop();
+        dashboard();
         preloader();
     });
 

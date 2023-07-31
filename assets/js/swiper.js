@@ -326,6 +326,8 @@ var swiper =  new Swiper(".autoslider3reverse", {
     direction: 'vertical',
     spaceBetween: 14,
     grabCursor: false,
+    observer: true,
+    observeParents: true,
     speed: 10000,
     centeredSlides: false,
     loop: true,
@@ -341,6 +343,8 @@ var swiper =  new Swiper(".autoslider4reverse", {
     direction: 'vertical',
     spaceBetween: 14,
     grabCursor: false,
+    observer: true,
+    observeParents: true,
     speed: 10000,
     centeredSlides: false,
     loop: true,
@@ -494,8 +498,8 @@ var swiper =  new Swiper(".carouselright", {
 var swiper =  new Swiper(".carousel1", {
     loop:false,
     slidesPerView: 1,
-    observer: true,
-    observeParents: true,
+    // observer: true,
+    // observeParents: true,
     spaceBetween: 26.67,
     navigation: {
         clickable: true,

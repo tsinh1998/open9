@@ -914,6 +914,9 @@ label.error {
 .gap30 {
     gap: 30px;
 }
+.gap4 {
+    gap: 4px;
+}
 .justify-center {
     justify-content: center;
 }
@@ -1121,16 +1124,16 @@ a:focus {
     align-items: center;
 }
 
-.flat-wallet .canvas {
+.canvas {
     position: relative;
     width: 30px;
     height: 30px;
     cursor: pointer;
 }
 
-.flat-wallet .canvas span,
-.flat-wallet .canvas::before,
-.flat-wallet .canvas::after {
+.canvas span,
+.canvas::before,
+.canvas::after {
     position: absolute;
     content: "";
     height: 3px;
@@ -1143,27 +1146,27 @@ a:focus {
     transform: translateY(-50%);
 }
 
-.flat-wallet .canvas span {
+.canvas span {
     width: 25px;
     top: 50%;
 }
 
-.flat-wallet .canvas::after {
+.canvas::after {
     width: 13px;
     top: 75%;
 }
 
-.flat-wallet .canvas::before {
+.canvas::before {
     width: 19px;
     top: 25%;
 }
 
-.flat-wallet .canvas.style-1 span,
-.flat-wallet .canvas.style-1::before {
+.canvas.style-1 span,
+.canvas.style-1::before {
     background-color: rgba(22, 22, 22, 1);
 }
 
-.flat-wallet .canvas.style-1::after {
+.canvas.style-1::after {
     background-color: rgba(221, 242, 71, 1);
 }
 
@@ -1762,10 +1765,21 @@ a:focus {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    border-radius: 0px 40px 40px 0px;
     background: #232323;
     width: 281px;
     padding: 40px 0px;
+    z-index: 30;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.section-menu-left > .wrap-bottom {
+    position: fixed;
+    bottom: 49px;
+    width: 281px;
 }
 
 .section-menu-left .box-logo {
@@ -1802,6 +1816,10 @@ a:focus {
     line-height: 20px;
     text-transform: capitalize;
     margin-bottom: 6px;
+}
+
+.section-menu-left .list-menu > ul > li:last-child {
+    margin-bottom: 0;
 }
 
 .section-menu-left .list-menu > ul > li > a {
@@ -1883,7 +1901,7 @@ a:focus {
 .section-menu-left .list-menu ul.sub-item {
     display: none;
     margin-top: 19px;
-    margin-bottom: 10px;
+    margin-bottom: 17px;
     padding-left: 22px;
     margin-left: 21px;
     border-left: 1px solid rgba(255, 255, 255, 0.08);
@@ -1928,13 +1946,15 @@ a:focus {
 
 .section-menu-left .menu-bottom {
     padding-top: 30px;
-    margin-top: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .section-menu-left .bottom {
     padding-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
+    position: fixed;
+    bottom: 39px;
+    width: 281px;
 }
 
 .section-menu-left .bottom p {
