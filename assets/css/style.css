@@ -151,6 +151,7 @@ html {
 body {
     background : #161616;;
     line-height: 1;
+    padding: 0 !important;
 }
 
 body.background-white {
@@ -1098,6 +1099,7 @@ a:focus {
     height: 57px;
     width: 100%;
     border: none;
+    padding-right: 0 !important;
 }
 
 #site-logo {

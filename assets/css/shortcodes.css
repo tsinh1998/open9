@@ -1507,7 +1507,7 @@ a:hover .icon-arrow-up-right2 {
     position: relative;
 }
 
-.flat-pages-title .bg-grid-line {
+.bg-grid-line {
     width: 100%;
     height: 400px;
     overflow: hidden;
@@ -1516,7 +1516,7 @@ a:hover .icon-arrow-up-right2 {
     bottom: 60px;
 }
 
-.flat-pages-title .bg-line-b {
+.bg-line {
     width: 100%;
     height: 100%;
     transform: rotateX(50deg);
@@ -1524,7 +1524,7 @@ a:hover .icon-arrow-up-right2 {
     overflow: hidden;
 }
 
-.flat-pages-title .bg-line-b::before {
+.bg-line::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -5371,11 +5371,36 @@ fieldset.password > i::before {
 }
 
 .modal-content {
-    border-radius: 20px !important;
+    background-color: transparent !important;
+}
+
+.modal-content .close{
     overflow: hidden;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    background-color: #DDF247;
+    border: none;
+    outline: none;
+    z-index: 10 !important;
+    opacity: 1;
+    box-shadow: 0px 3px 16px rgb(47 83 109 / 12%);
+}
+
+.modal-content .close:hover{
+    opacity: 1;
+}
+
+.modal-content .close span{
+    font-size: 15px;
+    color: #161616;
 }
 
 .modal-body {
+    border-radius: 20px !important;
     background: #161616;
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.80);
     padding: 30px !important;
@@ -5433,7 +5458,7 @@ fieldset.password > i::before {
 /* section-single-page */
 /* --------------------------------------- */
 .section-single-page {
-    background-image: url(../images/item-background/bg-home1.png);
+    /* background-image: url(../images/item-background/bg-home1.png); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -5937,7 +5962,6 @@ fieldset.password > i::before {
     animation: rotate360 1.5s infinite linear;
 }
 
-
 .tf-author-box.style-2.hv-border:before {
     content: "";
     position: absolute;
@@ -5959,4 +5983,68 @@ fieldset.password > i::before {
     background-position: 50% 100%, 0% 100%, 100% 100%, 100% 0%, 0% 0%;
     transform: scaleX(1) rotate(0deg);
     transition-delay: 0s, 0.2s, 0.4s;
+}
+
+/* widget-bg-line */
+.widget-bg-line {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.widget-bg-line .wraper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.widget-bg-line .bg-grid-line .bg-line {
+    height: 200%;
+    transform: rotateX(82deg);
+}
+
+.widget-bg-line .bg-grid-line .bg-line::before {
+    left: 0;
+    background-size: 118.9px 85px;
+}
+
+.widget-bg-line .bg-grid-line {
+    bottom: 0;
+    left: 0;
+    height: 88%;
+}
+
+.widget-bg-line .bg-grid-line.y.top {
+    transform: rotate(180deg);
+    top: 0;
+}
+
+.widget-bg-line .bg-grid-line.x .bg-line {
+    transform: rotateX(50deg);
+}
+
+.widget-bg-line .bg-grid-line.x {
+    transform: rotate(-90deg);
+    left: unset;
+    right: 37px;
+    height: 100%;
+    width: 56%;
+    top: 0;
+    bottom: unset;
+}
+
+.widget-bg-line .bg-grid-line.x .bg-line::before {
+    background-size: 96px 64px;
+}
+
+.widget-bg-line .bg-grid-line.x.left {
+    transform: rotate(90deg);
+    right: unset;
+    left: 37px;
+    height: 100%;
+    width: 56%;
+    top: 0;
+    bottom: unset;
 }
