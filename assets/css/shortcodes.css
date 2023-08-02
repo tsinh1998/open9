@@ -336,10 +336,6 @@
     transition        : all 0.3s ease;
 }
 
-a:hover .icon-arrow-up-right2 {
-    animation: arrow 1s linear;
-}
-
 /* tf-card-box */
 /* -------------------------------------- */
 .tf-card-box { 
@@ -1867,7 +1863,11 @@ a:hover .icon-arrow-up-right2 {
 .tf-author-box .author-avatar .number {
     background-color: #DEE8E8;
     left: 50%;
-    transform: translateX(42px);
+    margin-left: 23px;
+}
+
+.tf-author-box.style-3 .author-avatar .number {
+    margin-left: 41px;
 }
 
 /* seller */
@@ -2531,10 +2531,6 @@ a:hover .icon-arrow-up-right2 {
     transition        : all 0.3s ease;
 }
 
-.tf-category .card-media a:hover i {
-    transform: rotate(45deg);
-}
-
 .tf-category:hover .card-media a {
     top: 50%;
     opacity: 1;
@@ -3064,7 +3060,7 @@ a:hover .icon-arrow-up-right2 {
     margin-bottom: 60px;
 }
 
-.flat-pages-title-home7 .bg-line {
+.flat-pages-title-home7 .backgound {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -5458,16 +5454,13 @@ fieldset.password > i::before {
 /* section-single-page */
 /* --------------------------------------- */
 .section-single-page {
-    /* background-image: url(../images/item-background/bg-home1.png); */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     padding: 70px 0 75px 0;
     text-align: center;
+    height: 100vh;
 }
 
 .section-single-page .content {
-    padding: 216px 0 265px 0;
+    padding-top: 216px;
 }
 
 .section-single-page .content h1 {
@@ -5504,10 +5497,6 @@ fieldset.password > i::before {
     font-weight: 500;
     line-height: 11px;
     margin-bottom: -11px;
-}
-
-.section-single-page.maintanance .content {
-    padding-bottom: 346px;
 }
 
 .section-single-page.maintanance .content p {
@@ -5992,6 +5981,7 @@ fieldset.password > i::before {
     height: 100%;
     top: 0;
     left: 0;
+    z-index: -1;
 }
 
 .widget-bg-line .wraper {
