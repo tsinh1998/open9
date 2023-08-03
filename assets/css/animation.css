@@ -112,6 +112,18 @@
 	}
 }
 
+@keyframes rotateleftright1 {
+	0% {
+		transform: rotate(-2deg);
+	}
+    50% {
+		transform: rotate(2deg);
+	}
+	100% {
+		transform: rotate(-2deg);
+	}
+}
+
 @keyframes playline {
     0% {
         transform: translate3d(0,-50%,0) 

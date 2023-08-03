@@ -103,10 +103,10 @@ var swiper = new Swiper(".slider-3d", {
 });
 
 var swiper = new Swiper(".swiper-3d-2card", {
-    loop: true,
+    loop: false,
     spaceBetween: 0,
     slidesPerView: 1,
-    centeredSlides: true,
+    centeredSlides: false,
     observer: true,
     observeParents: true,
     freeMode: false,
@@ -131,10 +131,10 @@ var swiper = new Swiper(".swiper-3d-2card", {
 });
  
 var swiper = new Swiper(".swiper-3d-3card", {
-    loop: true,
+    loop: false,
     spaceBetween: 0,
     slidesPerView: 1,
-    centeredSlides: true,
+    centeredSlides: false,
     observer: true,
     freeMode: false,
     watchSlidesProgress: true,
@@ -159,10 +159,10 @@ var swiper = new Swiper(".swiper-3d-3card", {
 });
 
 var swiper = new Swiper(".swiper-3d-3cardfull", {
-    loop: true,
+    loop: false,
     spaceBetween: 0,
     slidesPerView: 1,
-    centeredSlides: true,
+    centeredSlides: false,
     freeMode: true,
     watchSlidesProgress: true,
     effect: "coverflow",
@@ -216,20 +216,6 @@ var swiper = new Swiper(".swiper-rotate-3", {
     },
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 var swiper =  new Swiper(".autoslider1", {
     spaceBetween: 28,
     grabCursor: true,
@@ -237,12 +223,8 @@ var swiper =  new Swiper(".autoslider1", {
     observer: true,
     observeParents: true,
     centeredSlides: false,
-    loop: true,
+    loop: false,
     slidesPerView: 'auto',
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: false,
-    },
     breakpoints: {
             0: { 
             spaceBetween: 20,
@@ -265,14 +247,8 @@ var swiper =  new Swiper(".autoslider2", {
     grabCursor: true,
     speed: 10000,
     centeredSlides: false,
-    
-    loop: true,
+    loop: false,
     slidesPerView: 'auto',
-    autoplay: {
-      reverseDirection: true,
-      delay: 0,
-      disableOnInteraction: false,
-    },
     breakpoints: {
             0: { 
             spaceBetween: 20,
@@ -405,7 +381,7 @@ var swiper =  new Swiper(".carouselfull", {
         prevEl: ".prev-full",
     },
     autoplay: {
-        delay: 2000,
+        delay: 3000,
         disableOnInteraction:false,
     },
     pagination: {
@@ -429,7 +405,7 @@ var swiper =  new Swiper(".carouselfull", {
 });
 
 var swiper =  new Swiper(".carouselfull-1", {
-    loop:true,
+    loop:false,
     observer: true,
     observeParents: true,
     slidesPerView: 1,
@@ -470,7 +446,7 @@ var swiper =  new Swiper(".carouselfull-2", {
 });
 
 var swiper =  new Swiper(".carouselright", {
-    loop:true,
+    loop:false,
     slidesPerView: 1,
     spaceBetween: 30,
     observer: true,
@@ -485,7 +461,7 @@ var swiper =  new Swiper(".carouselright", {
         clickable: true,
     },
     autoplay: {
-        delay: 2000,
+        delay: 3000,
         disableOnInteraction: false,
     },
     breakpoints: {
@@ -498,8 +474,6 @@ var swiper =  new Swiper(".carouselright", {
 var swiper =  new Swiper(".carousel1", {
     loop:false,
     slidesPerView: 1,
-    // observer: true,
-    // observeParents: true,
     spaceBetween: 26.67,
     navigation: {
         clickable: true,
@@ -567,8 +541,6 @@ var swiper =  new Swiper(".carousel3-type1", {
     loop:false,
     observer: true,
     observeParents: true,
-    observer: true,
-    observeParents: true,
     slidesPerView: 1,
     spaceBetween: 25,
     navigation: {
@@ -595,7 +567,7 @@ var swiper =  new Swiper(".carousel3-type1", {
 });
 
 var swiper =  new Swiper(".carousel3-type2", {
-    loop:true,
+    loop:false,
     observer: true,
     observeParents: true,
     slidesPerView: 1,
@@ -708,7 +680,7 @@ var swiper =  new Swiper(".seller-slider3", {
 
 var swiper =  new Swiper(".seller-slider2", {
     slidesPerView: 2,
-    loop: true, 
+    loop: false, 
     observer: true,
     observeParents: true,
     spaceBetween: 30,
@@ -755,7 +727,7 @@ var swiper =  new Swiper(".seller-slider", {
     },
     grabCursor: true,
     autoplay: {
-        delay: 2000,
+        delay: 5000,
         disableOnInteraction:false,
     },
 });

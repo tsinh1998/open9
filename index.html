@@ -76,9 +76,14 @@
                                                     <li class="menu-item"><a href="home-5.html">Home 5</a></li>
                                                     <li class="menu-item"><a href="home-6.html">Home 6</a></li>
                                                     <li class="menu-item"><a href="home-7.html">Home 7</a></li>
-                                                    <li class="menu-item"><a href="slider-3d.html">Slider 3d</a></li>
-                                                    <li class="menu-item"><a href="slider-scroll.html">Slider Scroll</a></li>
-                                                    <li class="menu-item"><a href="slider-animation.html">Slider Animation</a></li>
+                                                    <li class="menu-item has-item">
+                                                        <a href="#">Home Slider Style</a>
+                                                        <ul class="nav-sub-menu">
+                                                            <li class="nav-menu-item"><a href="slider-3d.html">Slider 3d</a></li>
+                                                            <li class="nav-menu-item"><a href="slider-scroll.html">Slider Scroll</a></li>
+                                                            <li class="nav-menu-item"><a href="slider-animation.html">Slider Animation</a></li>
+                                                        </ul>
+                                                    </li>
                                                 </ul>
                                             </li>
                                             <li class="menu-item">
@@ -101,7 +106,20 @@
                                             <li class="menu-item menu-item-has-children">
                                                 <a>Pages</a>
                                                 <ul class="sub-menu">
-                                                    <li class="menu-item"><a href="market.html">Market</a></li>
+                                                    <li class="menu-item has-item">
+                                                        <a href="market.html">Market</a>
+                                                        <ul class="nav-sub-menu">
+                                                            <li class="nav-menu-item"><a href="market.html">Create</a></li>
+                                                            <li class="nav-menu-item"><a href="market.html">Market</a></li>
+                                                            <li class="nav-menu-item"><a href="market.html">Active Bid</a></li>
+                                                            <li class="nav-menu-item"><a href="market.html">Explore</a></li>
+                                                            <li class="nav-menu-item"><a href="market.html">My collection</a></li>
+                                                            <li class="nav-menu-item"><a href="market.html">My favorite</a></li>
+                                                            <li class="nav-menu-item"><a href="market.html">Wallet</a></li>
+                                                            <li class="nav-menu-item"><a href="market.html">History</a></li>
+                                                            <li class="nav-menu-item"><a href="market.html">Settings</a></li>
+                                                        </ul>
+                                                    </li>
                                                     <li class="menu-item"><a href="author-1.html">Authors Style 1</a></li>
                                                     <li class="menu-item"><a href="author-2.html">Authors Style 2</a></li>
                                                     <li class="menu-item"><a href="terms-condition.html">Terms & Condition</a></li>
@@ -285,8 +303,21 @@
             </header>
 
             <div class="flat-pages-title">
-                <div class="bg-grid-line">
-                    <div class="bg-line"></div>
+                <div class="widget-bg-line">
+                    <div class="wraper">
+                        <div class="bg-grid-line y top">
+                            <div class="bg-line"></div>
+                        </div>
+                        <div class="bg-grid-line x left">
+                            <div class="bg-line"></div>
+                        </div>
+                        <div class="bg-grid-line y bottom">
+                            <div class="bg-line"></div>
+                        </div>
+                        <div class="bg-grid-line x right">
+                            <div class="bg-line"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="themesflat-container w1490">
                     <div class="row">
@@ -1305,40 +1336,11 @@
 
             <div class="tf-section top-collector">
                 <div class="top-collector-wrapper">
-                    <div class="widget-bg-animation">
-                        <div class="slide-bg">
-                            <div class="box">
-                                <div class="item">
-                                    <h2>Top Collector</h2>
-                                </div>
-                                <div class="item">
-                                    <h2>Top Collector</h2>
-                                </div>
-                                <div class="item">
-                                    <h2>Top Collector</h2>
-                                </div>
-                                <div class="item">
-                                    <h2>Top Collector</h2>
-                                </div>
-                            </div>
-                            <div class="box">
-                                <div class="item">
-                                    <h2>Top Collector</h2>
-                                </div>
-                                <div class="item">
-                                    <h2>Top Collector</h2>
-                                </div>
-                                <div class="item">
-                                    <h2>Top Collector</h2>
-                                </div>
-                                <div class="item">
-                                    <h2>Top Collector</h2>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="bg-text">
+                        <h2>Top Collector</h2>
                     </div>
                     <div class="heading-section ">
-                        <h2 class="tf-title ">Top Collector Buys Today</h2>
+                        <h2 class="tf-title">Top Collector Buys Today</h2>
                     </div>
                     <div class="featured swiper-container autoslider1">
                         <div class="swiper-wrapper">
@@ -1919,6 +1921,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="action__body">
+                                <div id="tsparticles"></div>
                                 <h2>Discover, create and sell your own NFT</h2>
                                 <div class="flat-button flex">
                                     <a href="#" class="tf-button style-2 h50 w190 mr-10">Explore now<i class="icon-arrow-up-right2"></i></a>
@@ -2044,7 +2047,7 @@
                     </div>
                 </div>
             </footer><!-- /#footer -->
-           
+        
         </div>
         <!-- /#page -->
 
@@ -2093,7 +2096,15 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/swiper.js"></script>
     <script src="assets/js/count-down.js"></script>
-    <script src="assets/js/shortcodes.js"></script>
+    
+    <script src="assets/js/simpleParallax.min.js"></script>
+    <script src="assets/js/gsap.js"></script>
+    <script src="assets/js/SplitText.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="assets/js/ScrollTrigger.js"></script>
+    <script src="assets/js/gsap-animation.js"></script>
+    <script src="assets/js/tsparticles.min.js"></script>
+    <script src="assets/js/tsparticles.js"></script>
     <script src="assets/js/main.js"></script>
 
 </body>

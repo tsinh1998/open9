@@ -130,6 +130,7 @@
 }
 
 @media (max-width: 1200px) {
+    .home-6 .bg-home7,
     .market-page .bg-home7 {
         display: none;
     }
@@ -452,6 +453,9 @@
         flex-wrap: wrap;
         display: flex;
     }
+    .tf-blog-detail .inner-content {
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 700px) {
@@ -739,5 +743,11 @@
         top: 3px !important;
         right: 0 !important;
         left: auto !important;
+    }
+}
+
+@media (min-width: 2000px) {
+    .tf-card-box .card-media img {
+        width: 100% !important;
     }
 }

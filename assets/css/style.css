@@ -8,7 +8,7 @@
 @import "shortcodes.css";
 @import "responsive.css";
 @import "widget.css";
-@import "animate.css";
+@import "animation.css";
 @import "swiper-bundle.min.css";
 @import "../font/font.css";
 @import "bootstrap.css";
@@ -1244,8 +1244,9 @@ a:focus {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 250px;
-    background-color: #ffff;
+    width: 260px;
+    padding: 27px 0;
+    background-color: #fff;
     border-radius: 7px;
     z-index: 9999;
     opacity: 0;
@@ -1263,28 +1264,12 @@ a:focus {
     transform: translateY(15px);
 }
 
-#main-nav .sub-menu::before {
-    content         : '';
-    position        : absolute;
-    top             : -5px;
-    left            : 25px;
-    height          : 15px;
-    width           : 15px;
-    transform       : rotate(45deg);
-    background-color: #fff;
-}
-
-
 #main-nav .sub-menu li a {
     display    : block;
     font-size  : 16px;
     color      : #14141F;
-    padding    : 20px;
+    padding    : 9px 36px;
     font-weight: 500;
-}
-
-#main-nav .sub-menu li:not(:last-child) a {
-    border-bottom: 1px solid #e1e1e18e;
 }
 
 #main-nav li:hover .sub-menu {
@@ -1298,55 +1283,54 @@ a:focus {
     transform        : translateY(0);
 }
 
-#main-nav .sub-menu li.current-item a,
+#main-nav .sub-menu li.current-item > a,
 #main-nav .sub-menu li a:hover {
-    color:rgba(22, 22, 22, 1);
+    color: #DDF247;
 }
 
 #main-nav>ul>li .sub-menu li {
     position: relative;
 }
-#main-nav>ul>li .sub-menu li.menu-item-has-children:after {
-    right: 20px;
-    font-size: 14px;
-    line-height: normal;
-    font-weight: normal;
-    content: '\f105';
-    font-family: 'Font Awesome 5 Pro';
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    transform: translateY(-50%);
-    color: #14141F;
-}
+
 #main-nav>ul>li .sub-menu li a {
     transition: all 0.15s linear;
     -webkit-transition: all 0.15s linear;
     -moz-transition: all 0.15s linear;
     -o-transition: all 0.15s linear;
 }
-#main-nav>ul>li .sub-menu li a:hover,
-#main-nav>ul>li .sub-menu li.current-item a {
-    padding-left: 35px;
-}
-#main-nav>ul>li .sub-menu li a:hover::after,
-#main-nav>ul>li .sub-menu li.current-item a:after {
-    width: 12px;
-}
-#main-nav>ul>li .sub-menu li a::after {
-    content: "";
+
+#main-nav .nav-sub-menu {
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
-    width: 0;
-    height: 2px;
-    background:rgba(22, 22, 22, 1);
-    left: 15px;
-    top: 29px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition   : all 0.3s ease;
-    -ms-transition    : all 0.3s ease;
-    -o-transition     : all 0.3s ease;
-    transition        : all 0.3s ease;
+    top: -2% !important;
+    left: 100%;
+    background-color: #fff;
+    z-index: 20;
+    transition: ease-out 0.3s;
+    min-width: 240px;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    text-align: start;
+    padding: 27px 0;
+}
+
+#main-nav .sub-menu li:hover .nav-sub-menu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    pointer-events: all;
+}
+
+#main-nav .sub-menu li.has-item a {
+    position: relative;
+}
+
+#main-nav .sub-menu li.has-item > a::before {
+    position: absolute;
+    content: '\e912';
+    font-family: 'icomoon';
+    right: 36px;
 }
 
 /* style-white */
@@ -1712,6 +1696,7 @@ a:focus {
     font-weight: 800;
     line-height: 44px;
     text-transform: capitalize;
+    z-index: 10;
 }
 
 .heading-section a {
@@ -1757,9 +1742,13 @@ a:focus {
     width: 107%;
 }
 
-.heading-section.bg-white .tf-title,
-.heading-section.bg-white a {
+.background-white .heading-section a,
+.background-white .heading-section .tf-title {
     color: #161616;
+}
+
+.background-white .heading-section a::after {
+    background-color: rgba(22, 22, 22, 0.10);
 }
 
 /* section-menu-left */
@@ -1782,8 +1771,10 @@ a:focus {
     position: fixed;
     bottom: 49px;
     width: 281px;
+    padding: 0 30px;
 }
 
+.section-menu-left .list-menu,
 .section-menu-left .box-logo {
     padding: 0 30px;
 }
@@ -1806,10 +1797,6 @@ a:focus {
 .tf-button.style-1.type-1:hover {
     background-color: #DDF247;
     color: #161616;
-}
-
-.section-menu-left .list-menu {
-    padding: 0 30px;
 }
 
 .section-menu-left .list-menu > ul > li {
@@ -1887,7 +1874,7 @@ a:focus {
     transform: rotate(180deg);
 }
 
-.section-menu-left .list-menu > ul > li.language a img {
+.section-menu-left .list-menu > ul > li.language img {
     position: absolute;
     top: 12px;
     left: 10px;
@@ -1944,6 +1931,26 @@ a:focus {
 }
 .section-menu-left .list-menu ul.sub-item li:hover a {
     color: #DDF247;
+}
+
+.section-menu-left .language ul.sub-item {
+    position: absolute;
+    background-color: #161616;
+    width: 100%;
+    z-index: 1;
+    margin: 0;
+    padding-left: 0px;
+    border-radius: 10px;
+}
+
+.section-menu-left .language ul.sub-item li {
+    padding: 12px 8px 10px 43px;  
+    margin-bottom: 0; 
+    cursor: pointer;
+}
+
+.section-menu-left .language ul.sub-item li::before {
+    display: none;
 }
 
 .section-menu-left .menu-bottom {
@@ -2430,7 +2437,7 @@ animation-delay: 0.8s;
 .progress-wrap svg.progress-circle path {
     box-sizing: border-box;
     stroke: #DDF247;
-    stroke-width: 4;
+    stroke-width: 5;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
@@ -2488,4 +2495,12 @@ animation-delay: 0.8s;
 
 .tf-mouse-outer.mouse-hover {
     opacity: 0
+}
+
+body.background-white .tf-mouse-inner {
+    background-color: rgba(22, 22, 22, 1);
+}
+
+body.background-white .tf-mouse-outer {
+    border-color: rgba(22, 22, 22, 1);
 }
