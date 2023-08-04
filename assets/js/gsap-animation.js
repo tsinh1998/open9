@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger, SplitText, ScrollSmoother);
+gsap.registerPlugin(ScrollTrigger, SplitText);
 gsap.config({
     nullTargetWarn: false,
     trialWarn: false
@@ -27,8 +27,8 @@ splitTitleLines.forEach((title) => {
         type: "lines",
     });
     tl.from(itemSplitted.lines, {
-        duration: 1,
-        delay: 0.3,
+        duration: 0.7,
+        delay: 0,
         opacity: 0,
         rotationX: -80,
         force3D: true,

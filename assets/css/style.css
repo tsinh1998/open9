@@ -7,8 +7,8 @@
 @import "../icon/icon.css";
 @import "shortcodes.css";
 @import "responsive.css";
-@import "widget.css";
 @import "animation.css";
+@import "animate.min.css";
 @import "swiper-bundle.min.css";
 @import "../font/font.css";
 @import "bootstrap.css";
@@ -20,6 +20,12 @@
 	* Typography
 	* Extra classes
 	* link style
+	* header
+    * footer
+    * header section
+    * mobile
+    * cusor
+    * preload
 
 */
 
@@ -2143,8 +2149,6 @@ a:focus {
     right: 30px;
     cursor: pointer;
 }
-
-
 
 /* mobile header */
 /* ------------------------------------ */

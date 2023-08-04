@@ -183,6 +183,9 @@
     .widget-income {
         margin-right: 0;
     }
+    .bg-text {
+        display: none;
+    }
 }
 
 @media (max-width: 1024px) {

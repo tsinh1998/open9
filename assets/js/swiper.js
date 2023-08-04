@@ -50,7 +50,6 @@ var swiper = new Swiper(".swiper-3d-7", {
     },
 });
 
-
 var swiper = new Swiper(".slider-3d", {
     loop: true,
     spaceBetween: 0,
@@ -62,7 +61,7 @@ var swiper = new Swiper(".slider-3d", {
     grabCursor: true,
     coverflowEffect: {
         rotate: 0,
-        stretch: 90,
+        stretch: 75,
         depth: 0,
         modifier: 1,
         scale: 0.9,
@@ -266,7 +265,6 @@ var swiper =  new Swiper(".autoslider2", {
     },
 );
 
-
 var swiper =  new Swiper(".autoslider1reverse", {
     direction: 'vertical',
     spaceBetween: 45,
@@ -422,7 +420,7 @@ var swiper =  new Swiper(".carouselfull-1", {
         },
     },
     autoplay: {
-        delay: 2000,
+        delay: 3000,
         disableOnInteraction:false,
     },
 });
@@ -475,6 +473,8 @@ var swiper =  new Swiper(".carousel1", {
     loop:false,
     slidesPerView: 1,
     spaceBetween: 26.67,
+    observer: true,
+    observeParents: true,
     navigation: {
         clickable: true,
         nextEl: ".swiper-button-next",
@@ -691,7 +691,7 @@ var swiper =  new Swiper(".seller-slider2", {
     },
     grabCursor: true,
     autoplay: {
-        delay: 2000,
+        delay: 2700,
         disableOnInteraction:false,
     },
     breakpoints: {

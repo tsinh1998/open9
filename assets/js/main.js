@@ -19,6 +19,7 @@
     * categorycheckbox
     * cursor
     * gotop
+    * parallax
     * dashboard
     * preloader
 */
@@ -501,24 +502,14 @@
         }
     };
 
-    new simpleParallax(document.getElementsByClassName('bg-text'), {
-        scale: 1.2,
-        orientation: 'right'
-    });
-
-    var tftsparticles = function() { 
-        
-        $('.tf-tsparticles').each(function() {            
-            
-                $(this).find('#tsparticles1')({
-                    console.log('ads');
-                  var tfcolor = $(this).data('color');
-                //   console.log(tfcolor);
-                });
-            }
-        )
-      };
-      
+    var parallax = function() {
+        if ($('div').hasClass('bg-text')) {
+            new simpleParallax(document.getElementsByClassName('bg-text'), {
+                scale: 1.2,
+                orientation: 'right'
+            });
+        }
+    }
 
     var preloader = function () {
         setTimeout(function () {
@@ -550,8 +541,8 @@
         categorycheckbox();
         cursor();
         gotop();
+        parallax();
         dashboard();
-        tftsparticles();
         preloader();
     });
 
