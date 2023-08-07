@@ -76,7 +76,7 @@
                 injectSpace.hide();
               }
     
-              if ($(window).scrollTop() > 200) {
+              if ($(window).scrollTop() > 100) {
                 nav.addClass("is-small");
               } else {
                 nav.removeClass("is-small");
@@ -505,6 +505,55 @@
                 orientation: 'right'
             });
         }
+    };
+
+    var sticky = function() {
+        if ($('body').hasClass('sticky-scroll')) {
+            $(document).ready(function() {
+                var $window = $(window);  
+                var $sidebar = $(".po-sticky"); 
+                var $sidebarHeight = $sidebar.innerHeight();   
+                var $footerOffsetTop = $(".po-sticky-footer").offset().top +$(".po-sticky-footer .content-inner.active").innerHeight() ; 
+                var $sidebarOffset = $sidebar.offset().top;
+                
+                $window.scroll(function() {
+                if($window.scrollTop() > $sidebarOffset - 87) {
+                    $sidebar.addClass("fixed");   
+                } else {
+                    $sidebar.removeClass("fixed");   
+                }    
+                if($window.scrollTop() + $sidebarHeight > $footerOffsetTop - 87 ) {
+                    $sidebar.css({"top" : 0 - 87 -($window.scrollTop() + $sidebarHeight - $footerOffsetTop)});        
+                } else {
+                    $sidebar.css({"top": "0"});  
+                }    
+                });   
+            });
+        }
+
+        if ($('body').hasClass('sticky-scroll1')) {
+            $(document).ready(function() {
+                var $window = $(window);  
+                var $sidebar = $(".po-sticky"); 
+                var $sidebarHeight = $sidebar.innerHeight();   
+                var $footerOffsetTop = $(".po-sticky-footer").offset().top +$(".po-sticky-footer").innerHeight() ; 
+                var $sidebarOffset = $sidebar.offset().top;
+                
+                $window.scroll(function() {
+                if($window.scrollTop() > $sidebarOffset - 87) {
+                    $sidebar.addClass("fixed");   
+                } else {
+                    $sidebar.removeClass("fixed");   
+                }    
+                if($window.scrollTop() + $sidebarHeight > $footerOffsetTop - 98 ) {
+                    $sidebar.css({"top" : 0 - 98 -($window.scrollTop() + $sidebarHeight - $footerOffsetTop)});        
+                } else {
+                    $sidebar.css({"top": "0"});  
+                }    
+                });   
+            });
+        }
+
     }
 
     var preloader = function () {
@@ -535,10 +584,11 @@
         dropdown('#select-day');
         listmenu();
         categorycheckbox();
+        dashboard();
         cursor();
         gotop();
         parallax();
-        dashboard();
+        sticky();
         preloader();
     });
 

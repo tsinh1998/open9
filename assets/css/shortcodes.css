@@ -6088,3 +6088,14 @@ fieldset.password > i::before {
     bottom: 0;
     z-index:0;
 }
+
+.po-sticky.fixed {
+    position: fixed;
+    top: 87px;
+    width: 255px;
+    margin-top: 87px;
+}
+
+.po-sticky.fixed.type1 {
+    margin-top: 98px;
+}

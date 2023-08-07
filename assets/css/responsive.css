@@ -189,6 +189,9 @@
 }
 
 @media (max-width: 1024px) {
+    .po-sticky.fixed {
+        width: 226px;
+    }
     .header_1 #main-nav {
         left: 20%;
     }
@@ -374,6 +377,9 @@
 }
 
 @media (max-width: 768px) {
+    .po-sticky.fixed {
+        width: 168px;
+    }
     #page.market-page .content-tabs .wrapper-content .inner-content {
         max-width: 100%;
     }
@@ -462,6 +468,11 @@
 }
 
 @media (max-width: 700px) {
+    .po-sticky {
+        position: unset !important;
+        width: unset !important;
+        margin-top: 0 !important;
+    }
     #wallet-header {
         display: none;
     }
