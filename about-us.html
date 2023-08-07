@@ -333,7 +333,25 @@
                                 <img class="absolute item4" src="assets/images/item-background/item13.png" alt="">
                             </div>
                             <div class="relative">
-                                <div class="swiper-container carousel3-type2">
+                                <div class="swiper-container carousel3-type2" data-swiper='{
+                                    "loop":false,
+                                    "slidesPerView": 1,
+                                    "observer": true,
+                                    "observeParents": true,
+                                    "spaceBetween": 12,
+                                    "autoplay": {
+                                        "delay": "2000",
+                                        "disableOnInteraction": false
+                                    },
+                                    "breakpoints": {
+                                        "768": {
+                                            "slidesPerView": 2
+                                        },
+                                        "1024": {
+                                            "slidesPerView": 3
+                                        }
+                                    }
+                                }'>
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <div class="tf-card-box style-7">

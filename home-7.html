@@ -348,7 +348,19 @@
                                 <img class="absolute item10" src="assets/images/item-background/item2.png" alt="">
                             </div>
                             <div class="bg-home7">
-                                <div class="swiper-container autoslider1reverse">
+                                <div class="swiper-container autoslider1reverse" data-swiper='{
+                                    "direction": "vertical",
+                                    "spaceBetween": 45,
+                                    "grabCursor": false,
+                                    "speed": 10000,
+                                    "centeredSlides": false,
+                                    "loop": true,
+                                    "slidesPerView": "auto",
+                                    "autoplay": {
+                                        "delay": "0",
+                                        "disableOnInteraction": false
+                                    }
+                                }'>
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <img src="assets/images/item-background/bg-home7-item1.png" alt="">
@@ -358,7 +370,20 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-container autoslider2reverse">
+                                <div class="swiper-container autoslider1reverse" data-swiper='{
+                                    "direction": "vertical",
+                                    "spaceBetween": 45,
+                                    "grabCursor": false,
+                                    "speed": 10000,
+                                    "centeredSlides": false,
+                                    "loop": true,
+                                    "slidesPerView": "auto",
+                                    "autoplay": {
+                                        "delay": "0",
+                                        "disableOnInteraction": false,
+                                        "reverseDirection": true
+                                    }
+                                }'>
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <img src="assets/images/item-background/bg-home7-item3.png" alt="">
@@ -368,7 +393,19 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-container autoslider1reverse">
+                                <div class="swiper-container autoslider1reverse" data-swiper='{
+                                    "direction": "vertical",
+                                    "spaceBetween": 45,
+                                    "grabCursor": false,
+                                    "speed": 10000,
+                                    "centeredSlides": false,
+                                    "loop": true,
+                                    "slidesPerView": "auto",
+                                    "autoplay": {
+                                        "delay": "0",
+                                        "disableOnInteraction": false
+                                    }
+                                }'>
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <img src="assets/images/item-background/bg-home7-item5.png" alt="">
@@ -457,7 +494,40 @@
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="featured pt-10 swiper-container carousel">
+                            <div class="featured pt-10 swiper-container carousel" data-swiper='{
+                                "loop":false,
+                                "slidesPerView": 1,
+                                "observer": true,
+                                "observeParents": true,
+                                "spaceBetween": 30,
+                                "navigation": {
+                                    "clickable": true,
+                                    "nextEl": ".slider-next",
+                                    "prevEl": ".slider-prev"
+                                },
+                                "pagination": {
+                                    "el": ".swiper-pagination",
+                                    "clickable": true
+                                },
+                                "autoplay": {
+                                    "delay": "2000",
+                                    "disableOnInteraction": false
+                                },
+                                "breakpoints": {
+                                    "768": {
+                                        "slidesPerView": 2,
+                                        "spaceBetween": 30
+                                    },
+                                    "1024": {
+                                        "slidesPerView": 3,
+                                        "spaceBetween": 30
+                                    },
+                                    "1300": {
+                                        "slidesPerView": 4,
+                                        "spaceBetween": 30
+                                    }
+                                }
+                            }'>
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="tf-card-box style-4">
@@ -677,7 +747,29 @@
                     <div class="heading-section ">
                         <h2 class="tf-title ">Top Collector Buys Today</h2>
                     </div>
-                    <div class="featured swiper-container autoslider1">
+                    <div class="featured swiper-container autoslider1" data-swiper='{
+                        "loop": false,
+                        "spaceBetween": 28,
+                        "slidesPerView": "auto",
+                        "centeredSlides": false,
+                        "observer": true,
+                        "observeParents": true,
+                        "grabCursor": true,
+                        "breakpoints": {
+                            "0": { 
+                                "spaceBetween": 20
+                            },
+                            "480": { 
+                                "spaceBetween": 20
+                            },
+                            "767": { 
+                                "spaceBetween": 28
+                            },
+                            "992": {
+                                "spaceBetween": 28
+                            }
+                        }
+                    }'>
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="tf-author-box style-1 text-center flex">
@@ -801,7 +893,29 @@
                             </div>
                         </div>
                     </div>
-                    <div class="featured mt-17 swiper-container autoslider2">
+                    <div class="featured mt-17 swiper-container autoslider2" data-swiper='{
+                        "loop": false,
+                        "spaceBetween": 28,
+                        "slidesPerView": "auto",
+                        "centeredSlides": false,
+                        "observer": true,
+                        "observeParents": true,
+                        "grabCursor": true,
+                        "breakpoints": {
+                            "0": { 
+                                "spaceBetween": 20
+                            },
+                            "480": { 
+                                "spaceBetween": 20
+                            },
+                            "767": { 
+                                "spaceBetween": 28
+                            },
+                            "992": {
+                                "spaceBetween": 28
+                            }
+                        }
+                    }'>
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="tf-author-box style-1 text-center flex">
@@ -938,7 +1052,37 @@
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="swiper-container seller seller-slider2">
+                            <div class="swiper-container seller seller-slider2" data-swiper='{
+                                "loop":false,
+                                "slidesPerView": 2,
+                                "observer": true,
+                                "grabCursor": true,
+                                "observeParents": true,
+                                "spaceBetween": 30,
+                                "autoplay": {
+                                    "delay": "2700",
+                                    "disableOnInteraction": false
+                                },
+                                "navigation": {
+                                    "clickable": true,
+                                    "nextEl": ".seller-next",
+                                    "prevEl": ".seller-prev"
+                                },
+                                "breakpoints": {
+                                    "500": {
+                                        "slidesPerView": 3
+                                    },
+                                    "640": {
+                                        "slidesPerView": 4
+                                    },
+                                    "768": {
+                                        "slidesPerView": 5
+                                    },
+                                    "1070": {
+                                        "slidesPerView": 6
+                                    }
+                                }
+                            }' >
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="tf-category text-center">
@@ -1041,7 +1185,40 @@
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="featured pt-10 swiper-container carousel">
+                            <div class="featured pt-10 swiper-container carousel" data-swiper='{
+                                "loop":false,
+                                "slidesPerView": 1,
+                                "observer": true,
+                                "observeParents": true,
+                                "spaceBetween": 30,
+                                "navigation": {
+                                    "clickable": true,
+                                    "nextEl": ".slider-next",
+                                    "prevEl": ".slider-prev"
+                                },
+                                "pagination": {
+                                    "el": ".swiper-pagination",
+                                    "clickable": true
+                                },
+                                "autoplay": {
+                                    "delay": "2000",
+                                    "disableOnInteraction": false
+                                },
+                                "breakpoints": {
+                                    "768": {
+                                        "slidesPerView": 2,
+                                        "spaceBetween": 30
+                                    },
+                                    "1024": {
+                                        "slidesPerView": 3,
+                                        "spaceBetween": 30
+                                    },
+                                    "1300": {
+                                        "slidesPerView": 4,
+                                        "spaceBetween": 30
+                                    }
+                                }
+                            }'>
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="tf-card-box style-1">
@@ -1210,7 +1387,23 @@
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="swiper-container seller seller-slider">
+                            <div class="swiper-container seller seller-slider" data-swiper='{
+                                "loop":false,
+                                "slidesPerView": 1,
+                                "observer": true,
+                                "grabCursor": true,
+                                "observeParents": true,
+                                "spaceBetween": 30,
+                                "autoplay": {
+                                    "delay": "5000",
+                                    "disableOnInteraction": false
+                                },
+                                "navigation": {
+                                    "clickable": true,
+                                    "nextEl": ".main-next",
+                                    "prevEl": ".main-prev"
+                                }
+                            }'>
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="grid-author-box">
@@ -1965,7 +2158,19 @@
                                     <a href="#" class="tf-button style-2 h50 w230">Create your first NFT<i class="icon-arrow-up-right2"></i></a>
                                 </div>
                                 <div class="bg-home7">
-                                    <div class="swiper-container autoslider3reverse">
+                                    <div class="swiper-container autoslider3reverse" data-swiper='{
+                                        "loop":true,
+                                        "slidesPerView": "auto",
+                                        "spaceBetween": 14,
+                                        "direction": "vertical",
+                                        "speed": 10000,
+                                        "observer": true,
+                                        "observeParents": true,
+                                        "autoplay": {
+                                            "delay": "0",
+                                            "disableOnInteraction": false
+                                        }
+                                    }'>
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <img src="assets/images/item-background/bg-action-1.png" alt="">
@@ -1975,7 +2180,20 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-container autoslider4reverse">
+                                    <div class="swiper-container autoslider4reverse" data-swiper='{
+                                        "loop":true,
+                                        "slidesPerView": "auto",
+                                        "spaceBetween": 14,
+                                        "direction": "vertical",
+                                        "speed": 10000,
+                                        "observer": true,
+                                        "observeParents": true,
+                                        "autoplay": {
+                                            "delay": "0",
+                                            "disableOnInteraction": false,
+                                            "reverseDirection": true
+                                        }
+                                    }'>
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <img src="assets/images/item-background/bg-action-1.png" alt="">
@@ -1985,7 +2203,19 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-container autoslider3reverse">
+                                    <div class="swiper-container autoslider3reverse" data-swiper='{
+                                        "loop":true,
+                                        "slidesPerView": "auto",
+                                        "spaceBetween": 14,
+                                        "direction": "vertical",
+                                        "speed": 10000,
+                                        "observer": true,
+                                        "observeParents": true,
+                                        "autoplay": {
+                                            "delay": "0",
+                                            "disableOnInteraction": false
+                                        }
+                                    }'>
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <img src="assets/images/item-background/bg-action-1.png" alt="">
@@ -2012,7 +2242,25 @@
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="featured pt-10 swiper-container carousel3">
+                            <div class="featured pt-10 swiper-container carousel3" data-swiper='{
+                                "loop":false,
+                                "slidesPerView": 1,
+                                "spaceBetween": 30,
+                                "observer": true,
+                                "observeParents": true,
+                                "autoplay": {
+                                    "delay": "2000",
+                                    "disableOnInteraction": false
+                                },
+                                "breakpoints": {
+                                    "600": {
+                                        "slidesPerView": 2
+                                    },
+                                    "991": {
+                                        "slidesPerView": 3
+                                    }
+                                }
+                            }'>
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="tf-card-collection style-2">
