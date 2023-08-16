@@ -160,6 +160,7 @@
                 document.querySelector("#" + tabs).classList.add("active");
                 
                 btn.classList.add("active");
+                $('html, body').animate({scrollTop: 0}, 'slow');
             }
         }
     }
@@ -269,19 +270,6 @@
             }     
         });
     }; 
-
-    var password = function() {
-        if ($('fieldset').hasClass('password')) {
-            Array.from(document.querySelectorAll(".password")).forEach(function (e) {
-                Array.from(e.querySelectorAll(".password-addon")).forEach(function (r) {
-                  r.addEventListener("click", function (r) {
-                    var o = e.querySelector(".password-input");
-                    "password" === o.type ? (o.type = "text") : (o.type = "password");
-                  });
-                });
-            });
-        }
-    }
 
     var btnmenu = function() {
         if ($('header').hasClass('header_1')) {
@@ -596,7 +584,6 @@
         flcustominput();
         flatAccordion();
         flatAccordion2();
-        password();
         btnmenu();
         loadmore();
         dropdown('#select-day');

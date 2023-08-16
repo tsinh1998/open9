@@ -2486,8 +2486,8 @@ animation-delay: 0.8s;
     box-sizing: border-box;
     z-index: 10000;
     opacity: .5;
-    -webkit-transition: all .1s ease-out;
-    transition: all .1s ease-out
+    -webkit-transition: all .05s ease-out;
+    transition: all .05s ease-out
 }
 
 .tf-mouse-outer.mouse-hover {

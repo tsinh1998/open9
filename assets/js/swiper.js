@@ -44,10 +44,6 @@ var swiper = new Swiper(".swiper-3d-7", {
         scale: 0.9,
         slideShadows: false,
     },
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
     navigation: {
       nextEl: ".next-3d",
       prevEl: ".prev-3d",
@@ -94,10 +90,6 @@ var swiper = new Swiper(".slider-3d", {
         modifier: 1,
         scale: 0.9,
         slideShadows: false,
-    },
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
     },
     navigation: {
       nextEl: ".next-3d",
