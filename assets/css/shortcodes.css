@@ -133,6 +133,10 @@
     background-color: #DDF247;
 }
 
+.tf-button:focus {
+    color: #161616 !important;
+}
+
 .tf-button.style-1 {
     width: 170px;
     height: 44px;

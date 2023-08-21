@@ -1521,6 +1521,10 @@ a:focus {
     color: #DDF247;
 }
 
+.background-white .widget-menu ul li a:after {
+    background: rgba(22, 22, 22, 1);
+}
+
 .widget-menu ul li a::after {
     content           : '';
     width             : 0;
