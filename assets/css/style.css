@@ -1178,6 +1178,36 @@ a:focus {
     background-color: rgba(221, 242, 71, 1);
 }
 
+.header-search.style-1 .show-search {
+    color: #000;
+}
+
+.header-search > a.active .icon-search::before {
+    content: url(../images/close.svg);
+}
+
+.header-search .show-search {
+    font-size: 20px;
+    line-height: 44px;
+}
+
+.header-search .top-search {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    min-width: 240px;
+    display: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-search .top-search.active {
+    display: block;
+}
+
 /* main-nav */
 .header_1 #main-nav {
     position: absolute;

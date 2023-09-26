@@ -271,7 +271,38 @@
         });
     }; 
 
+    var topSearch=function(){
+        
+        $(document).on('click',function(e){
+            var clickID=e.target.id;if((clickID!=='s')){
+                $('.top-search').removeClass('active');
+            }});
+        $(document).on('click',function(e){
+            var clickID=e.target.class;if((clickID!=='a111')){
+                $('.show-search').removeClass('active');
+        }});
+            
+        $('.show-search').on('click',function(event){
+            event.stopPropagation();});
+        $('.search-form').on('click',function(event){
+            event.stopPropagation();});
+        $('.show-search').on('click',function(event){
+            if(!$('.top-search').hasClass("active")){
+                $('.top-search').addClass('active');
+                    event.preventDefault();
+                }
+            else
+                $('.top-search').removeClass('active');
+                event.preventDefault();
+                if(!$('.show-search').hasClass("active"))
+                    $('.show-search').addClass('active');
+                else
+                    $('.show-search').removeClass('active'); 
+        })
+    ;}
+
     var btnmenu = function() {
+
         if ($('header').hasClass('header_1')) {
             $('.canvas').on('click', function () {
                 $(this).closest('#header_main').find('.canvas-nav-wrap').toggleClass('active');
@@ -584,6 +615,7 @@
         flcustominput();
         flatAccordion();
         flatAccordion2();
+        topSearch();
         btnmenu();
         loadmore();
         dropdown('#select-day');
